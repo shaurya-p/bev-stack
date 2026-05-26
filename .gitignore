@@ -22,9 +22,10 @@ htmlcov/
 *.swo
 .DS_Store
 
-# Frontend (when added)
+# Frontend
 node_modules/
 .next/
+frontend/dist/
 
 # Local Claude Code instructions
 CLAUDE.md

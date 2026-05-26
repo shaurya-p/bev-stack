@@ -1,0 +1,136 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  background: #070b14;
+  color: #dce8ff;
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 32px 24px;
+}
+
+/* ── shell ──────────────────────────────────────── */
+
+.viewer-shell {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 1px #111a28,
+    0 24px 64px rgba(0, 0, 0, 0.7);
+}
+
+/* ── side panel ─────────────────────────────────── */
+
+.side-panel {
+  width: 220px;
+  flex-shrink: 0;
+  background: #080d18;
+  border-right: 1px solid #111a28;
+  padding: 24px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.panel-title {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #3d8fd6;
+}
+
+.panel-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.panel-section-heading {
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #243650;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #0f1a28;
+}
+
+.panel-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.panel-label {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #2c4060;
+}
+
+.panel-value {
+  font-size: 12px;
+  color: #a8c4e0;
+  line-height: 1.3;
+}
+
+.panel-mono {
+  font-size: 10px;
+  color: #607a94;
+  word-break: break-all;
+}
+
+/* ── category list ──────────────────────────────── */
+
+.panel-cat-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.panel-cat-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.panel-cat-name {
+  color: #8aa8c8;
+  flex: 1;
+}
+
+.panel-cat-count {
+  color: #c0d8f0;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── canvas wrap ────────────────────────────────── */
+
+.canvas-wrap {
+  flex-shrink: 0;
+  background: #070b14;
+  line-height: 0;
+}
+
+/* ── status ─────────────────────────────────────── */
+
+.status-msg {
+  color: #4a6080;
+  font-size: 13px;
+}

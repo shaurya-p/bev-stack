@@ -38,3 +38,14 @@ See [docs/nuscenes_setup.md](docs/nuscenes_setup.md) for download instructions, 
 uv run python backend/apps/export_nuscenes_sample.py
 # Optional flags: --sample-token <token>  --output <path>
 ```
+
+## BEV web viewer
+
+```bash
+cd frontend
+npm install
+npm run dev    # starts Vite dev server at http://localhost:5173
+npm run build  # type-check + production build → frontend/dist/
+```
+
+The viewer loads `public/scene_frames/nuscenes_sample_frame.json` and renders a dark Tesla-inspired BEV canvas with ego box, object boxes, range rings, and a stats HUD.
