@@ -56,6 +56,17 @@ print('Dataroot exists: OK')
 uv run python -c "import nuscenes; print('nuscenes import ok')"
 ```
 
+## Exporting a sample
+
+With `BEV_STACK_DATASETS` set and the dataset extracted, export the first sample:
+
+```bash
+uv run python backend/apps/export_nuscenes_sample.py
+# Optional: --sample-token <token>  --output <path>
+```
+
+This writes `examples/scene_frames/nuscenes_sample_frame.json` — one real nuScenes sample converted to the canonical SceneFrame schema with all object geometry in the ego frame.
+
 ## Note
 
-This ticket only sets up path resolution and the devkit dependency. The actual nuScenes adapter — which loads samples, converts annotations, and exports `SceneFrame` JSON — is the next milestone. See [roadmap.md](roadmap.md).
+This covers a minimal one-sample nuScenes export: one sample, six cameras, one lidar reference, and object annotations converted from global to ego-frame coordinates. It does not cover full-scene iteration, lidar point processing, sweeps, maps, or model-output providers. See [roadmap.md](roadmap.md) for upcoming milestones.

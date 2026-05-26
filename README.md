@@ -31,3 +31,9 @@ export BEV_STACK_DATASETS=$HOME/datasets
 ```
 
 See [docs/nuscenes_setup.md](docs/nuscenes_setup.md) for download instructions, the expected directory layout, and how to verify path resolution.
+
+```bash
+# Export the first nuScenes mini sample as a SceneFrame JSON
+uv run python backend/apps/export_nuscenes_sample.py
+# Optional flags: --sample-token <token>  --output <path>
+```
