@@ -1,0 +1,71 @@
+# SceneFrame Schema
+
+The `SceneFrame` is the canonical unit of data consumed by the bev-stack visualizer and produced by all dataset adapters and model-output providers. It is intentionally **source-agnostic**: the same type represents ground-truth annotations, detector outputs, tracker outputs, and BEV fusion model results.
+
+## Top-level fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `frame_id` | `str` | Unique identifier for this frame (e.g. nuScenes sample token) |
+| `timestamp_us` | `int` | Frame timestamp in microseconds since Unix epoch |
+| `ego` | `EgoState` | Ego vehicle state at this timestamp |
+| `cameras` | `list[CameraFrame]` | Available camera views |
+| `lidar` | `LidarFrame \| None` | LiDAR pointcloud, if available |
+| `objects` | `list[Object3D]` | 3D objects in ego frame |
+| `metadata` | `dict[str, Any]` | Free-form provenance data (scene name, split, etc.) |
+| `diagnostics` | `dict[str, Any]` | Debug/runtime diagnostics; not rendered |
+
+## EgoState
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `pose_global` | `Pose3D \| None` | Ego pose in the global/map frame (optional metadata) |
+| `velocity_ego_mps` | `Vec3 \| None` | Ego velocity in ego frame |
+
+`pose_global` is for provenance and future map/temporal features, not for rendering placement.
+
+## CameraFrame
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `name` | `str` | Camera name (e.g. `"CAM_FRONT"`) |
+| `image_uri` | `str` | URI to the image file or data URL |
+| `intrinsics_3x3` | `list[float] \| None` | Row-major 3×3 intrinsics matrix (9 floats) |
+| `T_ego_sensor` | `Pose3D \| None` | Transform from sensor frame to ego frame |
+
+## LidarFrame
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `pointcloud_uri` | `str \| None` | URI to a pointcloud file |
+| `points_ego` | `list[Vec3] \| None` | Pointcloud already transformed into ego frame |
+| `T_ego_sensor` | `Pose3D \| None` | Transform from sensor frame to ego frame |
+
+## Object3D
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `object_id` | `str` | Unique object identifier within the frame |
+| `category` | `str` | Semantic category (e.g. `"vehicle.car"`) |
+| `box` | `Box3D` | 3D bounding box in ego frame |
+| `velocity_ego_mps` | `Vec3 \| None` | Object velocity in ego frame; `None` for GT without velocity |
+| `confidence` | `float \| None` | Detection/track confidence [0, 1]; `None` for ground truth |
+| `source` | `str` | Provenance tag (see below) |
+| `attributes` | `dict[str, Any]` | Category-specific attributes (e.g. `{"is_moving": true}`) |
+
+## Source field
+
+`source` allows multiple providers to contribute objects to the same frame without schema changes:
+
+| Value | Meaning |
+|-------|---------|
+| `"gt"` | Ground-truth annotation |
+| `"detector:centerpoint"` | CenterPoint detector output |
+| `"tracker:kalman_v1"` | Tracker output |
+| `"fusion_model:bevfusion"` | BEV fusion model output |
+
+## Serialization
+
+`to_dict(instance)` uses `dataclasses.asdict()` for recursive conversion to a JSON-compatible dict. Field names in the serialized output are **stable** — the TypeScript schema in `frontend/src/schema/sceneFrame.ts` mirrors them exactly. Do not rename fields without updating both.
+
+**Known limitation:** `timestamp_us` serializes as a JSON number. TypeScript `number` is a 64-bit float, which loses precision for large epoch-microsecond values (~year 2255 and beyond is fine; sub-microsecond precision is not guaranteed near the epoch edge). A future ticket will address this with `bigint` or string encoding if needed.
