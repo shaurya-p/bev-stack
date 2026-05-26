@@ -19,6 +19,7 @@ tests/      Schema contract tests
 uv sync                                                          # install project + dev dependencies
 uv run pytest                                                    # run schema contract tests
 uv run python backend/apps/export_sample_scene_frame.py         # regenerate sample fixture
+uv run python backend/apps/inspect_scene_frame.py examples/scene_frames/sample_scene_frame.json
 ```
 
 ## nuScenes setup
