@@ -1,0 +1,143 @@
+{
+  "frame_id": "sample_frame_000",
+  "timestamp_us": 1620000000000000,
+  "ego": {
+    "pose_global": null,
+    "velocity_ego_mps": {
+      "x": 5.0,
+      "y": 0.0,
+      "z": 0.0
+    }
+  },
+  "cameras": [
+    {
+      "name": "CAM_FRONT",
+      "image_uri": "data://sample/cameras/cam_front.jpg",
+      "intrinsics_3x3": null,
+      "T_ego_sensor": null
+    },
+    {
+      "name": "CAM_FRONT_LEFT",
+      "image_uri": "data://sample/cameras/cam_front_left.jpg",
+      "intrinsics_3x3": null,
+      "T_ego_sensor": null
+    },
+    {
+      "name": "CAM_FRONT_RIGHT",
+      "image_uri": "data://sample/cameras/cam_front_right.jpg",
+      "intrinsics_3x3": null,
+      "T_ego_sensor": null
+    },
+    {
+      "name": "CAM_BACK",
+      "image_uri": "data://sample/cameras/cam_back.jpg",
+      "intrinsics_3x3": null,
+      "T_ego_sensor": null
+    },
+    {
+      "name": "CAM_BACK_LEFT",
+      "image_uri": "data://sample/cameras/cam_back_left.jpg",
+      "intrinsics_3x3": null,
+      "T_ego_sensor": null
+    },
+    {
+      "name": "CAM_BACK_RIGHT",
+      "image_uri": "data://sample/cameras/cam_back_right.jpg",
+      "intrinsics_3x3": null,
+      "T_ego_sensor": null
+    }
+  ],
+  "lidar": {
+    "pointcloud_uri": "data://sample/lidar_top.pcd.bin",
+    "points_ego": null,
+    "T_ego_sensor": null
+  },
+  "objects": [
+    {
+      "object_id": "obj_000",
+      "category": "vehicle.car",
+      "box": {
+        "center_ego_m": {
+          "x": 15.0,
+          "y": 0.5,
+          "z": 0.9
+        },
+        "size_lwh_m": {
+          "x": 4.5,
+          "y": 2.0,
+          "z": 1.6
+        },
+        "yaw_ego_rad": 0.05
+      },
+      "source": "sample",
+      "velocity_ego_mps": {
+        "x": 4.2,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "confidence": null,
+      "attributes": {
+        "is_moving": true
+      }
+    },
+    {
+      "object_id": "obj_001",
+      "category": "human.pedestrian",
+      "box": {
+        "center_ego_m": {
+          "x": 5.0,
+          "y": 8.0,
+          "z": 0.9
+        },
+        "size_lwh_m": {
+          "x": 0.8,
+          "y": 0.6,
+          "z": 1.8
+        },
+        "yaw_ego_rad": 1.57
+      },
+      "source": "sample",
+      "velocity_ego_mps": {
+        "x": 0.3,
+        "y": 1.2,
+        "z": 0.0
+      },
+      "confidence": null,
+      "attributes": {
+        "is_moving": true
+      }
+    },
+    {
+      "object_id": "obj_002",
+      "category": "vehicle.bicycle",
+      "box": {
+        "center_ego_m": {
+          "x": 20.0,
+          "y": -3.0,
+          "z": 0.6
+        },
+        "size_lwh_m": {
+          "x": 1.8,
+          "y": 0.7,
+          "z": 1.2
+        },
+        "yaw_ego_rad": 0.1
+      },
+      "source": "sample",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "is_moving": false
+      }
+    }
+  ],
+  "metadata": {
+    "scene": "sample",
+    "split": "synthetic",
+    "note": "Synthetic sample frame \u2014 not derived from any real dataset."
+  },
+  "diagnostics": {
+    "source": "synthetic",
+    "real_data": false
+  }
+}

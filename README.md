@@ -16,6 +16,7 @@ tests/      Schema contract tests
 ## Getting started
 
 ```bash
-uv sync          # install project + dev dependencies
-uv run pytest    # run schema contract tests
+uv sync                                                          # install project + dev dependencies
+uv run pytest                                                    # run schema contract tests
+uv run python backend/apps/export_sample_scene_frame.py         # regenerate sample fixture
 ```
