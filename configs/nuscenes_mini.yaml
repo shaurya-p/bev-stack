@@ -1,0 +1,5 @@
+dataset: nuscenes
+version: v1.0-mini
+dataroot_env: BEV_STACK_DATASETS
+relative_dataroot: nuscenes
+split: mini

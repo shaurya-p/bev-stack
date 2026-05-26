@@ -20,3 +20,14 @@ uv sync                                                          # install proje
 uv run pytest                                                    # run schema contract tests
 uv run python backend/apps/export_sample_scene_frame.py         # regenerate sample fixture
 ```
+
+## nuScenes setup
+
+Set the `BEV_STACK_DATASETS` environment variable to the parent directory containing your datasets:
+
+```bash
+export BEV_STACK_DATASETS=$HOME/datasets
+# nuScenes dataroot is expected at $BEV_STACK_DATASETS/nuscenes/
+```
+
+See [docs/nuscenes_setup.md](docs/nuscenes_setup.md) for download instructions, the expected directory layout, and how to verify path resolution.
