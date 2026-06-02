@@ -171,3 +171,19 @@ def test_first_sample_exports_valid_scene_frame() -> None:
         # If global coords leaked in, distances would be ~UTM scale (100,000+ m).
         dist = (obj.box.center_ego_m.x ** 2 + obj.box.center_ego_m.y ** 2) ** 0.5
         assert dist < 200.0, f"Object center suspiciously far from ego: {dist:.1f} m"
+
+        # Provenance fields used by debug/verification tooling.
+        assert "nuscenes_annotation_token" in obj.attributes
+        assert "nuscenes_category" in obj.attributes
+        assert "nuscenes_size_wlh" in obj.attributes
+        assert obj.attributes["nuscenes_category"] == obj.category
+
+        # size_lwh_m must be the reordering of nuScenes [w, l, h] to [l, w, h].
+        # If this assertion fails, the adapter's size reorder is inconsistent
+        # with what we recorded as the raw nuScenes order — investigate before
+        # changing either side.
+        wlh = obj.attributes["nuscenes_size_wlh"]
+        assert len(wlh) == 3
+        assert obj.box.size_lwh_m.x == pytest.approx(wlh[1])
+        assert obj.box.size_lwh_m.y == pytest.approx(wlh[0])
+        assert obj.box.size_lwh_m.z == pytest.approx(wlh[2])

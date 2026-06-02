@@ -15,7 +15,12 @@ dependencies = [
 packages = ["backend/bevstack"]
 
 [dependency-groups]
-dev = ["pytest>=8.0"]
+dev = [
+    "pytest>=8.0",
+    # matplotlib is used only by debug/verification scripts under backend/apps/.
+    # The bevstack library itself does not import it.
+    "matplotlib>=3.7",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -5,12 +5,14 @@ import { Lighting } from './scene/Lighting';
 import { Stage } from './scene/Stage';
 import { EgoActor } from './scene/EgoActor';
 import { ObjectLayer } from './scene/ObjectLayer';
+import { DebugOverlay } from './scene/DebugOverlay';
 
 interface BevScene3DProps {
-  frame: SceneFrame;
+  frame:      SceneFrame;
+  showDebug?: boolean;
 }
 
-export function BevScene3D({ frame }: BevScene3DProps) {
+export function BevScene3D({ frame, showDebug = false }: BevScene3DProps) {
   return (
     <Canvas
       shadows
@@ -21,6 +23,7 @@ export function BevScene3D({ frame }: BevScene3DProps) {
       <Stage />
       <EgoActor />
       <ObjectLayer frame={frame} />
+      {showDebug && <DebugOverlay frame={frame} />}
       <OrbitControls
         target={[0, 0, -15]}
         minDistance={15}

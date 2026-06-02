@@ -5,12 +5,14 @@ import { BevScene3D } from './rendering/BevScene3D';
 import { displayName } from './rendering/categories';
 
 interface SidePanelProps {
-  frame: SceneFrame;
-  mode: '2d' | '3d';
-  onModeChange: (m: '2d' | '3d') => void;
+  frame:           SceneFrame;
+  mode:            '2d' | '3d';
+  onModeChange:    (m: '2d' | '3d') => void;
+  showDebug:       boolean;
+  onDebugChange:   (v: boolean) => void;
 }
 
-function SidePanel({ frame, mode, onModeChange }: SidePanelProps) {
+function SidePanel({ frame, mode, onModeChange, showDebug, onDebugChange }: SidePanelProps) {
   const counts = new Map<string, number>();
   for (const o of frame.objects) {
     counts.set(o.category, (counts.get(o.category) ?? 0) + 1);
@@ -72,14 +74,25 @@ function SidePanel({ frame, mode, onModeChange }: SidePanelProps) {
           ))}
         </div>
       )}
+
+      {mode === '3d' && (
+        <button
+          className={`debug-toggle${showDebug ? ' debug-toggle--active' : ''}`}
+          onClick={() => onDebugChange(!showDebug)}
+          title="Diagnostic overlay — flat footprints and labels at ground level. Not part of the polished view."
+        >
+          {showDebug ? '● debug overlay on' : '○ debug overlay'}
+        </button>
+      )}
     </div>
   );
 }
 
 export default function App() {
-  const [frame, setFrame]   = useState<SceneFrame | null>(null);
-  const [error, setError]   = useState<string | null>(null);
-  const [mode,  setMode]    = useState<'2d' | '3d'>('3d');
+  const [frame, setFrame]         = useState<SceneFrame | null>(null);
+  const [error, setError]         = useState<string | null>(null);
+  const [mode,  setMode]          = useState<'2d' | '3d'>('3d');
+  const [showDebug, setShowDebug] = useState<boolean>(false);
 
   useEffect(() => {
     fetch('/scene_frames/nuscenes_sample_frame.json')
@@ -109,9 +122,17 @@ export default function App() {
 
   return (
     <div className="viewer-shell">
-      <SidePanel frame={frame} mode={mode} onModeChange={(m) => setMode(m)} />
+      <SidePanel
+        frame={frame}
+        mode={mode}
+        onModeChange={setMode}
+        showDebug={showDebug}
+        onDebugChange={setShowDebug}
+      />
       <div className="canvas-wrap">
-        {mode === '3d' ? <BevScene3D frame={frame} /> : <BevCanvas frame={frame} />}
+        {mode === '3d'
+          ? <BevScene3D frame={frame} showDebug={showDebug} />
+          : <BevCanvas frame={frame} />}
       </div>
     </div>
   );

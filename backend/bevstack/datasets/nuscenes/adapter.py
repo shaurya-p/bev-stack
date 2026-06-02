@@ -168,6 +168,12 @@ def _annotation_to_object3d(
             "num_radar_pts": ann.get("num_radar_pts", -1),
             "visibility_token": ann.get("visibility_token", ""),
             "attributes": attr_names,
+            # Provenance fields for verification tooling. These let debug
+            # scripts and overlays look up the original nuScenes record and
+            # cross-check our size reordering against the raw [w, l, h].
+            "nuscenes_annotation_token": ann["token"],
+            "nuscenes_category": category_name,
+            "nuscenes_size_wlh": [float(w), float(l), float(h)],
         },
     )
 

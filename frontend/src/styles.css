@@ -178,3 +178,44 @@ html, body {
   color: #6b7a8d;
   font-size: 13px;
 }
+
+/* ── debug overlay ──────────────────────────────── */
+
+.debug-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border: 1px dashed #d0a;
+  border-radius: 6px;
+  background: #fff5fb;
+  color: #88006a;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.debug-toggle--active {
+  background: #ff10a0;
+  color: #fff;
+  border-color: #ff10a0;
+}
+
+.debug-toggle:hover {
+  border-style: solid;
+}
+
+.debug-label {
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 10px;
+  color: #fff;
+  background: rgba(255, 16, 160, 0.92);
+  padding: 1px 4px;
+  border-radius: 3px;
+  white-space: nowrap;
+  transform: translateY(-12px);
+  pointer-events: none;
+}
