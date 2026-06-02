@@ -1,22 +1,16 @@
 import { useEffect, useState } from 'react';
 import type { SceneFrame } from './schema/sceneFrame';
 import { BevCanvas, categoryColor } from './rendering/BevCanvas';
+import { BevScene3D } from './rendering/BevScene3D';
+import { displayName } from './rendering/categories';
 
-function displayCategory(cat: string): string {
-  if (cat.includes('pedestrian'))    return 'pedestrian';
-  if (cat.includes('vehicle.car'))   return 'car';
-  if (cat.includes('vehicle.truck')) return 'truck';
-  if (cat.includes('vehicle.bus'))   return 'bus';
-  if (cat.includes('motorcycle'))    return 'motorcycle';
-  if (cat.includes('bicycle'))       return 'bicycle';
-  if (cat.includes('barrier'))       return 'barrier';
-  if (cat.includes('cone'))          return 'traffic cone';
-  if (cat.includes('construction'))  return 'construction';
-  const last = cat.split('.').pop() ?? cat;
-  return last.replace(/_/g, ' ');
+interface SidePanelProps {
+  frame: SceneFrame;
+  mode: '2d' | '3d';
+  onModeChange: (m: '2d' | '3d') => void;
 }
 
-function SidePanel({ frame }: { frame: SceneFrame }) {
+function SidePanel({ frame, mode, onModeChange }: SidePanelProps) {
   const counts = new Map<string, number>();
   for (const o of frame.objects) {
     counts.set(o.category, (counts.get(o.category) ?? 0) + 1);
@@ -28,6 +22,21 @@ function SidePanel({ frame }: { frame: SceneFrame }) {
   return (
     <div className="side-panel">
       <div className="panel-title">BEV VIEWER</div>
+
+      <div className="mode-toggle">
+        <button
+          className={`mode-btn${mode === '3d' ? ' mode-btn--active' : ''}`}
+          onClick={() => onModeChange('3d')}
+        >
+          3D
+        </button>
+        <button
+          className={`mode-btn${mode === '2d' ? ' mode-btn--active' : ''}`}
+          onClick={() => onModeChange('2d')}
+        >
+          2D
+        </button>
+      </div>
 
       <div className="panel-section">
         <div className="panel-row">
@@ -57,7 +66,7 @@ function SidePanel({ frame }: { frame: SceneFrame }) {
                 className="panel-cat-dot"
                 style={{ background: categoryColor(cat) }}
               />
-              <span className="panel-cat-name">{displayCategory(cat)}</span>
+              <span className="panel-cat-name">{displayName(cat)}</span>
               <span className="panel-cat-count">{n}</span>
             </div>
           ))}
@@ -68,8 +77,9 @@ function SidePanel({ frame }: { frame: SceneFrame }) {
 }
 
 export default function App() {
-  const [frame, setFrame] = useState<SceneFrame | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const [frame, setFrame]   = useState<SceneFrame | null>(null);
+  const [error, setError]   = useState<string | null>(null);
+  const [mode,  setMode]    = useState<'2d' | '3d'>('3d');
 
   useEffect(() => {
     fetch('/scene_frames/nuscenes_sample_frame.json')
@@ -99,9 +109,9 @@ export default function App() {
 
   return (
     <div className="viewer-shell">
-      <SidePanel frame={frame} />
+      <SidePanel frame={frame} mode={mode} onModeChange={(m) => setMode(m)} />
       <div className="canvas-wrap">
-        <BevCanvas frame={frame} />
+        {mode === '3d' ? <BevScene3D frame={frame} /> : <BevCanvas frame={frame} />}
       </div>
     </div>
   );
