@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import type { SceneFrame } from './schema/sceneFrame';
-import { BevCanvas, categoryColor } from './rendering/BevCanvas';
+import { BevCanvas } from './rendering/BevCanvas';
 import { BevScene3D } from './rendering/BevScene3D';
 import { displayName } from './rendering/categories';
+import { categoryColor } from './rendering/visuals/registry';
 
-interface SidePanelProps {
+interface HudPanelProps {
   frame:           SceneFrame;
   mode:            '2d' | '3d';
   onModeChange:    (m: '2d' | '3d') => void;
@@ -12,7 +13,7 @@ interface SidePanelProps {
   onDebugChange:   (v: boolean) => void;
 }
 
-function SidePanel({ frame, mode, onModeChange, showDebug, onDebugChange }: SidePanelProps) {
+function HudPanel({ frame, mode, onModeChange, showDebug, onDebugChange }: HudPanelProps) {
   const counts = new Map<string, number>();
   for (const o of frame.objects) {
     counts.set(o.category, (counts.get(o.category) ?? 0) + 1);
@@ -22,8 +23,11 @@ function SidePanel({ frame, mode, onModeChange, showDebug, onDebugChange }: Side
     .slice(0, 6);
 
   return (
-    <div className="side-panel">
-      <div className="panel-title">BEV VIEWER</div>
+    <aside className="hud-panel">
+      <div className="hud-header">
+        <div className="hud-title">BEV STACK</div>
+        <div className="hud-subtitle">scene viewer</div>
+      </div>
 
       <div className="mode-toggle">
         <button
@@ -76,15 +80,18 @@ function SidePanel({ frame, mode, onModeChange, showDebug, onDebugChange }: Side
       )}
 
       {mode === '3d' && (
-        <button
-          className={`debug-toggle${showDebug ? ' debug-toggle--active' : ''}`}
-          onClick={() => onDebugChange(!showDebug)}
-          title="Diagnostic overlay — flat footprints and labels at ground level. Not part of the polished view."
-        >
-          {showDebug ? '● debug overlay on' : '○ debug overlay'}
-        </button>
+        <div className="panel-section panel-section--diagnostics">
+          <div className="panel-section-heading">diagnostics</div>
+          <button
+            className={`debug-toggle${showDebug ? ' debug-toggle--active' : ''}`}
+            onClick={() => onDebugChange(!showDebug)}
+            title="Diagnostic overlay — flat footprints and labels at ground level. Not part of the polished view."
+          >
+            {showDebug ? '● debug overlay on' : '○ debug overlay'}
+          </button>
+        </div>
       )}
-    </div>
+    </aside>
   );
 }
 
@@ -106,7 +113,7 @@ export default function App() {
 
   if (error) {
     return (
-      <div className="viewer-shell">
+      <div className="viewer-root viewer-root--status">
         <span className="status-msg">Error: {error}</span>
       </div>
     );
@@ -114,26 +121,29 @@ export default function App() {
 
   if (!frame) {
     return (
-      <div className="viewer-shell">
+      <div className="viewer-root viewer-root--status">
         <span className="status-msg">Loading…</span>
       </div>
     );
   }
 
   return (
-    <div className="viewer-shell">
-      <SidePanel
+    <div className="viewer-root">
+      <div className={`canvas-area${mode === '2d' ? ' canvas-area--2d' : ''}`}>
+        {mode === '3d'
+          ? <BevScene3D frame={frame} showDebug={showDebug} />
+          : <BevCanvas frame={frame} />}
+      </div>
+      <HudPanel
         frame={frame}
         mode={mode}
         onModeChange={setMode}
         showDebug={showDebug}
         onDebugChange={setShowDebug}
       />
-      <div className="canvas-wrap">
-        {mode === '3d'
-          ? <BevScene3D frame={frame} showDebug={showDebug} />
-          : <BevCanvas frame={frame} />}
-      </div>
+      {mode === '3d' && (
+        <div className="hud-hint">drag to orbit · scroll to zoom</div>
+      )}
     </div>
   );
 }

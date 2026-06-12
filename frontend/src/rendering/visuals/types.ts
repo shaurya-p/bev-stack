@@ -1,20 +1,23 @@
 import type { NormalizedCategory } from '../categories';
+import type { VehicleKind } from './proceduralGeometry';
 
 // Procedural fallback shapes. Used when a registry entry has no asset, or
 // when an asset is missing / failing to load.
 export type FallbackShape =
-  | 'vehicle'     // body box + cabin + optional heading line
-  | 'two_wheel'   // body box + heading line (no cabin)
-  | 'pedestrian'  // upright cylinder
-  | 'cone'        // cone primitive
-  | 'barrier'     // low box + edges
-  | 'box';        // plain box + edges
+  | 'vehicle'     // extruded body silhouette + wheels + glass + light strips
+  | 'two_wheel'   // slim body + inline wheels + rider
+  | 'pedestrian'  // capsule figure
+  | 'cone'        // banded traffic cone
+  | 'barrier'     // jersey-barrier extrusion
+  | 'box';        // plain box + edges (unknowns)
 
 export interface FallbackSpec {
   shape: FallbackShape;
+  // Which body silhouette a 'vehicle' fallback uses. Defaults to 'sedan'.
+  vehicleKind?: VehicleKind;
 }
 
-// Optional asset entry. Populated in Ticket #2 when real GLB meshes land.
+// Optional asset entry. Populated when real GLB meshes land.
 //
 // nativeForwardAxis records the +X / -X / +Z / -Z axis along which the asset
 // faces in its own local frame. The loader uses this to rotate the asset so
