@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { SceneFrame } from './schema/sceneFrame';
 import { BevCanvas } from './rendering/BevCanvas';
 import { BevScene3D } from './rendering/BevScene3D';
@@ -6,6 +6,7 @@ import { TransportBar } from './rendering/TransportBar';
 import { displayName } from './rendering/categories';
 import { categoryColor } from './rendering/visuals/registry';
 import { usePlayback } from './sequence/usePlayback';
+import { interpolateFrame, lerp } from './sequence/interpolate';
 
 const SEQUENCE_URL = '/scene_frames/nuscenes_scene_0061/manifest.json';
 const FALLBACK_FRAME_URL = '/scene_frames/nuscenes_sample_frame.json';
@@ -122,7 +123,15 @@ export default function App() {
       .catch(e => setFallbackError(String(e)));
   }, [manifestMissing]);
 
-  const frame = pb.frame ?? fallbackFrame;
+  // Interpolated frame for the canvas (smooth playback between sparse keyframes).
+  const renderFrame = useMemo(
+    () => (pb.current ? interpolateFrame(pb.current, pb.next, pb.alpha) : null),
+    [pb.current, pb.next, pb.alpha],
+  );
+
+  const canvasFrame = renderFrame ?? fallbackFrame;
+  // HUD shows discrete source-keyframe metadata, not interpolated values.
+  const hudFrame = pb.current ?? fallbackFrame;
 
   if (manifestMissing && fallbackError) {
     return (
@@ -140,7 +149,7 @@ export default function App() {
     );
   }
 
-  if (!frame) {
+  if (!canvasFrame || !hudFrame) {
     return (
       <div className="viewer-root viewer-root--status">
         <span className="status-msg">Loading…</span>
@@ -152,11 +161,11 @@ export default function App() {
     <div className="viewer-root">
       <div className={`canvas-area${mode === '2d' ? ' canvas-area--2d' : ''}`}>
         {mode === '3d'
-          ? <BevScene3D frame={frame} showDebug={showDebug} />
-          : <BevCanvas frame={frame} />}
+          ? <BevScene3D frame={canvasFrame} showDebug={showDebug} />
+          : <BevCanvas frame={canvasFrame} />}
       </div>
       <HudPanel
-        frame={frame}
+        frame={hudFrame}
         mode={mode}
         onModeChange={setMode}
         showDebug={showDebug}
@@ -167,8 +176,12 @@ export default function App() {
           index={pb.index}
           frameCount={pb.manifest.frame_count}
           timestampUs={
-            (pb.manifest.frames[pb.index]?.timestamp_us ?? 0) -
-            (pb.manifest.frames[0]?.timestamp_us ?? 0)
+            lerp(
+              pb.manifest.frames[pb.index]?.timestamp_us ?? 0,
+              pb.manifest.frames[pb.index + 1]?.timestamp_us ??
+                pb.manifest.frames[pb.index]?.timestamp_us ?? 0,
+              pb.alpha,
+            ) - (pb.manifest.frames[0]?.timestamp_us ?? 0)
           }
           playing={pb.playing}
           onToggle={pb.toggle}
