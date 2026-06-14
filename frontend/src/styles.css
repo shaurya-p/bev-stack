@@ -260,3 +260,96 @@ html, body, #root {
   transform: translateY(-12px);
   pointer-events: none;
 }
+
+/* ── transport bar (playback) ───────────────────── */
+
+.transport-bar {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  width: min(560px, calc(100% - 280px));
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 16px;
+  background: rgba(13, 17, 24, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.transport-btn {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #d3dce8;
+  font-size: 12px;
+  cursor: pointer;
+  transition: border-color 0.12s, color 0.12s, background 0.12s;
+}
+
+.transport-btn:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+.transport-scrubber {
+  flex: 1;
+  height: 4px;
+  appearance: none;
+  -webkit-appearance: none;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.transport-scrubber::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #38c8f0;
+  box-shadow: 0 0 8px rgba(56, 200, 240, 0.5);
+  cursor: pointer;
+}
+
+.transport-scrubber::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border: none;
+  border-radius: 50%;
+  background: #38c8f0;
+  cursor: pointer;
+}
+
+.transport-readout {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  min-width: 72px;
+}
+
+.transport-frame {
+  font-size: 12px;
+  color: #e6ebf2;
+  font-variant-numeric: tabular-nums;
+}
+
+.transport-time {
+  font-size: 10px;
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  color: #8b99ad;
+  font-variant-numeric: tabular-nums;
+}

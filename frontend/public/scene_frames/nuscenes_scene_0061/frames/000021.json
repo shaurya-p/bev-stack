@@ -1,0 +1,5330 @@
+{
+  "frame_id": "fedfb3a6cb804635a0f47143f9ca8d6f",
+  "timestamp_us": 1532402938197897,
+  "ego": {
+    "pose_global": {
+      "translation_m": {
+        "x": 399.9076584877769,
+        "y": 1117.2088940698718,
+        "z": 0.0
+      },
+      "rotation_quat_wxyz": {
+        "w": 0.8844105671305761,
+        "x": -0.022400134583953728,
+        "y": 0.013839511111922116,
+        "z": -0.4659663621449255
+      }
+    },
+    "velocity_ego_mps": null
+  },
+  "cameras": [
+    {
+      "name": "CAM_FRONT",
+      "image_uri": "/Users/shauryaparashar/datasets/nuscenes/samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402938162460.jpg",
+      "intrinsics_3x3": [
+        1266.417203046554,
+        0.0,
+        816.2670197447984,
+        0.0,
+        1266.417203046554,
+        491.50706579294757,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "T_ego_sensor": {
+        "translation_m": {
+          "x": 1.70079118954,
+          "y": 0.0159456324149,
+          "z": 1.51095763913
+        },
+        "rotation_quat_wxyz": {
+          "w": 0.4998015430569128,
+          "x": -0.5030316162024876,
+          "y": 0.4997798114386805,
+          "z": -0.49737083824542755
+        }
+      }
+    },
+    {
+      "name": "CAM_FRONT_LEFT",
+      "image_uri": "/Users/shauryaparashar/datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-24-11-22-45+0800__CAM_FRONT_LEFT__1532402938154844.jpg",
+      "intrinsics_3x3": [
+        1272.5979470598488,
+        0.0,
+        826.6154927353808,
+        0.0,
+        1272.5979470598488,
+        479.75165386361925,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "T_ego_sensor": {
+        "translation_m": {
+          "x": 1.52387798135,
+          "y": 0.494631336551,
+          "z": 1.50932822144
+        },
+        "rotation_quat_wxyz": {
+          "w": 0.6757265034669446,
+          "x": -0.6736266522251881,
+          "y": 0.21214015046209478,
+          "z": -0.21122827103904068
+        }
+      }
+    },
+    {
+      "name": "CAM_FRONT_RIGHT",
+      "image_uri": "/Users/shauryaparashar/datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-24-11-22-45+0800__CAM_FRONT_RIGHT__1532402938170339.jpg",
+      "intrinsics_3x3": [
+        1260.8474446004698,
+        0.0,
+        807.968244525554,
+        0.0,
+        1260.8474446004698,
+        495.3344268742088,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "T_ego_sensor": {
+        "translation_m": {
+          "x": 1.5508477543,
+          "y": -0.493404796419,
+          "z": 1.49574800619
+        },
+        "rotation_quat_wxyz": {
+          "w": 0.2060347966337182,
+          "x": -0.2026940577919598,
+          "y": 0.6824507824531167,
+          "z": -0.6713610884174485
+        }
+      }
+    },
+    {
+      "name": "CAM_BACK",
+      "image_uri": "/Users/shauryaparashar/datasets/nuscenes/samples/CAM_BACK/n015-2018-07-24-11-22-45+0800__CAM_BACK__1532402938187525.jpg",
+      "intrinsics_3x3": [
+        809.2209905677063,
+        0.0,
+        829.2196003259838,
+        0.0,
+        809.2209905677063,
+        481.77842384512485,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "T_ego_sensor": {
+        "translation_m": {
+          "x": 0.0283260309358,
+          "y": 0.00345136761476,
+          "z": 1.57910346144
+        },
+        "rotation_quat_wxyz": {
+          "w": 0.5037872666382278,
+          "x": -0.49740249788611096,
+          "y": -0.4941850223835201,
+          "z": 0.5045496097725578
+        }
+      }
+    },
+    {
+      "name": "CAM_BACK_LEFT",
+      "image_uri": "/Users/shauryaparashar/datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-24-11-22-45+0800__CAM_BACK_LEFT__1532402938197423.jpg",
+      "intrinsics_3x3": [
+        1256.7414812095406,
+        0.0,
+        792.1125740759628,
+        0.0,
+        1256.7414812095406,
+        492.7757465151356,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "T_ego_sensor": {
+        "translation_m": {
+          "x": 1.03569100218,
+          "y": 0.484795032713,
+          "z": 1.59097014818
+        },
+        "rotation_quat_wxyz": {
+          "w": 0.6924185592174665,
+          "x": -0.7031619420114925,
+          "y": -0.11648342771943819,
+          "z": 0.11203317912370753
+        }
+      }
+    },
+    {
+      "name": "CAM_BACK_RIGHT",
+      "image_uri": "/Users/shauryaparashar/datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-24-11-22-45+0800__CAM_BACK_RIGHT__1532402938177893.jpg",
+      "intrinsics_3x3": [
+        1259.5137405846733,
+        0.0,
+        807.2529053838625,
+        0.0,
+        1259.5137405846733,
+        501.19579884916527,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "T_ego_sensor": {
+        "translation_m": {
+          "x": 1.0148780988,
+          "y": -0.480568219723,
+          "z": 1.56239545128
+        },
+        "rotation_quat_wxyz": {
+          "w": 0.12280980120078765,
+          "x": -0.132400842670559,
+          "y": -0.7004305821388234,
+          "z": 0.690496031265798
+        }
+      }
+    }
+  ],
+  "lidar": {
+    "pointcloud_uri": "/Users/shauryaparashar/datasets/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402938197897.pcd.bin",
+    "points_ego": null,
+    "T_ego_sensor": {
+      "translation_m": {
+        "x": 0.943713,
+        "y": 0.0,
+        "z": 1.84023
+      },
+      "rotation_quat_wxyz": {
+        "w": 0.7077955119163518,
+        "x": -0.006492242056004365,
+        "y": 0.010646214713995808,
+        "z": -0.7063073142877817
+      }
+    }
+  },
+  "objects": [
+    {
+      "object_id": "6dd2cbf4c24b4caeb625035869bca7b5",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -26.12429110082053,
+          "y": -14.464815166529734,
+          "z": 0.44677997432397615
+        },
+        "size_lwh_m": {
+          "x": 0.669,
+          "y": 0.621,
+          "z": 1.642
+        },
+        "yaw_ego_rad": 0.6018055921174856
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 4,
+        "num_radar_pts": 1,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "e5fe9ea066254609b48eb073e81ef209",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.621,
+          0.669,
+          1.642
+        ]
+      }
+    },
+    {
+      "object_id": "48d58b69b40149aeb2e64aa4b1a9192f",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -36.1046964037843,
+          "y": -7.278268969141145,
+          "z": 0.9058777214050642
+        },
+        "size_lwh_m": {
+          "x": 0.769,
+          "y": 0.775,
+          "z": 1.711
+        },
+        "yaw_ego_rad": -1.209776358289901
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "b6677c115f9849e89ed54141f8693448",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.775,
+          0.769,
+          1.711
+        ]
+      }
+    },
+    {
+      "object_id": "bd26c2cdb22d4bb1834e808c89128898",
+      "category": "vehicle.car",
+      "box": {
+        "center_ego_m": {
+          "x": -38.756738878354085,
+          "y": -28.993071853085343,
+          "z": -0.2957937913327962
+        },
+        "size_lwh_m": {
+          "x": 4.633,
+          "y": 2.011,
+          "z": 1.573
+        },
+        "yaw_ego_rad": 0.5839683271623699
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "2",
+        "attributes": [
+          "vehicle.stopped"
+        ],
+        "nuscenes_annotation_token": "18ffa96b939f445b90abd82dc0da0772",
+        "nuscenes_category": "vehicle.car",
+        "nuscenes_size_wlh": [
+          2.011,
+          4.633,
+          1.573
+        ]
+      }
+    },
+    {
+      "object_id": "6e04e175f20d402f8cbbdf701fe99d92",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -55.97768323327101,
+          "y": 14.938696130359627,
+          "z": 2.820726603853633
+        },
+        "size_lwh_m": {
+          "x": 0.819,
+          "y": 0.752,
+          "z": 1.637
+        },
+        "yaw_ego_rad": 2.3796677813662055
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "2",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "b2e659a6ce74416c86b70169dd3d2145",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.752,
+          0.819,
+          1.637
+        ]
+      }
+    },
+    {
+      "object_id": "f4b2632a2f9947da9f7959a3bd0e322c",
+      "category": "vehicle.bicycle",
+      "box": {
+        "center_ego_m": {
+          "x": -25.63428583890609,
+          "y": -15.467729251748707,
+          "z": 0.46790297044597606
+        },
+        "size_lwh_m": {
+          "x": 1.77,
+          "y": 0.689,
+          "z": 1.709
+        },
+        "yaw_ego_rad": 0.768048203364097
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "cycle.with_rider"
+        ],
+        "nuscenes_annotation_token": "37e9065439364342b68d8cfafbb3f54f",
+        "nuscenes_category": "vehicle.bicycle",
+        "nuscenes_size_wlh": [
+          0.689,
+          1.77,
+          1.709
+        ]
+      }
+    },
+    {
+      "object_id": "c08be936e0394352b11760ede982d6fd",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -34.790993585657134,
+          "y": -9.457878131261005,
+          "z": 0.7379080632891022
+        },
+        "size_lwh_m": {
+          "x": 0.703,
+          "y": 0.661,
+          "z": 1.839
+        },
+        "yaw_ego_rad": -1.3719698056765621
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 4,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "8eb4bf83e3dd4c758a828f635e35267a",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.661,
+          0.703,
+          1.839
+        ]
+      }
+    },
+    {
+      "object_id": "1bc410ff237c4c48b9b7b094a9eaeb4d",
+      "category": "human.pedestrian.construction_worker",
+      "box": {
+        "center_ego_m": {
+          "x": -0.6751420333114813,
+          "y": -7.88486089094933,
+          "z": 0.7925580403858475
+        },
+        "size_lwh_m": {
+          "x": 0.687,
+          "y": 0.626,
+          "z": 1.766
+        },
+        "yaw_ego_rad": -0.4142203786395584
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 26,
+        "num_radar_pts": 0,
+        "visibility_token": "2",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "0757c97938954dab940c8c547e4490a9",
+        "nuscenes_category": "human.pedestrian.construction_worker",
+        "nuscenes_size_wlh": [
+          0.626,
+          0.687,
+          1.766
+        ]
+      }
+    },
+    {
+      "object_id": "291e6cccbc254f2ab4eadfe98331dfec",
+      "category": "vehicle.truck",
+      "box": {
+        "center_ego_m": {
+          "x": 27.360917788076527,
+          "y": -4.604349860467174,
+          "z": 1.9284709201609669
+        },
+        "size_lwh_m": {
+          "x": 6.452,
+          "y": 2.508,
+          "z": 3.236
+        },
+        "yaw_ego_rad": -2.5786380906412596
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 129,
+        "num_radar_pts": 4,
+        "visibility_token": "4",
+        "attributes": [
+          "vehicle.stopped"
+        ],
+        "nuscenes_annotation_token": "671683b0f3404b3bbeceb379b9bb7ec6",
+        "nuscenes_category": "vehicle.truck",
+        "nuscenes_size_wlh": [
+          2.508,
+          6.452,
+          3.236
+        ]
+      }
+    },
+    {
+      "object_id": "d7cd73e84d444b98a1923e1bcf433064",
+      "category": "vehicle.motorcycle",
+      "box": {
+        "center_ego_m": {
+          "x": -31.040338640829553,
+          "y": -32.150099069095205,
+          "z": -0.19664979653597936
+        },
+        "size_lwh_m": {
+          "x": 2.059,
+          "y": 1.169,
+          "z": 1.931
+        },
+        "yaw_ego_rad": 0.5904784052278269
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "cycle.with_rider"
+        ],
+        "nuscenes_annotation_token": "3e05e9e50de44d6aa30d35c78b8c74fb",
+        "nuscenes_category": "vehicle.motorcycle",
+        "nuscenes_size_wlh": [
+          1.169,
+          2.059,
+          1.931
+        ]
+      }
+    },
+    {
+      "object_id": "c4041d3882c344338031b18ef5484631",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": 2.2990260777162304,
+          "y": -18.830555866191794,
+          "z": 0.4459364076249508
+        },
+        "size_lwh_m": {
+          "x": 0.913,
+          "y": 0.7,
+          "z": 1.76
+        },
+        "yaw_ego_rad": -0.8075652321625315
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "f2416cf4f4df4b1c82bebb4d0c36a57c",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.7,
+          0.913,
+          1.76
+        ]
+      }
+    },
+    {
+      "object_id": "fdd3fe14d1c044b9a9f6c24383c6207c",
+      "category": "vehicle.motorcycle",
+      "box": {
+        "center_ego_m": {
+          "x": 5.442063988971391,
+          "y": 7.7208248741844905,
+          "z": 1.4060564355305911
+        },
+        "size_lwh_m": {
+          "x": 2.229,
+          "y": 0.844,
+          "z": 1.336
+        },
+        "yaw_ego_rad": -3.120754809587207
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 28,
+        "num_radar_pts": 0,
+        "visibility_token": "2",
+        "attributes": [
+          "cycle.without_rider"
+        ],
+        "nuscenes_annotation_token": "b62a698baeb84cfa8e86e81f77a3278d",
+        "nuscenes_category": "vehicle.motorcycle",
+        "nuscenes_size_wlh": [
+          0.844,
+          2.229,
+          1.336
+        ]
+      }
+    },
+    {
+      "object_id": "47bccbb74b1343d58f5c593240d567d7",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": 4.698665953913312,
+          "y": -12.948368552857264,
+          "z": 0.30932427269190715
+        },
+        "size_lwh_m": {
+          "x": 0.616,
+          "y": 2.068,
+          "z": 1.169
+        },
+        "yaw_ego_rad": -1.0193434836105693
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 37,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "a4ba8576d2a84b22a92778c5a9c4fbac",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.068,
+          0.616,
+          1.169
+        ]
+      }
+    },
+    {
+      "object_id": "918b55a1bf3e4fe08bf234395a06521c",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -9.527140096051202,
+          "y": -36.2620361972599,
+          "z": -0.9090558794470666
+        },
+        "size_lwh_m": {
+          "x": 0.699,
+          "y": 2.143,
+          "z": 1.109
+        },
+        "yaw_ego_rad": -1.1330691377212292
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 7,
+        "num_radar_pts": 0,
+        "visibility_token": "3",
+        "attributes": [],
+        "nuscenes_annotation_token": "e98fa7d70cf244a48e058d5e08f1648e",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.143,
+          0.699,
+          1.109
+        ]
+      }
+    },
+    {
+      "object_id": "1e775890010e4d97b74ca1d06441d023",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": 16.55450077775296,
+          "y": 20.405494437230328,
+          "z": 3.0245423612253686
+        },
+        "size_lwh_m": {
+          "x": 0.995,
+          "y": 0.979,
+          "z": 1.89
+        },
+        "yaw_ego_rad": -2.4725220720975556
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "4a2e9d6de20f46b1bf24ba831851ae67",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.979,
+          0.995,
+          1.89
+        ]
+      }
+    },
+    {
+      "object_id": "99094aeb2f9d4efcbbc66423b5d84e56",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -24.1145615810709,
+          "y": -42.67046463574849,
+          "z": -1.0594066930598893
+        },
+        "size_lwh_m": {
+          "x": 0.668,
+          "y": 2.192,
+          "z": 1.132
+        },
+        "yaw_ego_rad": -1.4557107032572292
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "3",
+        "attributes": [],
+        "nuscenes_annotation_token": "7ff8b81d43a048af9fcef592ff5e6a8f",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.192,
+          0.668,
+          1.132
+        ]
+      }
+    },
+    {
+      "object_id": "c542c70024df4cf2a02c55a7b16fe3c4",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 23.138325174254096,
+          "y": 7.790835633902251,
+          "z": 0.9528858762701582
+        },
+        "size_lwh_m": {
+          "x": 0.513,
+          "y": 0.488,
+          "z": 0.798
+        },
+        "yaw_ego_rad": -2.5662637062598344
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "7649226c96e14b03909b8a814f5985d8",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.488,
+          0.513,
+          0.798
+        ]
+      }
+    },
+    {
+      "object_id": "1511e02cbd80490299371149ed7eb269",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": 33.555871155975765,
+          "y": 44.15019316025663,
+          "z": 4.502924184437222
+        },
+        "size_lwh_m": {
+          "x": 1.034,
+          "y": 0.874,
+          "z": 1.798
+        },
+        "yaw_ego_rad": -2.522467577516678
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "5689f0704d474be38c323f28306f709e",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.874,
+          1.034,
+          1.798
+        ]
+      }
+    },
+    {
+      "object_id": "73ee514c205c483da3d1d04282337457",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -3.3132359590852327,
+          "y": -9.877574047757404,
+          "z": 0.8074144692816615
+        },
+        "size_lwh_m": {
+          "x": 0.914,
+          "y": 0.695,
+          "z": 1.905
+        },
+        "yaw_ego_rad": 2.017354881944833
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 20,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "52abfd99251a4e11bb2f72f84215599d",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.695,
+          0.914,
+          1.905
+        ]
+      }
+    },
+    {
+      "object_id": "453c4dbf8ec9428eaae1bc6e0c191c1b",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -15.770879649579813,
+          "y": -42.568749541100516,
+          "z": -1.2582681162388274
+        },
+        "size_lwh_m": {
+          "x": 0.589,
+          "y": 1.911,
+          "z": 1.327
+        },
+        "yaw_ego_rad": -1.7653146592561844
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 5,
+        "num_radar_pts": 0,
+        "visibility_token": "3",
+        "attributes": [],
+        "nuscenes_annotation_token": "43cab2326e614e0e8776f2be0095d701",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.911,
+          0.589,
+          1.327
+        ]
+      }
+    },
+    {
+      "object_id": "7a34fc22f9d645b59d5b6e5c88268008",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 27.266003135366645,
+          "y": 10.738069804590069,
+          "z": 0.997611623616994
+        },
+        "size_lwh_m": {
+          "x": 0.484,
+          "y": 0.473,
+          "z": 0.73
+        },
+        "yaw_ego_rad": -2.5662637062598344
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "b62f46dd354246c5843d006a61c6a052",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.473,
+          0.484,
+          0.73
+        ]
+      }
+    },
+    {
+      "object_id": "adfd2ee7c64d4f259206a5a10663904e",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 41.046099127999554,
+          "y": 10.462009457512087,
+          "z": 1.3402544676866117
+        },
+        "size_lwh_m": {
+          "x": 0.421,
+          "y": 0.424,
+          "z": 0.808
+        },
+        "yaw_ego_rad": -2.55966636166163
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "315d3654ca684ff497a13c4c4afcb6fe",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.424,
+          0.421,
+          0.808
+        ]
+      }
+    },
+    {
+      "object_id": "bbd6c47a20e34276bc6f2cfbc6ba6205",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -10.500011893447159,
+          "y": -4.865521140495048,
+          "z": 0.79171975424726
+        },
+        "size_lwh_m": {
+          "x": 0.709,
+          "y": 0.648,
+          "z": 1.609
+        },
+        "yaw_ego_rad": -2.1101044529331827
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 15,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "daf3d740c50b43828bed5d60f648ee07",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.648,
+          0.709,
+          1.609
+        ]
+      }
+    },
+    {
+      "object_id": "03e81d6b45c34d56bc1a886919722f7f",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -37.10052911804346,
+          "y": 19.20293204116556,
+          "z": 2.081693717615037
+        },
+        "size_lwh_m": {
+          "x": 0.703,
+          "y": 1.977,
+          "z": 1.149
+        },
+        "yaw_ego_rad": 0.5510339641747425
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 4,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "02950f21e6194a92a5866f434b0ccbf4",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.977,
+          0.703,
+          1.149
+        ]
+      }
+    },
+    {
+      "object_id": "3c7d5216d6bd4e1ba7a982c7274214b1",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -55.77121053553199,
+          "y": 48.52746146378536,
+          "z": 3.9861460138283755
+        },
+        "size_lwh_m": {
+          "x": 0.555,
+          "y": 1.91,
+          "z": 1.055
+        },
+        "yaw_ego_rad": 0.5637574144267908
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "2ff2560167114574a450536c05e7e89d",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.91,
+          0.555,
+          1.055
+        ]
+      }
+    },
+    {
+      "object_id": "3843d35144d84c02b387678f9bc7f2ed",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -18.76245430291854,
+          "y": 34.93408508161068,
+          "z": 2.968206601322108
+        },
+        "size_lwh_m": {
+          "x": 0.891,
+          "y": 0.934,
+          "z": 1.835
+        },
+        "yaw_ego_rad": -0.967088325796897
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "fe516dcb477d4fd49f57c703c238db3d",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.934,
+          0.891,
+          1.835
+        ]
+      }
+    },
+    {
+      "object_id": "f138c230c29a4cb3b7b50155babe4e90",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -34.89930392978925,
+          "y": -15.907075213457142,
+          "z": 0.3572824409933306
+        },
+        "size_lwh_m": {
+          "x": 0.908,
+          "y": 0.8,
+          "z": 1.835
+        },
+        "yaw_ego_rad": 0.13126482577689766
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "540ee08a512d4745b07a6ff2d3cc6cbf",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.8,
+          0.908,
+          1.835
+        ]
+      }
+    },
+    {
+      "object_id": "be2c3211bef04f5b8d422ced129735d3",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -36.01003341596402,
+          "y": 17.496764164252873,
+          "z": 2.007914997529091
+        },
+        "size_lwh_m": {
+          "x": 0.694,
+          "y": 1.964,
+          "z": 1.131
+        },
+        "yaw_ego_rad": 0.586219801892611
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 5,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "85a702eb4f1d495ebc9243720058a7b1",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.964,
+          0.694,
+          1.131
+        ]
+      }
+    },
+    {
+      "object_id": "bc38961ca0ac4b14ab90e547ba79fbb6",
+      "category": "vehicle.car",
+      "box": {
+        "center_ego_m": {
+          "x": -26.434610121157583,
+          "y": -36.564936201154346,
+          "z": -0.5253698909538184
+        },
+        "size_lwh_m": {
+          "x": 4.01,
+          "y": 1.708,
+          "z": 1.631
+        },
+        "yaw_ego_rad": -2.3992182435200524
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "vehicle.moving"
+        ],
+        "nuscenes_annotation_token": "cc962e8ddcaa41c18034a11dce2df3d1",
+        "nuscenes_category": "vehicle.car",
+        "nuscenes_size_wlh": [
+          1.708,
+          4.01,
+          1.631
+        ]
+      }
+    },
+    {
+      "object_id": "81714918a9f54bda9e2b52dd7ce362e5",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -25.886616843225184,
+          "y": -16.274298572968746,
+          "z": 0.4446007317987367
+        },
+        "size_lwh_m": {
+          "x": 0.741,
+          "y": 0.79,
+          "z": 1.725
+        },
+        "yaw_ego_rad": 0.6716187621972592
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 4,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "2a6e993cc4bc40f385951604dbda5c11",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.79,
+          0.741,
+          1.725
+        ]
+      }
+    },
+    {
+      "object_id": "daf07d30c8df4426aca25114b6b00cce",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -21.762750317326486,
+          "y": -42.71892481932539,
+          "z": -1.1636198895974619
+        },
+        "size_lwh_m": {
+          "x": 0.712,
+          "y": 2.259,
+          "z": 1.215
+        },
+        "yaw_ego_rad": -1.794899982970075
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "72d09695cf2c4be0a97b300a073eae87",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.259,
+          0.712,
+          1.215
+        ]
+      }
+    },
+    {
+      "object_id": "e91afa15647c4c4994f19aeb302c7179",
+      "category": "vehicle.truck",
+      "box": {
+        "center_ego_m": {
+          "x": -32.75734132023484,
+          "y": 34.792473044719515,
+          "z": 3.7373953971085427
+        },
+        "size_lwh_m": {
+          "x": 10.201,
+          "y": 2.877,
+          "z": 3.595
+        },
+        "yaw_ego_rad": -0.9445910317212225
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 8,
+        "num_radar_pts": 0,
+        "visibility_token": "3",
+        "attributes": [
+          "vehicle.parked"
+        ],
+        "nuscenes_annotation_token": "1edcb7e44daa423993f72ae3c6861925",
+        "nuscenes_category": "vehicle.truck",
+        "nuscenes_size_wlh": [
+          2.877,
+          10.201,
+          3.595
+        ]
+      }
+    },
+    {
+      "object_id": "56a71c208ac6472f90b6a82529a6ce61",
+      "category": "vehicle.car",
+      "box": {
+        "center_ego_m": {
+          "x": 6.3230785939078755,
+          "y": -13.892650766482914,
+          "z": 0.8012680459584892
+        },
+        "size_lwh_m": {
+          "x": 4.956,
+          "y": 2.135,
+          "z": 2.17
+        },
+        "yaw_ego_rad": -2.5786380906412596
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 84,
+        "num_radar_pts": 0,
+        "visibility_token": "2",
+        "attributes": [
+          "vehicle.stopped"
+        ],
+        "nuscenes_annotation_token": "6b3666852b8e45f39f3143185b0b1fc8",
+        "nuscenes_category": "vehicle.car",
+        "nuscenes_size_wlh": [
+          2.135,
+          4.956,
+          2.17
+        ]
+      }
+    },
+    {
+      "object_id": "863043f8c9204bf888f0ec77aa27ddef",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 26.18453273151877,
+          "y": 0.7734734419886475,
+          "z": 0.7149880293587678
+        },
+        "size_lwh_m": {
+          "x": 0.451,
+          "y": 0.435,
+          "z": 0.706
+        },
+        "yaw_ego_rad": -2.560922998716919
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "bd56fa58e0314e3296f33fa82adf9f06",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.435,
+          0.451,
+          0.706
+        ]
+      }
+    },
+    {
+      "object_id": "03d01c950f044575b69137f069345db0",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -1.0063306388155038,
+          "y": -16.09873680892446,
+          "z": 0.5526444899291552
+        },
+        "size_lwh_m": {
+          "x": 0.951,
+          "y": 0.767,
+          "z": 1.835
+        },
+        "yaw_ego_rad": -0.9229564290016713
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "2",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "c5e385b8fe114080a04ed8fc1b12f064",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.767,
+          0.951,
+          1.835
+        ]
+      }
+    },
+    {
+      "object_id": "8705ebefeb7746468d837fb138a1a121",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -28.7496281145676,
+          "y": 4.6221544637994345,
+          "z": 1.3159576863848315
+        },
+        "size_lwh_m": {
+          "x": 0.704,
+          "y": 1.967,
+          "z": 0.962
+        },
+        "yaw_ego_rad": 0.6083505768088086
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 8,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "aad0a55c7e1a492faf2080ddb0bb2a39",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.967,
+          0.704,
+          0.962
+        ]
+      }
+    },
+    {
+      "object_id": "ce995b52d7204ee8b4a6ed0b2b0ebd3e",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -18.570947180817008,
+          "y": -35.783743800479314,
+          "z": -0.8614659989948037
+        },
+        "size_lwh_m": {
+          "x": 0.626,
+          "y": 2.001,
+          "z": 1.077
+        },
+        "yaw_ego_rad": -0.9913484024593227
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 4,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "5da6c0ec4a8740e29f1b79d5c0515a0d",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.001,
+          0.626,
+          1.077
+        ]
+      }
+    },
+    {
+      "object_id": "e1e148c7bcb14072822872a4cfc8e882",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -4.732702114294986,
+          "y": -9.001338212970078,
+          "z": 0.7822828945503347
+        },
+        "size_lwh_m": {
+          "x": 0.78,
+          "y": 0.72,
+          "z": 1.812
+        },
+        "yaw_ego_rad": 2.0103735649368555
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 23,
+        "num_radar_pts": 1,
+        "visibility_token": "3",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "fd4bd6186e5f40d198c19343aff00c71",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.72,
+          0.78,
+          1.812
+        ]
+      }
+    },
+    {
+      "object_id": "16dc951205cb4f8299f5915313436d69",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -33.85008449294751,
+          "y": 14.176041042670718,
+          "z": 1.7819844777900489
+        },
+        "size_lwh_m": {
+          "x": 0.759,
+          "y": 2.06,
+          "z": 1.1
+        },
+        "yaw_ego_rad": 0.551313216852725
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 6,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "9af647486cfd4f4e80db4d500cd0e984",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.06,
+          0.759,
+          1.1
+        ]
+      }
+    },
+    {
+      "object_id": "c38e6667f26a4fb5a6b2f2ce9a61ad5b",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -12.895297186251828,
+          "y": -40.08167379806832,
+          "z": -1.1721650093188092
+        },
+        "size_lwh_m": {
+          "x": 0.675,
+          "y": 2.412,
+          "z": 1.385
+        },
+        "yaw_ego_rad": -0.5847041400523526
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "0f1e3231e63a43918059ae5dd91faec2",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.412,
+          0.675,
+          1.385
+        ]
+      }
+    },
+    {
+      "object_id": "eb3da8843f614a90a48ddb6ee392c0c0",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -1.8578137692261232,
+          "y": 4.189240039427611,
+          "z": 1.267077047529138
+        },
+        "size_lwh_m": {
+          "x": 0.761,
+          "y": 0.69,
+          "z": 1.73
+        },
+        "yaw_ego_rad": 2.2562380966808204
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 140,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "6cd9ba367e654db7961c252fa82abbea",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.69,
+          0.761,
+          1.73
+        ]
+      }
+    },
+    {
+      "object_id": "100427ca2fab4537b068582d5525495a",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -42.3047788593173,
+          "y": 27.80552110578826,
+          "z": 2.6835732867016238
+        },
+        "size_lwh_m": {
+          "x": 0.716,
+          "y": 1.969,
+          "z": 1.092
+        },
+        "yaw_ego_rad": 0.5751718677451809
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "fa9d2e6239aa4b3f87a20212bedea4ba",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.969,
+          0.716,
+          1.092
+        ]
+      }
+    },
+    {
+      "object_id": "b1aa169935a24be893c74d0958c42a43",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": 2.859283224387138,
+          "y": -13.304695001228616,
+          "z": 0.27393166736260494
+        },
+        "size_lwh_m": {
+          "x": 0.621,
+          "y": 1.877,
+          "z": 1.203
+        },
+        "yaw_ego_rad": -1.6110799131973643
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 65,
+        "num_radar_pts": 0,
+        "visibility_token": "3",
+        "attributes": [],
+        "nuscenes_annotation_token": "cec528e260a74e0a9bba2b6f5f7c93e4",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.877,
+          0.621,
+          1.203
+        ]
+      }
+    },
+    {
+      "object_id": "b42629870eee45b7bb01572742e8723d",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 39.6881910320475,
+          "y": 9.599653268970261,
+          "z": 1.3390682840894135
+        },
+        "size_lwh_m": {
+          "x": 0.497,
+          "y": 0.493,
+          "z": 0.808
+        },
+        "yaw_ego_rad": -2.55966636166163
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "9bd9ab91e6b746a395afe1e4a6527b5c",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.493,
+          0.497,
+          0.808
+        ]
+      }
+    },
+    {
+      "object_id": "070412f6a4f944e6a0a9e01ac1ea1fee",
+      "category": "human.pedestrian.construction_worker",
+      "box": {
+        "center_ego_m": {
+          "x": 6.5124250095758365,
+          "y": -9.058588776679384,
+          "z": 0.8819440250927417
+        },
+        "size_lwh_m": {
+          "x": 0.851,
+          "y": 0.703,
+          "z": 1.76
+        },
+        "yaw_ego_rad": 1.195519081752339
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "b4cf3a69943c4840be684cd3fc0d899e",
+        "nuscenes_category": "human.pedestrian.construction_worker",
+        "nuscenes_size_wlh": [
+          0.703,
+          0.851,
+          1.76
+        ]
+      }
+    },
+    {
+      "object_id": "3b54d4dd46f24f91a36799f2d0ed801e",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -27.692729315742255,
+          "y": 3.0984137811671744,
+          "z": 1.2146005892847387
+        },
+        "size_lwh_m": {
+          "x": 0.726,
+          "y": 1.99,
+          "z": 0.921
+        },
+        "yaw_ego_rad": 0.5848758983682
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 9,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "811163f00e014488ba22d7ebe12f6022",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.99,
+          0.726,
+          0.921
+        ]
+      }
+    },
+    {
+      "object_id": "a0256497c28e47348c45fdd211e8679e",
+      "category": "vehicle.construction",
+      "box": {
+        "center_ego_m": {
+          "x": -6.973272291456556,
+          "y": -43.0936737124544,
+          "z": -0.6973506654277266
+        },
+        "size_lwh_m": {
+          "x": 3.715,
+          "y": 2.333,
+          "z": 2.033
+        },
+        "yaw_ego_rad": 2.478924655885142
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "vehicle.stopped"
+        ],
+        "nuscenes_annotation_token": "57241580bd7b4295a674f7e092deaa56",
+        "nuscenes_category": "vehicle.construction",
+        "nuscenes_size_wlh": [
+          2.333,
+          3.715,
+          2.033
+        ]
+      }
+    },
+    {
+      "object_id": "097ee69674894219bd2be190a0b77b99",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -33.25626568087203,
+          "y": -31.483816486259194,
+          "z": -0.834528212080455
+        },
+        "size_lwh_m": {
+          "x": 0.428,
+          "y": 0.425,
+          "z": 0.72
+        },
+        "yaw_ego_rad": 0.5635479748025058
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "bd5e176aab3e42e09a1dbd9d1fd84af8",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.425,
+          0.428,
+          0.72
+        ]
+      }
+    },
+    {
+      "object_id": "37f12d00c86d4b5689326f7b98189b81",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -35.40458454371985,
+          "y": -7.275879103888627,
+          "z": 0.9105330346268987
+        },
+        "size_lwh_m": {
+          "x": 0.775,
+          "y": 0.734,
+          "z": 1.821
+        },
+        "yaw_ego_rad": -1.2099508912109855
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "07056c6046eb497d9726afe64bdcc401",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.734,
+          0.775,
+          1.821
+        ]
+      }
+    },
+    {
+      "object_id": "1610b41e5fdc4a3f939033ca8d4fc700",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -33.79974571039364,
+          "y": -12.57500689316393,
+          "z": 0.5134600035877813
+        },
+        "size_lwh_m": {
+          "x": 0.746,
+          "y": 0.733,
+          "z": 1.695
+        },
+        "yaw_ego_rad": -0.9845241650246439
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "87c8a575dbde4a20afdb89ddfffd0d48",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.733,
+          0.746,
+          1.695
+        ]
+      }
+    },
+    {
+      "object_id": "97535c43b47f4b4396b15a9b36e646c8",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -25.373319485692686,
+          "y": -0.2527367328135348,
+          "z": 1.052735605679123
+        },
+        "size_lwh_m": {
+          "x": 0.696,
+          "y": 1.923,
+          "z": 0.919
+        },
+        "yaw_ego_rad": 0.6197824834080872
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 13,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "a0fbf9f7aa8c44cfa118175ad6bb8d41",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.923,
+          0.696,
+          0.919
+        ]
+      }
+    },
+    {
+      "object_id": "4fd562bd150943848fa66e461610fdfe",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -2.04597427449467,
+          "y": -8.592557092628908,
+          "z": 0.30477319779565065
+        },
+        "size_lwh_m": {
+          "x": 0.41,
+          "y": 0.376,
+          "z": 0.761
+        },
+        "yaw_ego_rad": -2.7398367003589668
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 5,
+        "num_radar_pts": 0,
+        "visibility_token": "3",
+        "attributes": [],
+        "nuscenes_annotation_token": "4d3ee21b5c164b9abef35803928296d7",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.376,
+          0.41,
+          0.761
+        ]
+      }
+    },
+    {
+      "object_id": "2f5921c1c2ed4d6194ab1bfe9e538a8e",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -32.25930161456175,
+          "y": 10.116877158004854,
+          "z": 1.5772495485315021
+        },
+        "size_lwh_m": {
+          "x": 0.693,
+          "y": 2.05,
+          "z": 1.081
+        },
+        "yaw_ego_rad": 0.6052264374140612
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 11,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "97de22a0b7954a6a834f5658c215d532",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.05,
+          0.693,
+          1.081
+        ]
+      }
+    },
+    {
+      "object_id": "71603dd1a2ba4e9daf095535e38310ac",
+      "category": "human.pedestrian.construction_worker",
+      "box": {
+        "center_ego_m": {
+          "x": -4.32099558229435,
+          "y": -4.414938863795508,
+          "z": 1.022975107551761
+        },
+        "size_lwh_m": {
+          "x": 0.837,
+          "y": 0.775,
+          "z": 1.746
+        },
+        "yaw_ego_rad": -0.8789491985685255
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 50,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "cbd011fcff384103a9d425ad145a95db",
+        "nuscenes_category": "human.pedestrian.construction_worker",
+        "nuscenes_size_wlh": [
+          0.775,
+          0.837,
+          1.746
+        ]
+      }
+    },
+    {
+      "object_id": "338d99cf723140a6b154fe1135472f8e",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -14.184819964716928,
+          "y": -37.47798668447729,
+          "z": -1.024864573682733
+        },
+        "size_lwh_m": {
+          "x": 0.626,
+          "y": 2.055,
+          "z": 1.093
+        },
+        "yaw_ego_rad": 2.75068987362269
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "758106f4587a45799e7254e1074df04c",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.055,
+          0.626,
+          1.093
+        ]
+      }
+    },
+    {
+      "object_id": "c0741f8b4da3440e9686de5eb7363668",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -32.72735910408753,
+          "y": 12.44874085477988,
+          "z": 1.690187080650813
+        },
+        "size_lwh_m": {
+          "x": 0.764,
+          "y": 1.977,
+          "z": 1.144
+        },
+        "yaw_ego_rad": 0.6036730944125533
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 5,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "eeb93b0082c345818398b790b9425947",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.977,
+          0.764,
+          1.144
+        ]
+      }
+    },
+    {
+      "object_id": "e37421ad87d34227b87d6adeaf6b3f60",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": 6.656109686347146,
+          "y": -11.733330208578062,
+          "z": 0.323211543358437
+        },
+        "size_lwh_m": {
+          "x": 0.644,
+          "y": 2.175,
+          "z": 1.245
+        },
+        "yaw_ego_rad": -1.0193434836105693
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "1510248ba7dc4607a83910cf1c86f49b",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.175,
+          0.644,
+          1.245
+        ]
+      }
+    },
+    {
+      "object_id": "37ae87b1176543ac9e5dce973219aa05",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -16.75468428982721,
+          "y": -34.63531551704317,
+          "z": -0.7664734276159868
+        },
+        "size_lwh_m": {
+          "x": 0.685,
+          "y": 2.16,
+          "z": 1.162
+        },
+        "yaw_ego_rad": -1.026254987499208
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "c2c7557441434ceab1ac2d9d3f838b53",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.16,
+          0.685,
+          1.162
+        ]
+      }
+    },
+    {
+      "object_id": "b061f2f4c7a74223ab8546a193d07bab",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": 8.250505112824358,
+          "y": -10.038637811807742,
+          "z": 0.4741714862492328
+        },
+        "size_lwh_m": {
+          "x": 0.638,
+          "y": 2.326,
+          "z": 1.221
+        },
+        "yaw_ego_rad": -0.4152152163229116
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "10e80c60d31048e29bfeda1e4d0d8293",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.326,
+          0.638,
+          1.221
+        ]
+      }
+    },
+    {
+      "object_id": "82e693ad9227437e8c792edfcc1ed243",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 15.1682845783158,
+          "y": 2.8540194529649012,
+          "z": 0.6204209988304816
+        },
+        "size_lwh_m": {
+          "x": 0.476,
+          "y": 0.51,
+          "z": 0.739
+        },
+        "yaw_ego_rad": -2.5984650309474264
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "b1f17e91413e452984ba291dc288e494",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.51,
+          0.476,
+          0.739
+        ]
+      }
+    },
+    {
+      "object_id": "91d424135a6344aea4b0dde64a953b19",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 43.37636683828223,
+          "y": 11.897561934700034,
+          "z": 0.9044431740586285
+        },
+        "size_lwh_m": {
+          "x": 0.466,
+          "y": 0.468,
+          "z": 0.838
+        },
+        "yaw_ego_rad": -2.55966636166163
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "95d341533d8d421daf3e28b33c190c20",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.468,
+          0.466,
+          0.838
+        ]
+      }
+    },
+    {
+      "object_id": "01c083253f30417dbe374f84e8ba6c19",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -26.63012070209817,
+          "y": 1.5272898601350544,
+          "z": 1.1307998794408671
+        },
+        "size_lwh_m": {
+          "x": 0.677,
+          "y": 1.842,
+          "z": 0.885
+        },
+        "yaw_ego_rad": 0.6023291908881441
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 9,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "5f646a9f356243ed8fcfcfc7d6ef9f7f",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.842,
+          0.677,
+          0.885
+        ]
+      }
+    },
+    {
+      "object_id": "22907d343d2940e099a353e3b364b04e",
+      "category": "vehicle.truck",
+      "box": {
+        "center_ego_m": {
+          "x": -1.650562745109383,
+          "y": -43.211193984108576,
+          "z": -0.7083538911294105
+        },
+        "size_lwh_m": {
+          "x": 6.013,
+          "y": 2.287,
+          "z": 2.598
+        },
+        "yaw_ego_rad": 2.1164372235660904
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 12,
+        "num_radar_pts": 0,
+        "visibility_token": "2",
+        "attributes": [
+          "vehicle.stopped"
+        ],
+        "nuscenes_annotation_token": "779b725653d54651b3172bc5d0f5d360",
+        "nuscenes_category": "vehicle.truck",
+        "nuscenes_size_wlh": [
+          2.287,
+          6.013,
+          2.598
+        ]
+      }
+    },
+    {
+      "object_id": "4117f81bcda742fbbbd5c1b981877f75",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -15.649812600259501,
+          "y": -38.3637690877031,
+          "z": -1.0296720617800583
+        },
+        "size_lwh_m": {
+          "x": 0.606,
+          "y": 1.87,
+          "z": 1.118
+        },
+        "yaw_ego_rad": -1.977686322719642
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "c2d7d444e649436d8ea5ff3c2fd5602f",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.87,
+          0.606,
+          1.118
+        ]
+      }
+    },
+    {
+      "object_id": "ac81888f5e9c4c9dae3461c741fc85d6",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -36.10809305758631,
+          "y": -9.35238465028389,
+          "z": 0.7767552834610071
+        },
+        "size_lwh_m": {
+          "x": 0.828,
+          "y": 0.777,
+          "z": 1.734
+        },
+        "yaw_ego_rad": -1.144501044261198
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 1,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "37e47959d71a4054a6e168b212ce808c",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.777,
+          0.828,
+          1.734
+        ]
+      }
+    },
+    {
+      "object_id": "ba2f459b88dc43d194d98ec3759bcd04",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -28.620513732232588,
+          "y": -15.087038880106457,
+          "z": 0.4631269828982221
+        },
+        "size_lwh_m": {
+          "x": 0.813,
+          "y": 0.698,
+          "z": 1.656
+        },
+        "yaw_ego_rad": -0.4078150202877593
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "f5b3e529ba394821a29e8c9c0f7c26aa",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.698,
+          0.813,
+          1.656
+        ]
+      }
+    },
+    {
+      "object_id": "f81722a685cc49eba454efbb3aec0331",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -4.158661616709733,
+          "y": 6.562431085584449,
+          "z": 1.3395231735200697
+        },
+        "size_lwh_m": {
+          "x": 0.994,
+          "y": 0.674,
+          "z": 1.757
+        },
+        "yaw_ego_rad": -1.9682557268512502
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 40,
+        "num_radar_pts": 0,
+        "visibility_token": "2",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "4582021c09644229b65bb281e21905bb",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.674,
+          0.994,
+          1.757
+        ]
+      }
+    },
+    {
+      "object_id": "c6b004f9321f4069bc33dea838783ee9",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -31.435143164863234,
+          "y": 10.341896559212158,
+          "z": 1.4168153910996688
+        },
+        "size_lwh_m": {
+          "x": 0.483,
+          "y": 0.473,
+          "z": 0.733
+        },
+        "yaw_ego_rad": 0.4690383958996748
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "86199353f11943579f4611d3b6ef6dc2",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.473,
+          0.483,
+          0.733
+        ]
+      }
+    },
+    {
+      "object_id": "dad63b6319f2479fab3a8f5f75d6049b",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": 0.8970753912983955,
+          "y": -12.824094227560437,
+          "z": 0.35220884229190225
+        },
+        "size_lwh_m": {
+          "x": 0.619,
+          "y": 1.827,
+          "z": 1.066
+        },
+        "yaw_ego_rad": -2.0406752552826632
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 14,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "9a3f8b39c2a943beaf074c85248de647",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.827,
+          0.619,
+          1.066
+        ]
+      }
+    },
+    {
+      "object_id": "797a3547f5df45ea80143e1832b51362",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 10.412700377349267,
+          "y": -0.16320475148533653,
+          "z": 0.5236842033663993
+        },
+        "size_lwh_m": {
+          "x": 0.536,
+          "y": 0.499,
+          "z": 0.798
+        },
+        "yaw_ego_rad": -2.5984650309474264
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 5,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "b6fcb92dbeb34f57b5ddcc25fdb3fa91",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.499,
+          0.536,
+          0.798
+        ]
+      }
+    },
+    {
+      "object_id": "270f83c6aa8045cdaf422c3fa18309de",
+      "category": "vehicle.bus.rigid",
+      "box": {
+        "center_ego_m": {
+          "x": 3.9362345054695176,
+          "y": -52.63709992459351,
+          "z": -0.5430309282566017
+        },
+        "size_lwh_m": {
+          "x": 11.084,
+          "y": 3.523,
+          "z": 3.32
+        },
+        "yaw_ego_rad": 2.132494252649144
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 18,
+        "num_radar_pts": 0,
+        "visibility_token": "3",
+        "attributes": [
+          "vehicle.stopped"
+        ],
+        "nuscenes_annotation_token": "81af487c693e419f9d7d11275f8f1f6c",
+        "nuscenes_category": "vehicle.bus.rigid",
+        "nuscenes_size_wlh": [
+          3.523,
+          11.084,
+          3.32
+        ]
+      }
+    },
+    {
+      "object_id": "fbbe278ba6f84676afea509a306518c1",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -0.006350951290928997,
+          "y": -18.976558550870365,
+          "z": 0.5921621584084986
+        },
+        "size_lwh_m": {
+          "x": 1.002,
+          "y": 0.685,
+          "z": 1.914
+        },
+        "yaw_ego_rad": -1.0838611457217862
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 7,
+        "num_radar_pts": 0,
+        "visibility_token": "3",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "9bc7815e38744887b8fd4e15eff0ec40",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.685,
+          1.002,
+          1.914
+        ]
+      }
+    },
+    {
+      "object_id": "aa8209a4e8b34f5ab7c489ced764ddb9",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 32.42464348498996,
+          "y": 4.713299452741117,
+          "z": 0.9407086296847362
+        },
+        "size_lwh_m": {
+          "x": 0.525,
+          "y": 0.514,
+          "z": 0.736
+        },
+        "yaw_ego_rad": -2.5569960079013954
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "15c5a0c2d6074bcd857197aa782fafae",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.514,
+          0.525,
+          0.736
+        ]
+      }
+    },
+    {
+      "object_id": "79ef17865dbf483b89e1e83d330bdef6",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -23.442265362384525,
+          "y": -1.68947341131949,
+          "z": 0.9100412137439045
+        },
+        "size_lwh_m": {
+          "x": 0.647,
+          "y": 2.168,
+          "z": 1.098
+        },
+        "yaw_ego_rad": 0.594457755927054
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 24,
+        "num_radar_pts": 1,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "d3c9603268584450b03092f5719471f7",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.168,
+          0.647,
+          1.098
+        ]
+      }
+    },
+    {
+      "object_id": "723142f696f64a24834877421a664224",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -3.793671758648358,
+          "y": -42.953905065693476,
+          "z": -1.4195515911740744
+        },
+        "size_lwh_m": {
+          "x": 0.676,
+          "y": 2.535,
+          "z": 1.2
+        },
+        "yaw_ego_rad": -2.6242260907605126
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "2169b95f2c75405598bd898691fa7888",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.535,
+          0.676,
+          1.2
+        ]
+      }
+    },
+    {
+      "object_id": "a87f4eb5c4b349cc8719e44a4dc0fcba",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 49.82219745041015,
+          "y": 24.94745919752179,
+          "z": 1.6090240065768289
+        },
+        "size_lwh_m": {
+          "x": 0.566,
+          "y": 0.56,
+          "z": 0.789
+        },
+        "yaw_ego_rad": -2.573332289718707
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "ed2fab39a36f413c9b15ccd951ff275a",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.56,
+          0.566,
+          0.789
+        ]
+      }
+    },
+    {
+      "object_id": "32db4d3114344adb906e29cfe82d7f16",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": 7.205083631714567,
+          "y": -2.1748565674718536,
+          "z": 0.5735418443327771
+        },
+        "size_lwh_m": {
+          "x": 0.59,
+          "y": 1.991,
+          "z": 1.079
+        },
+        "yaw_ego_rad": 2.1159310780990013
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 265,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "2ede33189eef4f489a924b42e8e97395",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.991,
+          0.59,
+          1.079
+        ]
+      }
+    },
+    {
+      "object_id": "5fd331f2791a42c2be66a8b274ff5c04",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 38.21319681723387,
+          "y": 8.639990483586118,
+          "z": 1.3894210855510551
+        },
+        "size_lwh_m": {
+          "x": 0.429,
+          "y": 0.439,
+          "z": 0.844
+        },
+        "yaw_ego_rad": -2.5569960079013954
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "c982fb7513e9430cbedcdad4300ea0ca",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.439,
+          0.429,
+          0.844
+        ]
+      }
+    },
+    {
+      "object_id": "98c19c689d5c43cab35eba2c6dc113d9",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -6.202519788169244,
+          "y": -38.877336086733834,
+          "z": -1.012570595967918
+        },
+        "size_lwh_m": {
+          "x": 0.64,
+          "y": 1.998,
+          "z": 1.068
+        },
+        "yaw_ego_rad": -2.60658081200763
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "ccade9e9731744c49eade8cb61283542",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.998,
+          0.64,
+          1.068
+        ]
+      }
+    },
+    {
+      "object_id": "5547ffd07a2b4b4b8850c8d75fa5b14e",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -23.197129551077325,
+          "y": -3.523271661283422,
+          "z": 0.9036059636328259
+        },
+        "size_lwh_m": {
+          "x": 0.639,
+          "y": 1.994,
+          "z": 0.927
+        },
+        "yaw_ego_rad": 0.5869702934395086
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 7,
+        "num_radar_pts": 1,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "d13cf23b775d47df9b2cd513b2f990f0",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.994,
+          0.639,
+          0.927
+        ]
+      }
+    },
+    {
+      "object_id": "426df39d8d994875ad6377c727a34d63",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -14.945128545568531,
+          "y": -35.1112224934165,
+          "z": -0.7909797178330026
+        },
+        "size_lwh_m": {
+          "x": 0.646,
+          "y": 2.089,
+          "z": 1.076
+        },
+        "yaw_ego_rad": -2.597365473561219
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "4acc2f166630430a8095628608b67330",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.089,
+          0.646,
+          1.076
+        ]
+      }
+    },
+    {
+      "object_id": "036e926dd21d407b8cde4f91f0ebf747",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 29.498191983272854,
+          "y": 2.8381102613592493,
+          "z": 0.8725829764994055
+        },
+        "size_lwh_m": {
+          "x": 0.463,
+          "y": 0.466,
+          "z": 0.785
+        },
+        "yaw_ego_rad": -2.5569960079013954
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "2938ba69d4424212888d3ac7157cd692",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.466,
+          0.463,
+          0.785
+        ]
+      }
+    },
+    {
+      "object_id": "8f886599bee54d96b8d9a6c0f1171105",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 22.363738691998133,
+          "y": -1.595502611075693,
+          "z": 0.6537151351008382
+        },
+        "size_lwh_m": {
+          "x": 0.427,
+          "y": 0.407,
+          "z": 0.723
+        },
+        "yaw_ego_rad": -2.560922998716919
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "83d143175e874321b80536052a4e0544",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.407,
+          0.427,
+          0.723
+        ]
+      }
+    },
+    {
+      "object_id": "9ab053c383784943b0a141777f717d31",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": 29.2308554839749,
+          "y": 40.07712861285109,
+          "z": 4.12289440979423
+        },
+        "size_lwh_m": {
+          "x": 0.889,
+          "y": 0.8,
+          "z": 1.721
+        },
+        "yaw_ego_rad": -2.3353391928703133
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "d95182de4a9f43d28a343a7f46e19ac6",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.8,
+          0.889,
+          1.721
+        ]
+      }
+    },
+    {
+      "object_id": "8fa10277171849e0a4b3376dcc62f9fd",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 46.7217228302956,
+          "y": 22.83707183126106,
+          "z": 1.4768298525749144
+        },
+        "size_lwh_m": {
+          "x": 0.533,
+          "y": 0.555,
+          "z": 0.734
+        },
+        "yaw_ego_rad": -2.573332289718707
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "790650141d9a467ca4388b4d7584076c",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.555,
+          0.533,
+          0.734
+        ]
+      }
+    },
+    {
+      "object_id": "94865552495e4d7abea1ad3a5d6da527",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -38.028510511163866,
+          "y": -34.006911411856706,
+          "z": -1.185726555152467
+        },
+        "size_lwh_m": {
+          "x": 0.581,
+          "y": 0.566,
+          "z": 0.72
+        },
+        "yaw_ego_rad": 0.5635479748025058
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "2",
+        "attributes": [],
+        "nuscenes_annotation_token": "0d6b0822d9be46e9bad7b320a115c780",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.566,
+          0.581,
+          0.72
+        ]
+      }
+    },
+    {
+      "object_id": "11cca56878db41aa80044dee9db11b43",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 35.89113419515003,
+          "y": 7.019824159985598,
+          "z": 1.040478020006438
+        },
+        "size_lwh_m": {
+          "x": 0.456,
+          "y": 0.471,
+          "z": 0.754
+        },
+        "yaw_ego_rad": -2.5569960079013954
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "7bd4a538de8741f6b100bd5e43c23f34",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.471,
+          0.456,
+          0.754
+        ]
+      }
+    },
+    {
+      "object_id": "f11f865bc5c74e52ab78218e45b8b40a",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 32.345413695789816,
+          "y": 13.88784866111743,
+          "z": 1.9266312755270234
+        },
+        "size_lwh_m": {
+          "x": 0.497,
+          "y": 0.524,
+          "z": 0.72
+        },
+        "yaw_ego_rad": -2.592810164180327
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "f722caaf5e48492a93fabc2b95c14ada",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.524,
+          0.497,
+          0.72
+        ]
+      }
+    },
+    {
+      "object_id": "42641eb6adcb4f8f8def8ef129d9e843",
+      "category": "vehicle.car",
+      "box": {
+        "center_ego_m": {
+          "x": -31.909155603043807,
+          "y": -25.238258921247823,
+          "z": -0.04957207296007371
+        },
+        "size_lwh_m": {
+          "x": 4.819,
+          "y": 1.939,
+          "z": 1.736
+        },
+        "yaw_ego_rad": 0.5665150346424268
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 1,
+        "visibility_token": "2",
+        "attributes": [
+          "vehicle.stopped"
+        ],
+        "nuscenes_annotation_token": "e9800a04ff2f4c9790b7a7b0480afc36",
+        "nuscenes_category": "vehicle.car",
+        "nuscenes_size_wlh": [
+          1.939,
+          4.819,
+          1.736
+        ]
+      }
+    },
+    {
+      "object_id": "05739869b03543b4ae5e7b2b6ed47e6d",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -44.610247133106036,
+          "y": 31.14949831265981,
+          "z": 2.9782960012608712
+        },
+        "size_lwh_m": {
+          "x": 0.633,
+          "y": 2.073,
+          "z": 1.078
+        },
+        "yaw_ego_rad": 0.6148781081812393
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "dcc60f90850740738a4da27ab5f53295",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.073,
+          0.633,
+          1.078
+        ]
+      }
+    },
+    {
+      "object_id": "7c80918c0074444c87801c6123fbed80",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -38.15019252898384,
+          "y": 20.899854918005957,
+          "z": 2.189180804229182
+        },
+        "size_lwh_m": {
+          "x": 0.649,
+          "y": 1.945,
+          "z": 1.11
+        },
+        "yaw_ego_rad": 0.5335806716548003
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 4,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "655a3f8e9dc2486dbf75a5cd6d66fe67",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.945,
+          0.649,
+          1.11
+        ]
+      }
+    },
+    {
+      "object_id": "e3c5b72c12c34c85aac247734ad83bef",
+      "category": "vehicle.construction",
+      "box": {
+        "center_ego_m": {
+          "x": 5.14511277469501,
+          "y": -5.246624553460768,
+          "z": 1.5331206626087006
+        },
+        "size_lwh_m": {
+          "x": 3.992,
+          "y": 3.016,
+          "z": 2.916
+        },
+        "yaw_ego_rad": -2.5786380906412596
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 743,
+        "num_radar_pts": 2,
+        "visibility_token": "3",
+        "attributes": [
+          "vehicle.stopped"
+        ],
+        "nuscenes_annotation_token": "baac3bb388a7483cbdadf938a44ae90d",
+        "nuscenes_category": "vehicle.construction",
+        "nuscenes_size_wlh": [
+          3.016,
+          3.992,
+          2.916
+        ]
+      }
+    },
+    {
+      "object_id": "9f6aafa40e69441483fb49b46070f22c",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -41.2271493223314,
+          "y": 26.110968748252525,
+          "z": 2.6033492966142906
+        },
+        "size_lwh_m": {
+          "x": 0.72,
+          "y": 1.964,
+          "z": 1.104
+        },
+        "yaw_ego_rad": 0.5454838171828009
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "578bceddc59345dc952bca0749818dc0",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.964,
+          0.72,
+          1.104
+        ]
+      }
+    },
+    {
+      "object_id": "4080c30aa7104d91ad005a50b18f6108",
+      "category": "vehicle.car",
+      "box": {
+        "center_ego_m": {
+          "x": -35.07308746015574,
+          "y": -34.984480977075776,
+          "z": -0.5194921108858844
+        },
+        "size_lwh_m": {
+          "x": 4.698,
+          "y": 1.972,
+          "z": 1.581
+        },
+        "yaw_ego_rad": 0.5904260453514374
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "vehicle.stopped"
+        ],
+        "nuscenes_annotation_token": "66122a786bb64ce68c74c236c252f048",
+        "nuscenes_category": "vehicle.car",
+        "nuscenes_size_wlh": [
+          1.972,
+          4.698,
+          1.581
+        ]
+      }
+    },
+    {
+      "object_id": "b4db946778484c2195efa320571f53dc",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -2.6130421202080187,
+          "y": -16.663230694356937,
+          "z": 0.6473380423544586
+        },
+        "size_lwh_m": {
+          "x": 0.837,
+          "y": 0.759,
+          "z": 1.916
+        },
+        "yaw_ego_rad": -0.9304364115102185
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "12178c30dfb3453e8c4af454a39d790f",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.759,
+          0.837,
+          1.916
+        ]
+      }
+    },
+    {
+      "object_id": "58ce00fe2eb547acaa7f792ff2b11742",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -34.40227849903201,
+          "y": -12.855141125101678,
+          "z": 0.5215871625157896
+        },
+        "size_lwh_m": {
+          "x": 0.771,
+          "y": 0.739,
+          "z": 1.766
+        },
+        "yaw_ego_rad": -0.9218094983445176
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "28227bd0daff485fb8e8ce7bd6e04b5a",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.739,
+          0.771,
+          1.766
+        ]
+      }
+    },
+    {
+      "object_id": "cf04a584e9d54f44a9000e98cda623de",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": 1.754638518763695,
+          "y": -20.245621182256148,
+          "z": 0.45066260372033173
+        },
+        "size_lwh_m": {
+          "x": 0.902,
+          "y": 0.694,
+          "z": 1.807
+        },
+        "yaw_ego_rad": -0.9719810654657403
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 5,
+        "num_radar_pts": 0,
+        "visibility_token": "3",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "ed05645c619f4910a7a8c905990174eb",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.694,
+          0.902,
+          1.807
+        ]
+      }
+    },
+    {
+      "object_id": "da622cff51e24d318855473f432f63bc",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -35.446356080254176,
+          "y": -8.982249166383836,
+          "z": 0.8436723693911428
+        },
+        "size_lwh_m": {
+          "x": 0.807,
+          "y": 0.751,
+          "z": 1.706
+        },
+        "yaw_ego_rad": -1.1974368804771314
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 2,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "0b933c74df0a494b808c3cfa8bd8b806",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.751,
+          0.807,
+          1.706
+        ]
+      }
+    },
+    {
+      "object_id": "e2f67391cb914b0cbdda3995dbc397f8",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -11.6911280230593,
+          "y": -5.090623337912515,
+          "z": 0.853690444864397
+        },
+        "size_lwh_m": {
+          "x": 0.958,
+          "y": 0.777,
+          "z": 1.757
+        },
+        "yaw_ego_rad": -2.551026981851637
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 11,
+        "num_radar_pts": 0,
+        "visibility_token": "3",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "08a2cde2800840c58bd260c56de024dc",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.777,
+          0.958,
+          1.757
+        ]
+      }
+    },
+    {
+      "object_id": "a60047adc78a4b6895702e86b6d2fe88",
+      "category": "vehicle.truck",
+      "box": {
+        "center_ego_m": {
+          "x": -44.44271668072991,
+          "y": -49.198112771837074,
+          "z": -1.0154401645311402
+        },
+        "size_lwh_m": {
+          "x": 4.535,
+          "y": 1.787,
+          "z": 2.059
+        },
+        "yaw_ego_rad": -2.5728610507886795
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "vehicle.moving"
+        ],
+        "nuscenes_annotation_token": "552129e5e971406daaba9b8fe33d3dbc",
+        "nuscenes_category": "vehicle.truck",
+        "nuscenes_size_wlh": [
+          1.787,
+          4.535,
+          2.059
+        ]
+      }
+    },
+    {
+      "object_id": "d7e840afc77247278b0b6346c07921e5",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -58.9428219988599,
+          "y": 48.652572747662376,
+          "z": 4.296716283386385
+        },
+        "size_lwh_m": {
+          "x": 1.04,
+          "y": 0.942,
+          "z": 1.937
+        },
+        "yaw_ego_rad": -2.384627290973221
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "3b0489f1347543fcb1c538647eb01691",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.942,
+          1.04,
+          1.937
+        ]
+      }
+    },
+    {
+      "object_id": "7ba3f4fee7b44e85986fe47846a67cf5",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -26.464269987874854,
+          "y": -17.847256968310347,
+          "z": 0.40184876107437995
+        },
+        "size_lwh_m": {
+          "x": 0.716,
+          "y": 0.687,
+          "z": 1.73
+        },
+        "yaw_ego_rad": -0.8698036732877469
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 1,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "3354db8361b24e2084fa83952edc0916",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.687,
+          0.716,
+          1.73
+        ]
+      }
+    },
+    {
+      "object_id": "95fc384cb4994ffe9a5caf914274ab22",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -1.5717468037160813,
+          "y": -16.476918614714933,
+          "z": 0.7099629002893038
+        },
+        "size_lwh_m": {
+          "x": 0.858,
+          "y": 0.728,
+          "z": 2.0
+        },
+        "yaw_ego_rad": -0.9566163502901338
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "f3d6664e39eb4e12b87ab6b87d86c96e",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.728,
+          0.858,
+          2.0
+        ]
+      }
+    },
+    {
+      "object_id": "c0c7d24d72d44267b401783e8a36b83e",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -8.838678005736199,
+          "y": -36.453554648398864,
+          "z": -0.3468533953965953
+        },
+        "size_lwh_m": {
+          "x": 1.03,
+          "y": 0.838,
+          "z": 1.876
+        },
+        "yaw_ego_rad": -0.6678516255820404
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "9130fe1e50214c56be202757ca88f2d7",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.838,
+          1.03,
+          1.876
+        ]
+      }
+    },
+    {
+      "object_id": "0e79e7bed1d543c9a00acfbf90ff60b3",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -33.54231621332842,
+          "y": 32.22691105914302,
+          "z": 3.004808804699421
+        },
+        "size_lwh_m": {
+          "x": 0.618,
+          "y": 0.634,
+          "z": 1.752
+        },
+        "yaw_ego_rad": 1.2373672392303061
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "16fe81b6934149aa863acde8aaf89dd8",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.634,
+          0.618,
+          1.752
+        ]
+      }
+    },
+    {
+      "object_id": "e900050c5fe14d77a62da9ab6107abf1",
+      "category": "movable_object.pushable_pullable",
+      "box": {
+        "center_ego_m": {
+          "x": -33.52508572019814,
+          "y": 32.58315217556616,
+          "z": 2.781270492376696
+        },
+        "size_lwh_m": {
+          "x": 0.835,
+          "y": 0.599,
+          "z": 1.265
+        },
+        "yaw_ego_rad": -0.9190743180712945
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "83260469a4cb449f949647a8413ffb1e",
+        "nuscenes_category": "movable_object.pushable_pullable",
+        "nuscenes_size_wlh": [
+          0.599,
+          0.835,
+          1.265
+        ]
+      }
+    },
+    {
+      "object_id": "963c99d31d0447acb45808d3452af0e8",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -56.296725306814,
+          "y": 48.20807495683197,
+          "z": 3.945421520700523
+        },
+        "size_lwh_m": {
+          "x": 0.579,
+          "y": 1.908,
+          "z": 1.051
+        },
+        "yaw_ego_rad": 0.5579105614384583
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "d60d6784be5c4b0b86a01f687dd0441f",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.908,
+          0.579,
+          1.051
+        ]
+      }
+    },
+    {
+      "object_id": "b77d6bc70844489da846d3a938a48e80",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -33.3899501035996,
+          "y": 11.806897166717944,
+          "z": 1.6510354847624742
+        },
+        "size_lwh_m": {
+          "x": 0.714,
+          "y": 2.042,
+          "z": 1.073
+        },
+        "yaw_ego_rad": 0.5877731448941189
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 5,
+        "num_radar_pts": 0,
+        "visibility_token": "3",
+        "attributes": [],
+        "nuscenes_annotation_token": "f0d2dcb648a643b3a9f000767d0378c2",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.042,
+          0.714,
+          1.073
+        ]
+      }
+    },
+    {
+      "object_id": "3d03622178a2438fa9ed419f2e209ec0",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -60.15452346681566,
+          "y": 47.80125540346576,
+          "z": 3.860032951870317
+        },
+        "size_lwh_m": {
+          "x": 0.937,
+          "y": 0.971,
+          "z": 1.568
+        },
+        "yaw_ego_rad": -2.466075989399623
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "3a8560ff9ba14aa29c6538c3f4448cc4",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.971,
+          0.937,
+          1.568
+        ]
+      }
+    },
+    {
+      "object_id": "28a722d057f24c1989f539d7d4f32fca",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -40.18183742377529,
+          "y": 24.390168238319944,
+          "z": 2.454535185211508
+        },
+        "size_lwh_m": {
+          "x": 0.731,
+          "y": 2.037,
+          "z": 1.1
+        },
+        "yaw_ego_rad": 0.5379439947847173
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "3",
+        "attributes": [],
+        "nuscenes_annotation_token": "55b3d5579ae64a239158e7fffdfe5032",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.037,
+          0.731,
+          1.1
+        ]
+      }
+    },
+    {
+      "object_id": "c1958768d48640948f6053d04cffd35b",
+      "category": "vehicle.car",
+      "box": {
+        "center_ego_m": {
+          "x": 12.057064348892725,
+          "y": 3.7843946281422074,
+          "z": 1.231918110387154
+        },
+        "size_lwh_m": {
+          "x": 4.727,
+          "y": 1.907,
+          "z": 1.957
+        },
+        "yaw_ego_rad": 0.47621169914058353
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 173,
+        "num_radar_pts": 6,
+        "visibility_token": "4",
+        "attributes": [
+          "vehicle.moving"
+        ],
+        "nuscenes_annotation_token": "0f2efdc2c7ab463e93825dbf849dbcdb",
+        "nuscenes_category": "vehicle.car",
+        "nuscenes_size_wlh": [
+          1.907,
+          4.727,
+          1.957
+        ]
+      }
+    },
+    {
+      "object_id": "1056bca4aedb40a2b2451c5356f014c9",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -31.868202130975398,
+          "y": 11.188279635596624,
+          "z": 1.5218516699740339
+        },
+        "size_lwh_m": {
+          "x": 0.474,
+          "y": 0.485,
+          "z": 0.784
+        },
+        "yaw_ego_rad": 0.5737581510193336
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "bd9413ef3354401fb86208eb67f9b206",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.485,
+          0.474,
+          0.784
+        ]
+      }
+    },
+    {
+      "object_id": "932bae8cbd83400d87a42ec74f1a7c20",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -24.156366726900394,
+          "y": -0.5856261643416119,
+          "z": 0.8573677238650983
+        },
+        "size_lwh_m": {
+          "x": 0.359,
+          "y": 0.415,
+          "z": 0.761
+        },
+        "yaw_ego_rad": 0.49891843267054414
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "909c9b649b1a440eb4a02221829acf91",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.415,
+          0.359,
+          0.761
+        ]
+      }
+    },
+    {
+      "object_id": "91b65783daac459aa0bc1abb4887afe7",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -39.14904647084458,
+          "y": 22.655210508623725,
+          "z": 2.2558632855584313
+        },
+        "size_lwh_m": {
+          "x": 0.683,
+          "y": 2.034,
+          "z": 1.127
+        },
+        "yaw_ego_rad": 0.5243827864956203
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "f03210a08562470cb9603cc011f85a80",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.034,
+          0.683,
+          1.127
+        ]
+      }
+    },
+    {
+      "object_id": "808a988e37a64f3c9d7961826acd1e7e",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -34.93379254902792,
+          "y": 15.85841242169811,
+          "z": 1.8945917254065172
+        },
+        "size_lwh_m": {
+          "x": 0.721,
+          "y": 1.908,
+          "z": 1.106
+        },
+        "yaw_ego_rad": 0.5687665093726672
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 4,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "5d98bdfd3d5443c1b29a64121c31d1fa",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.908,
+          0.721,
+          1.106
+        ]
+      }
+    },
+    {
+      "object_id": "a3d0b60656064b6397942ee9c81d47a2",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": 0.4042890679116731,
+          "y": -6.449497423261141,
+          "z": 0.40830003677569776
+        },
+        "size_lwh_m": {
+          "x": 0.693,
+          "y": 2.025,
+          "z": 1.046
+        },
+        "yaw_ego_rad": 2.114482454815389
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 309,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "2280a57887834c18b33ac94ff2bec1c2",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.025,
+          0.693,
+          1.046
+        ]
+      }
+    },
+    {
+      "object_id": "2dcbeb1537fa434b9352fd993c189d1e",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -25.935405821840057,
+          "y": -40.21248852820209,
+          "z": -1.3222425840431051
+        },
+        "size_lwh_m": {
+          "x": 0.417,
+          "y": 0.401,
+          "z": 0.61
+        },
+        "yaw_ego_rad": 2.1734571301381034
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "297513ab5d924efeba274a8bb6c56be7",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.401,
+          0.417,
+          0.61
+        ]
+      }
+    },
+    {
+      "object_id": "4b77b9d062f547a5a3cfe21ac661ea9a",
+      "category": "vehicle.truck",
+      "box": {
+        "center_ego_m": {
+          "x": 17.734362846977533,
+          "y": -10.665452048458597,
+          "z": 1.8052790668287169
+        },
+        "size_lwh_m": {
+          "x": 10.107,
+          "y": 2.853,
+          "z": 3.608
+        },
+        "yaw_ego_rad": -2.561184798121316
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 292,
+        "num_radar_pts": 4,
+        "visibility_token": "3",
+        "attributes": [
+          "vehicle.stopped"
+        ],
+        "nuscenes_annotation_token": "2354c63829314bd387f66e666e4e61a0",
+        "nuscenes_category": "vehicle.truck",
+        "nuscenes_size_wlh": [
+          2.853,
+          10.107,
+          3.608
+        ]
+      }
+    },
+    {
+      "object_id": "7f0a02fbc45b452994b0740a9bcdbe30",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -7.507658124661736,
+          "y": -36.58813851029392,
+          "z": -0.912909276297144
+        },
+        "size_lwh_m": {
+          "x": 0.561,
+          "y": 2.285,
+          "z": 1.092
+        },
+        "yaw_ego_rad": -2.255874352119783
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 6,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "2382ef38f97941948a8fe17e75fb1648",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.285,
+          0.561,
+          1.092
+        ]
+      }
+    },
+    {
+      "object_id": "5ae085634a294735ada287659b488378",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -43.435879743632015,
+          "y": 29.487593072880514,
+          "z": 2.686842388255291
+        },
+        "size_lwh_m": {
+          "x": 0.651,
+          "y": 1.99,
+          "z": 1.107
+        },
+        "yaw_ego_rad": 0.609083615045892
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "5c9dec92abbf4ca9b11c6d7790df8d4d",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.99,
+          0.651,
+          1.107
+        ]
+      }
+    },
+    {
+      "object_id": "a0049f95375044b8987fbcca8fda1e2b",
+      "category": "vehicle.car",
+      "box": {
+        "center_ego_m": {
+          "x": 10.025911538152165,
+          "y": -15.261091647096569,
+          "z": 0.615486606397415
+        },
+        "size_lwh_m": {
+          "x": 4.272,
+          "y": 1.706,
+          "z": 1.65
+        },
+        "yaw_ego_rad": -2.5786380906412596
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "vehicle.stopped"
+        ],
+        "nuscenes_annotation_token": "eb0585bd3f4c4d56a9e068b32e8207d3",
+        "nuscenes_category": "vehicle.car",
+        "nuscenes_size_wlh": [
+          1.706,
+          4.272,
+          1.65
+        ]
+      }
+    },
+    {
+      "object_id": "61dd7d03d7ad466d89f901ed64e2c0dd",
+      "category": "vehicle.car",
+      "box": {
+        "center_ego_m": {
+          "x": 14.607072416071578,
+          "y": -8.3846847859406,
+          "z": 0.8494667133874472
+        },
+        "size_lwh_m": {
+          "x": 4.663,
+          "y": 1.745,
+          "z": 1.482
+        },
+        "yaw_ego_rad": -2.5786380906412596
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 113,
+        "num_radar_pts": 4,
+        "visibility_token": "4",
+        "attributes": [
+          "vehicle.stopped"
+        ],
+        "nuscenes_annotation_token": "583485526ae841a1a7bbbcabeb0ef2d1",
+        "nuscenes_category": "vehicle.car",
+        "nuscenes_size_wlh": [
+          1.745,
+          4.663,
+          1.482
+        ]
+      }
+    },
+    {
+      "object_id": "26d807159cd749e89ee6624b5e4f835f",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 19.40690628620723,
+          "y": 5.453060308763819,
+          "z": 0.8204751097084837
+        },
+        "size_lwh_m": {
+          "x": 0.499,
+          "y": 0.492,
+          "z": 0.789
+        },
+        "yaw_ego_rad": -2.5434871595037536
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "b5de03f8dcf94e4094119c489be7f337",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.492,
+          0.499,
+          0.789
+        ]
+      }
+    },
+    {
+      "object_id": "e59d97d4403a48b88fbb6a58fc9959e6",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -4.182038859728539,
+          "y": -8.666701788659726,
+          "z": 0.8279057352665098
+        },
+        "size_lwh_m": {
+          "x": 0.936,
+          "y": 0.749,
+          "z": 1.856
+        },
+        "yaw_ego_rad": 2.038525725771087
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 33,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "70dedfef08e14429a828af768e28ec10",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.749,
+          0.936,
+          1.856
+        ]
+      }
+    },
+    {
+      "object_id": "4e5e612885cd4b4289126c391d894d28",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": 3.7883473364392826,
+          "y": -4.2271915085311,
+          "z": 0.5293787573060588
+        },
+        "size_lwh_m": {
+          "x": 0.675,
+          "y": 1.981,
+          "z": 1.078
+        },
+        "yaw_ego_rad": 2.1159310780990013
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 571,
+        "num_radar_pts": 1,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "7686520c744249849f245d05aa4274fa",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.981,
+          0.675,
+          1.078
+        ]
+      }
+    },
+    {
+      "object_id": "acc1b985c3b746cdbb22fc59bb41b774",
+      "category": "human.pedestrian.construction_worker",
+      "box": {
+        "center_ego_m": {
+          "x": -0.514163357742738,
+          "y": -9.703907225576957,
+          "z": 0.795607382949555
+        },
+        "size_lwh_m": {
+          "x": 0.718,
+          "y": 0.595,
+          "z": 1.76
+        },
+        "yaw_ego_rad": 2.4423774613926725
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 13,
+        "num_radar_pts": 0,
+        "visibility_token": "3",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "4b295c3385ce4bf48c1dd854109a0210",
+        "nuscenes_category": "human.pedestrian.construction_worker",
+        "nuscenes_size_wlh": [
+          0.595,
+          0.718,
+          1.76
+        ]
+      }
+    },
+    {
+      "object_id": "be001ed5da3e4eacadd3784ff00d9b3d",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -31.727600638577613,
+          "y": 9.335633564953156,
+          "z": 1.4189159751707616
+        },
+        "size_lwh_m": {
+          "x": 0.356,
+          "y": 0.379,
+          "z": 0.803
+        },
+        "yaw_ego_rad": 0.6133422184348045
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "05634eaa0c6840f7a66b87f8c3592f73",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.379,
+          0.356,
+          0.803
+        ]
+      }
+    },
+    {
+      "object_id": "db5d2c1232154b5f83270c510d227720",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -5.053616213390461,
+          "y": -40.75920087696558,
+          "z": -1.0713454813124599
+        },
+        "size_lwh_m": {
+          "x": 0.667,
+          "y": 2.219,
+          "z": 1.169
+        },
+        "yaw_ego_rad": -2.589127519487686
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "d2693d75746042798ae7c2a78243aa0d",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.219,
+          0.667,
+          1.169
+        ]
+      }
+    },
+    {
+      "object_id": "daa2c79186574e7e9afbb180c73daa1f",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -11.283905051551018,
+          "y": -37.717768154488724,
+          "z": -0.9058372104000575
+        },
+        "size_lwh_m": {
+          "x": 0.721,
+          "y": 2.404,
+          "z": 1.341
+        },
+        "yaw_ego_rad": -0.6634010360227268
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 0,
+        "visibility_token": "3",
+        "attributes": [],
+        "nuscenes_annotation_token": "bc631efed77d4d9180393a4e48e3a07a",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.404,
+          0.721,
+          1.341
+        ]
+      }
+    },
+    {
+      "object_id": "e3b29de7fe024c31b1e139a431c3c508",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -59.949189401898245,
+          "y": -31.19443940197209,
+          "z": -0.4820482458855553
+        },
+        "size_lwh_m": {
+          "x": 0.983,
+          "y": 0.973,
+          "z": 1.811
+        },
+        "yaw_ego_rad": -2.625657260706454
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "259c930e1a104c2dbcc7a58fd816be24",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.973,
+          0.983,
+          1.811
+        ]
+      }
+    },
+    {
+      "object_id": "ec44266b83264542b4437d1e9c89197c",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -1.553558290300967,
+          "y": -12.52952355599738,
+          "z": 0.0634465212301864
+        },
+        "size_lwh_m": {
+          "x": 0.445,
+          "y": 0.422,
+          "z": 0.734
+        },
+        "yaw_ego_rad": -2.7445490893393516
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "a06a93e8a1a74fcba61e778f948f8450",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.422,
+          0.445,
+          0.734
+        ]
+      }
+    },
+    {
+      "object_id": "d76647cebfc04503905d477d62edbb7c",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -28.15064376418981,
+          "y": -24.697548328512255,
+          "z": -0.3200028628072635
+        },
+        "size_lwh_m": {
+          "x": 0.407,
+          "y": 0.422,
+          "z": 0.764
+        },
+        "yaw_ego_rad": 0.553529784887864
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "22dff19ccec24163bffae2d404e19c5f",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.422,
+          0.407,
+          0.764
+        ]
+      }
+    },
+    {
+      "object_id": "f8fe56a047cd40adb42c7d67d26af28d",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": 5.442989811426116,
+          "y": -3.1974234689052223,
+          "z": 0.5384377050564033
+        },
+        "size_lwh_m": {
+          "x": 0.626,
+          "y": 1.974,
+          "z": 1.054
+        },
+        "yaw_ego_rad": 2.1159310780990013
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 444,
+        "num_radar_pts": 2,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "bc7e86df5dcd435dbc72b089549cd9e1",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.974,
+          0.626,
+          1.054
+        ]
+      }
+    },
+    {
+      "object_id": "f701357e9a3d43f485bdb25cdb643318",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 42.26199538161653,
+          "y": 11.152770838004548,
+          "z": 1.3329049329728402
+        },
+        "size_lwh_m": {
+          "x": 0.509,
+          "y": 0.489,
+          "z": 0.767
+        },
+        "yaw_ego_rad": -2.55966636166163
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "aad57bc85f234ec487b2c0fe65c75b5b",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.489,
+          0.509,
+          0.767
+        ]
+      }
+    },
+    {
+      "object_id": "9a433619baf44e41901d180558f263a0",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -26.413412329534133,
+          "y": -43.04172966457999,
+          "z": -1.1152682599610007
+        },
+        "size_lwh_m": {
+          "x": 0.687,
+          "y": 2.032,
+          "z": 1.148
+        },
+        "yaw_ego_rad": -1.4030890263330034
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "8c7059e1e52e42e4a5db30d3c54e05cc",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.032,
+          0.687,
+          1.148
+        ]
+      }
+    },
+    {
+      "object_id": "1866c60ae91e43f09154bb56cda1cce5",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -22.347917397814456,
+          "y": -3.380394447982537,
+          "z": 0.8200546580187696
+        },
+        "size_lwh_m": {
+          "x": 0.666,
+          "y": 2.03,
+          "z": 1.15
+        },
+        "yaw_ego_rad": 0.5595511708871678
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 18,
+        "num_radar_pts": 1,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "55de50bf665140d391549499a55e0747",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.03,
+          0.666,
+          1.15
+        ]
+      }
+    },
+    {
+      "object_id": "6f6da3251c4c4398b45e47aeb030682b",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": 2.058307552555685,
+          "y": -5.34742872591121,
+          "z": 0.47923972085580624
+        },
+        "size_lwh_m": {
+          "x": 0.677,
+          "y": 2.086,
+          "z": 1.091
+        },
+        "yaw_ego_rad": 2.161030385968487
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 473,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "6a13804fb34c4f1a90ab53e831d1057c",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.086,
+          0.677,
+          1.091
+        ]
+      }
+    },
+    {
+      "object_id": "86ed8530809d4b1b8fbc53808f599339",
+      "category": "vehicle.car",
+      "box": {
+        "center_ego_m": {
+          "x": -26.868580732887523,
+          "y": -29.878894308790212,
+          "z": -0.22136607238111541
+        },
+        "size_lwh_m": {
+          "x": 4.363,
+          "y": 1.875,
+          "z": 1.441
+        },
+        "yaw_ego_rad": 0.5904784052278269
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "vehicle.stopped"
+        ],
+        "nuscenes_annotation_token": "dc9addeece0546a8b19c39a49aefd2fa",
+        "nuscenes_category": "vehicle.car",
+        "nuscenes_size_wlh": [
+          1.875,
+          4.363,
+          1.441
+        ]
+      }
+    },
+    {
+      "object_id": "b43aaf61de5d48c3883291610b4dd555",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 14.446812595648485,
+          "y": -6.72650887326363,
+          "z": 0.45142345873305
+        },
+        "size_lwh_m": {
+          "x": 0.424,
+          "y": 0.393,
+          "z": 0.734
+        },
+        "yaw_ego_rad": -2.560922998716919
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "2",
+        "attributes": [],
+        "nuscenes_annotation_token": "b703ca463a1d46b1b47a9059e83cb1a9",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.393,
+          0.424,
+          0.734
+        ]
+      }
+    },
+    {
+      "object_id": "9e6d680cd81942f5acdfbb07254f8f45",
+      "category": "human.pedestrian.construction_worker",
+      "box": {
+        "center_ego_m": {
+          "x": 6.730167123844397,
+          "y": -8.190862657236675,
+          "z": 0.8652780924503288
+        },
+        "size_lwh_m": {
+          "x": 0.829,
+          "y": 0.759,
+          "z": 1.78
+        },
+        "yaw_ego_rad": -2.2265179140369997
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "1770231a100c43e5b1ab42900425ede8",
+        "nuscenes_category": "human.pedestrian.construction_worker",
+        "nuscenes_size_wlh": [
+          0.759,
+          0.829,
+          1.78
+        ]
+      }
+    },
+    {
+      "object_id": "783b8bd4b6954dc2a157ade706795a62",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -1.228212683155125,
+          "y": -9.649829964507628,
+          "z": 0.40232858780129077
+        },
+        "size_lwh_m": {
+          "x": 0.621,
+          "y": 1.79,
+          "z": 1.119
+        },
+        "yaw_ego_rad": -2.5379893723424165
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 9,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "dd55ec52703e447799bbbcbf5e8757f8",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.79,
+          0.621,
+          1.119
+        ]
+      }
+    },
+    {
+      "object_id": "36f5c9f6981d4fbf8362a73577bbdcfe",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -1.168479896120839,
+          "y": -7.664700503071142,
+          "z": 0.4088105234844629
+        },
+        "size_lwh_m": {
+          "x": 0.613,
+          "y": 2.056,
+          "z": 1.181
+        },
+        "yaw_ego_rad": 2.4918575456840113
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 124,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "85f1f2fd591d4e25a59ec8d00eb9d08a",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.056,
+          0.613,
+          1.181
+        ]
+      }
+    },
+    {
+      "object_id": "203a688b840844b8ae16a2b07967ffad",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": 15.70519834273113,
+          "y": 19.533888991026593,
+          "z": 2.8264304736114423
+        },
+        "size_lwh_m": {
+          "x": 0.909,
+          "y": 0.791,
+          "z": 1.78
+        },
+        "yaw_ego_rad": 3.08300879047606
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "37f2bb4c6522450fbba8df5e496252f3",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.791,
+          0.909,
+          1.78
+        ]
+      }
+    },
+    {
+      "object_id": "60953504927c48eb99231e3c025c8eeb",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -30.066567689481815,
+          "y": -26.350726922923542,
+          "z": -0.4579233017354601
+        },
+        "size_lwh_m": {
+          "x": 0.395,
+          "y": 0.411,
+          "z": 0.803
+        },
+        "yaw_ego_rad": 0.5701453193680224
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "bc8bd531a4f843208463c86e2c1e27c4",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.411,
+          0.395,
+          0.803
+        ]
+      }
+    },
+    {
+      "object_id": "aa3bf7a6025b43369a3cc8044bb031d9",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -22.20962759063183,
+          "y": -4.4156767304876485,
+          "z": 0.6980115313772194
+        },
+        "size_lwh_m": {
+          "x": 0.399,
+          "y": 0.383,
+          "z": 0.705
+        },
+        "yaw_ego_rad": 0.5464262949168524
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "5323e305281f411ca93b81f913f90628",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.383,
+          0.399,
+          0.705
+        ]
+      }
+    },
+    {
+      "object_id": "15c72d99133e41dc98d0c16c32d24f2e",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 36.99767623052573,
+          "y": 7.794374108010983,
+          "z": 1.051159871918789
+        },
+        "size_lwh_m": {
+          "x": 0.465,
+          "y": 0.478,
+          "z": 0.766
+        },
+        "yaw_ego_rad": -2.5569960079013954
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "cfd63f31c20d41cc80988a953d0a37a4",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.478,
+          0.465,
+          0.766
+        ]
+      }
+    },
+    {
+      "object_id": "be4d4a2f77b84dedbdd11c0a430db35f",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 18.299253595013262,
+          "y": -4.3226265566360205,
+          "z": 0.5647157983617184
+        },
+        "size_lwh_m": {
+          "x": 0.451,
+          "y": 0.392,
+          "z": 0.69
+        },
+        "yaw_ego_rad": -1.8627912979191865
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "2",
+        "attributes": [],
+        "nuscenes_annotation_token": "cdd10af17e0b4ba1ab2ebe779cfee7bb",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.392,
+          0.451,
+          0.69
+        ]
+      }
+    },
+    {
+      "object_id": "4192e942d0da4211a692a7c806bc5bfe",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": 21.60814604969191,
+          "y": 31.40944638939144,
+          "z": 3.6215045877845364
+        },
+        "size_lwh_m": {
+          "x": 0.917,
+          "y": 0.822,
+          "z": 1.849
+        },
+        "yaw_ego_rad": -2.328183342959082
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "c63e423f3e944811a9f76b39a3ab48f4",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.822,
+          0.917,
+          1.849
+        ]
+      }
+    },
+    {
+      "object_id": "9a53abab867949e1b59144c44301df23",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -14.294147548304538,
+          "y": -41.979034879647855,
+          "z": -1.1828697135302337
+        },
+        "size_lwh_m": {
+          "x": 0.66,
+          "y": 2.019,
+          "z": 1.25
+        },
+        "yaw_ego_rad": -0.6832628829165689
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "169e0e2c05c841429a78f7c7f0bb92a6",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.019,
+          0.66,
+          1.25
+        ]
+      }
+    },
+    {
+      "object_id": "e030ecead0154a5fb2a3e1646467780d",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 41.767428147663516,
+          "y": 19.87203275969101,
+          "z": 1.366098187243276
+        },
+        "size_lwh_m": {
+          "x": 0.549,
+          "y": 0.529,
+          "z": 0.746
+        },
+        "yaw_ego_rad": -2.573332289718707
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "37096287e1dd4365a8e7591b736e836f",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.529,
+          0.549,
+          0.746
+        ]
+      }
+    },
+    {
+      "object_id": "b8177b00f30c4fb8b98dfd7354cda6d1",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 44.37846439228502,
+          "y": 12.576569580336683,
+          "z": 1.3943953242004685
+        },
+        "size_lwh_m": {
+          "x": 0.482,
+          "y": 0.496,
+          "z": 0.825
+        },
+        "yaw_ego_rad": -2.55966636166163
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "380f3eac4fbd4c5eb898ce1911e4b3b8",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.496,
+          0.482,
+          0.825
+        ]
+      }
+    },
+    {
+      "object_id": "b0d0e9f13e7d439f85de1ec58379ff13",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": 34.03501333029308,
+          "y": 43.259603900077835,
+          "z": 4.471834854356441
+        },
+        "size_lwh_m": {
+          "x": 1.078,
+          "y": 0.86,
+          "z": 2.0
+        },
+        "yaw_ego_rad": -2.4805118015622343
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "c1603d8a3a184f95825ea2669b1678e6",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.86,
+          1.078,
+          2.0
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "dataset": "nuscenes",
+    "version": "v1.0-mini",
+    "sample_token": "fedfb3a6cb804635a0f47143f9ca8d6f",
+    "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+    "scene_name": "scene-0061"
+  },
+  "diagnostics": {
+    "object_count": 151,
+    "camera_count": 6,
+    "lidar_present": true
+  }
+}

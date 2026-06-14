@@ -2,8 +2,13 @@ import { useEffect, useState } from 'react';
 import type { SceneFrame } from './schema/sceneFrame';
 import { BevCanvas } from './rendering/BevCanvas';
 import { BevScene3D } from './rendering/BevScene3D';
+import { TransportBar } from './rendering/TransportBar';
 import { displayName } from './rendering/categories';
 import { categoryColor } from './rendering/visuals/registry';
+import { usePlayback } from './sequence/usePlayback';
+
+const SEQUENCE_URL = '/scene_frames/nuscenes_scene_0061/manifest.json';
+const FALLBACK_FRAME_URL = '/scene_frames/nuscenes_sample_frame.json';
 
 interface HudPanelProps {
   frame:           SceneFrame;
@@ -96,25 +101,41 @@ function HudPanel({ frame, mode, onModeChange, showDebug, onDebugChange }: HudPa
 }
 
 export default function App() {
-  const [frame, setFrame]         = useState<SceneFrame | null>(null);
-  const [error, setError]         = useState<string | null>(null);
   const [mode,  setMode]          = useState<'2d' | '3d'>('3d');
   const [showDebug, setShowDebug] = useState<boolean>(false);
 
+  const pb = usePlayback(SEQUENCE_URL);
+
+  // Single-frame fallback: if the sequence manifest is missing, load the standalone JSON.
+  const [fallbackFrame, setFallbackFrame] = useState<SceneFrame | null>(null);
+  const [fallbackError, setFallbackError] = useState<string | null>(null);
+  const manifestMissing = pb.manifest === null && pb.error !== null;
+
   useEffect(() => {
-    fetch('/scene_frames/nuscenes_sample_frame.json')
+    if (!manifestMissing) return;
+    fetch(FALLBACK_FRAME_URL)
       .then(r => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
         return r.json() as Promise<SceneFrame>;
       })
-      .then(d => setFrame(d))
-      .catch(e => setError(String(e)));
-  }, []);
+      .then(d => setFallbackFrame(d))
+      .catch(e => setFallbackError(String(e)));
+  }, [manifestMissing]);
 
-  if (error) {
+  const frame = pb.frame ?? fallbackFrame;
+
+  if (manifestMissing && fallbackError) {
     return (
       <div className="viewer-root viewer-root--status">
-        <span className="status-msg">Error: {error}</span>
+        <span className="status-msg">Error: {fallbackError}</span>
+      </div>
+    );
+  }
+
+  if (pb.error && !manifestMissing) {
+    return (
+      <div className="viewer-root viewer-root--status">
+        <span className="status-msg">Error: {pb.error}</span>
       </div>
     );
   }
@@ -141,6 +162,19 @@ export default function App() {
         showDebug={showDebug}
         onDebugChange={setShowDebug}
       />
+      {pb.manifest && (
+        <TransportBar
+          index={pb.index}
+          frameCount={pb.manifest.frame_count}
+          timestampUs={
+            (pb.manifest.frames[pb.index]?.timestamp_us ?? 0) -
+            (pb.manifest.frames[0]?.timestamp_us ?? 0)
+          }
+          playing={pb.playing}
+          onToggle={pb.toggle}
+          onSeek={pb.seek}
+        />
+      )}
       {mode === '3d' && (
         <div className="hud-hint">drag to orbit · scroll to zoom</div>
       )}

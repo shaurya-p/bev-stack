@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "sequence_id": "nuscenes_scene_0061",
+  "name": "scene-0061",
+  "source": "nuscenes",
+  "frame_count": 30,
+  "frames": [
+    {
+      "index": 0,
+      "path": "frames/000000.json",
+      "timestamp_us": 1532402927647951
+    },
+    {
+      "index": 1,
+      "path": "frames/000001.json",
+      "timestamp_us": 1532402928147847
+    },
+    {
+      "index": 2,
+      "path": "frames/000002.json",
+      "timestamp_us": 1532402928698048
+    },
+    {
+      "index": 3,
+      "path": "frames/000003.json",
+      "timestamp_us": 1532402929197353
+    },
+    {
+      "index": 4,
+      "path": "frames/000004.json",
+      "timestamp_us": 1532402929697797
+    },
+    {
+      "index": 5,
+      "path": "frames/000005.json",
+      "timestamp_us": 1532402930152601
+    },
+    {
+      "index": 6,
+      "path": "frames/000006.json",
+      "timestamp_us": 1532402930648325
+    },
+    {
+      "index": 7,
+      "path": "frames/000007.json",
+      "timestamp_us": 1532402931198511
+    },
+    {
+      "index": 8,
+      "path": "frames/000008.json",
+      "timestamp_us": 1532402931697833
+    },
+    {
+      "index": 9,
+      "path": "frames/000009.json",
+      "timestamp_us": 1532402932197715
+    },
+    {
+      "index": 10,
+      "path": "frames/000010.json",
+      "timestamp_us": 1532402932647284
+    },
+    {
+      "index": 11,
+      "path": "frames/000011.json",
+      "timestamp_us": 1532402933146604
+    },
+    {
+      "index": 12,
+      "path": "frames/000012.json",
+      "timestamp_us": 1532402933646462
+    },
+    {
+      "index": 13,
+      "path": "frames/000013.json",
+      "timestamp_us": 1532402934146351
+    },
+    {
+      "index": 14,
+      "path": "frames/000014.json",
+      "timestamp_us": 1532402934696555
+    },
+    {
+      "index": 15,
+      "path": "frames/000015.json",
+      "timestamp_us": 1532402935197541
+    },
+    {
+      "index": 16,
+      "path": "frames/000016.json",
+      "timestamp_us": 1532402935697945
+    },
+    {
+      "index": 17,
+      "path": "frames/000017.json",
+      "timestamp_us": 1532402936198962
+    },
+    {
+      "index": 18,
+      "path": "frames/000018.json",
+      "timestamp_us": 1532402936699359
+    },
+    {
+      "index": 19,
+      "path": "frames/000019.json",
+      "timestamp_us": 1532402937198682
+    },
+    {
+      "index": 20,
+      "path": "frames/000020.json",
+      "timestamp_us": 1532402937698000
+    },
+    {
+      "index": 21,
+      "path": "frames/000021.json",
+      "timestamp_us": 1532402938197897
+    },
+    {
+      "index": 22,
+      "path": "frames/000022.json",
+      "timestamp_us": 1532402938647444
+    },
+    {
+      "index": 23,
+      "path": "frames/000023.json",
+      "timestamp_us": 1532402939147334
+    },
+    {
+      "index": 24,
+      "path": "frames/000024.json",
+      "timestamp_us": 1532402939697511
+    },
+    {
+      "index": 25,
+      "path": "frames/000025.json",
+      "timestamp_us": 1532402940197958
+    },
+    {
+      "index": 26,
+      "path": "frames/000026.json",
+      "timestamp_us": 1532402940797343
+    },
+    {
+      "index": 27,
+      "path": "frames/000027.json",
+      "timestamp_us": 1532402941297218
+    },
+    {
+      "index": 28,
+      "path": "frames/000028.json",
+      "timestamp_us": 1532402941797653
+    },
+    {
+      "index": 29,
+      "path": "frames/000029.json",
+      "timestamp_us": 1532402942197463
+    }
+  ],
+  "dataset": {
+    "version": "v1.0-mini",
+    "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+    "description": "Parked truck, construction, intersection, turn left, following a van"
+  }
+}
