@@ -43,6 +43,9 @@ function interpolateObject(cur: Object3D, next: Object3D, t: number): Object3D {
  * Build a render-only SceneFrame interpolated between `cur` and `next` at t∈[0,1].
  * Returns `cur` unchanged when there is no next frame or t collapses to an endpoint.
  * Non-geometric fields (ego, cameras, lidar, metadata, diagnostics) come from `cur`.
+ * map_layers are intentionally NOT interpolated: static map geometry is
+ * per-keyframe (already in that keyframe's ego frame) and passes through
+ * from `cur` unchanged via the spread below.
  */
 export function interpolateFrame(
   cur: SceneFrame,

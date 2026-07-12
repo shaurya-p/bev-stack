@@ -35,9 +35,14 @@ export async function loadManifest(manifestUrl: string): Promise<SequenceManifes
   return (await r.json()) as SequenceManifest;
 }
 
+/** Normalize fields that older exports may omit (schema additions). */
+export function normalizeFrame(raw: SceneFrame): SceneFrame {
+  return { ...raw, map_layers: raw.map_layers ?? [] };
+}
+
 export async function loadFrame(manifestUrl: string, frame: ManifestFrame): Promise<SceneFrame> {
   const url = resolveFramePath(manifestUrl, frame.path);
   const r = await fetch(url);
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
-  return (await r.json()) as SceneFrame;
+  return normalizeFrame((await r.json()) as SceneFrame);
 }

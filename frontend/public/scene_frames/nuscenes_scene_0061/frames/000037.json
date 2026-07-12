@@ -1,0 +1,6866 @@
+{
+  "frame_id": "29e056fc277543c9bc42310b122c640e",
+  "timestamp_us": 1532402946297085,
+  "ego": {
+    "pose_global": {
+      "translation_m": {
+        "x": 419.5269830911931,
+        "y": 1104.8312849413196,
+        "z": 0.0
+      },
+      "rotation_quat_wxyz": {
+        "w": 0.9903703549241515,
+        "x": -0.024165421836372873,
+        "y": 0.008086535585526917,
+        "z": -0.13607792038793065
+      }
+    },
+    "velocity_ego_mps": null
+  },
+  "cameras": [
+    {
+      "name": "CAM_FRONT",
+      "image_uri": "/sessions/modest-nice-gauss/mnt/datasets/nuscenes/samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402946262460.jpg",
+      "intrinsics_3x3": [
+        1266.417203046554,
+        0.0,
+        816.2670197447984,
+        0.0,
+        1266.417203046554,
+        491.50706579294757,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "T_ego_sensor": {
+        "translation_m": {
+          "x": 1.70079118954,
+          "y": 0.0159456324149,
+          "z": 1.51095763913
+        },
+        "rotation_quat_wxyz": {
+          "w": 0.4998015430569128,
+          "x": -0.5030316162024876,
+          "y": 0.4997798114386805,
+          "z": -0.49737083824542755
+        }
+      }
+    },
+    {
+      "name": "CAM_FRONT_LEFT",
+      "image_uri": "/sessions/modest-nice-gauss/mnt/datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-24-11-22-45+0800__CAM_FRONT_LEFT__1532402946254844.jpg",
+      "intrinsics_3x3": [
+        1272.5979470598488,
+        0.0,
+        826.6154927353808,
+        0.0,
+        1272.5979470598488,
+        479.75165386361925,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "T_ego_sensor": {
+        "translation_m": {
+          "x": 1.52387798135,
+          "y": 0.494631336551,
+          "z": 1.50932822144
+        },
+        "rotation_quat_wxyz": {
+          "w": 0.6757265034669446,
+          "x": -0.6736266522251881,
+          "y": 0.21214015046209478,
+          "z": -0.21122827103904068
+        }
+      }
+    },
+    {
+      "name": "CAM_FRONT_RIGHT",
+      "image_uri": "/sessions/modest-nice-gauss/mnt/datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-24-11-22-45+0800__CAM_FRONT_RIGHT__1532402946270339.jpg",
+      "intrinsics_3x3": [
+        1260.8474446004698,
+        0.0,
+        807.968244525554,
+        0.0,
+        1260.8474446004698,
+        495.3344268742088,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "T_ego_sensor": {
+        "translation_m": {
+          "x": 1.5508477543,
+          "y": -0.493404796419,
+          "z": 1.49574800619
+        },
+        "rotation_quat_wxyz": {
+          "w": 0.2060347966337182,
+          "x": -0.2026940577919598,
+          "y": 0.6824507824531167,
+          "z": -0.6713610884174485
+        }
+      }
+    },
+    {
+      "name": "CAM_BACK",
+      "image_uri": "/sessions/modest-nice-gauss/mnt/datasets/nuscenes/samples/CAM_BACK/n015-2018-07-24-11-22-45+0800__CAM_BACK__1532402946287525.jpg",
+      "intrinsics_3x3": [
+        809.2209905677063,
+        0.0,
+        829.2196003259838,
+        0.0,
+        809.2209905677063,
+        481.77842384512485,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "T_ego_sensor": {
+        "translation_m": {
+          "x": 0.0283260309358,
+          "y": 0.00345136761476,
+          "z": 1.57910346144
+        },
+        "rotation_quat_wxyz": {
+          "w": 0.5037872666382278,
+          "x": -0.49740249788611096,
+          "y": -0.4941850223835201,
+          "z": 0.5045496097725578
+        }
+      }
+    },
+    {
+      "name": "CAM_BACK_LEFT",
+      "image_uri": "/sessions/modest-nice-gauss/mnt/datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-24-11-22-45+0800__CAM_BACK_LEFT__1532402946297423.jpg",
+      "intrinsics_3x3": [
+        1256.7414812095406,
+        0.0,
+        792.1125740759628,
+        0.0,
+        1256.7414812095406,
+        492.7757465151356,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "T_ego_sensor": {
+        "translation_m": {
+          "x": 1.03569100218,
+          "y": 0.484795032713,
+          "z": 1.59097014818
+        },
+        "rotation_quat_wxyz": {
+          "w": 0.6924185592174665,
+          "x": -0.7031619420114925,
+          "y": -0.11648342771943819,
+          "z": 0.11203317912370753
+        }
+      }
+    },
+    {
+      "name": "CAM_BACK_RIGHT",
+      "image_uri": "/sessions/modest-nice-gauss/mnt/datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-24-11-22-45+0800__CAM_BACK_RIGHT__1532402946277893.jpg",
+      "intrinsics_3x3": [
+        1259.5137405846733,
+        0.0,
+        807.2529053838625,
+        0.0,
+        1259.5137405846733,
+        501.19579884916527,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "T_ego_sensor": {
+        "translation_m": {
+          "x": 1.0148780988,
+          "y": -0.480568219723,
+          "z": 1.56239545128
+        },
+        "rotation_quat_wxyz": {
+          "w": 0.12280980120078765,
+          "x": -0.132400842670559,
+          "y": -0.7004305821388234,
+          "z": 0.690496031265798
+        }
+      }
+    }
+  ],
+  "lidar": {
+    "pointcloud_uri": "/sessions/modest-nice-gauss/mnt/datasets/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402946297085.pcd.bin",
+    "points_ego": null,
+    "T_ego_sensor": {
+      "translation_m": {
+        "x": 0.943713,
+        "y": 0.0,
+        "z": 1.84023
+      },
+      "rotation_quat_wxyz": {
+        "w": 0.7077955119163518,
+        "x": -0.006492242056004365,
+        "y": 0.010646214713995808,
+        "z": -0.7063073142877817
+      }
+    }
+  },
+  "objects": [
+    {
+      "object_id": "6dd2cbf4c24b4caeb625035869bca7b5",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -51.445947298404064,
+          "y": 12.367122035763671,
+          "z": 1.2581301245788412
+        },
+        "size_lwh_m": {
+          "x": 0.669,
+          "y": 0.621,
+          "z": 1.642
+        },
+        "yaw_ego_rad": -0.09477881946975399
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "93d5b79041c64693a5b32f1103a39a06",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.621,
+          0.669,
+          1.642
+        ]
+      }
+    },
+    {
+      "object_id": "1bc410ff237c4c48b9b7b094a9eaeb4d",
+      "category": "human.pedestrian.construction_worker",
+      "box": {
+        "center_ego_m": {
+          "x": -27.85131953302615,
+          "y": 1.0245611672481734,
+          "z": 1.127828331489674
+        },
+        "size_lwh_m": {
+          "x": 0.687,
+          "y": 0.626,
+          "z": 1.766
+        },
+        "yaw_ego_rad": -1.1108047902267977
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "2",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "7ee2fab6900e4379a14cb7c0f588a631",
+        "nuscenes_category": "human.pedestrian.construction_worker",
+        "nuscenes_size_wlh": [
+          0.626,
+          0.687,
+          1.766
+        ]
+      }
+    },
+    {
+      "object_id": "291e6cccbc254f2ab4eadfe98331dfec",
+      "category": "vehicle.truck",
+      "box": {
+        "center_ego_m": {
+          "x": -4.143788536335288,
+          "y": -14.469624118513122,
+          "z": 1.2931201081642147
+        },
+        "size_lwh_m": {
+          "x": 6.452,
+          "y": 2.508,
+          "z": 3.236
+        },
+        "yaw_ego_rad": 3.0079628049510885
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 554,
+        "num_radar_pts": 9,
+        "visibility_token": "4",
+        "attributes": [
+          "vehicle.stopped"
+        ],
+        "nuscenes_annotation_token": "2f39064061fd47e6a3211dbffd23153b",
+        "nuscenes_category": "vehicle.truck",
+        "nuscenes_size_wlh": [
+          2.508,
+          6.452,
+          3.236
+        ]
+      }
+    },
+    {
+      "object_id": "fdd3fe14d1c044b9a9f6c24383c6207c",
+      "category": "vehicle.motorcycle",
+      "box": {
+        "center_ego_m": {
+          "x": -13.157748596663463,
+          "y": 8.927482549596983,
+          "z": 1.5037016645324934
+        },
+        "size_lwh_m": {
+          "x": 2.229,
+          "y": 0.844,
+          "z": 1.336
+        },
+        "yaw_ego_rad": 2.4658460860051408
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 11,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "cycle.without_rider"
+        ],
+        "nuscenes_annotation_token": "1077f74706594a9587aa718299137b6a",
+        "nuscenes_category": "vehicle.motorcycle",
+        "nuscenes_size_wlh": [
+          0.844,
+          2.229,
+          1.336
+        ]
+      }
+    },
+    {
+      "object_id": "47bccbb74b1343d58f5c593240d567d7",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -26.91526139090428,
+          "y": -6.345921734691444,
+          "z": 0.43975933292637615
+        },
+        "size_lwh_m": {
+          "x": 0.616,
+          "y": 2.068,
+          "z": 1.169
+        },
+        "yaw_ego_rad": -1.7159278951978079
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 1,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "170441fb6b9d4b43825f023b9b9689bf",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.068,
+          0.616,
+          1.169
+        ]
+      }
+    },
+    {
+      "object_id": "1e775890010e4d97b74ca1d06441d023",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": 3.5963863262570364,
+          "y": 11.680310231227955,
+          "z": 2.460937131814239
+        },
+        "size_lwh_m": {
+          "x": 0.995,
+          "y": 0.979,
+          "z": 1.89
+        },
+        "yaw_ego_rad": -3.094929990475035
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 7,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "4da57e367e2e4fdaa1e63feaa56b8246",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.979,
+          0.995,
+          1.89
+        ]
+      }
+    },
+    {
+      "object_id": "c542c70024df4cf2a02c55a7b16fe3c4",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 0.616716226366085,
+          "y": -2.100061213421155,
+          "z": 0.28505019924610303
+        },
+        "size_lwh_m": {
+          "x": 0.513,
+          "y": 0.488,
+          "z": 0.798
+        },
+        "yaw_ego_rad": 3.0203371893325137
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 11,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "7e5996ec50bd4a2b81747711c173d750",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.488,
+          0.513,
+          0.798
+        ]
+      }
+    },
+    {
+      "object_id": "1511e02cbd80490299371149ed7eb269",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": 21.88006131970983,
+          "y": 18.52599461538135,
+          "z": 3.1852237093133664
+        },
+        "size_lwh_m": {
+          "x": 1.034,
+          "y": 0.874,
+          "z": 1.798
+        },
+        "yaw_ego_rad": -2.8897665368943195
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 4,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "08d861aa7c714cb58109e06373b40295",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.874,
+          1.034,
+          1.798
+        ]
+      }
+    },
+    {
+      "object_id": "73ee514c205c483da3d1d04282337457",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -26.455037654384615,
+          "y": 9.127263457411093,
+          "z": 1.3409586023679823
+        },
+        "size_lwh_m": {
+          "x": 0.914,
+          "y": 0.695,
+          "z": 1.905
+        },
+        "yaw_ego_rad": 0.6139121232998891
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 6,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "3e8d9c07f2bf4668ad990a48b11048d5",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.695,
+          0.914,
+          1.905
+        ]
+      }
+    },
+    {
+      "object_id": "5fad73f97d7541dca6c109c1639c8dae",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 16.21245875870906,
+          "y": -4.1427374787546665,
+          "z": 0.3581086683539997
+        },
+        "size_lwh_m": {
+          "x": 0.519,
+          "y": 0.523,
+          "z": 0.736
+        },
+        "yaw_ego_rad": 3.013268605873641
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "a30147ab503a4a7abdc08a4577b98168",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.523,
+          0.519,
+          0.736
+        ]
+      }
+    },
+    {
+      "object_id": "7a34fc22f9d645b59d5b6e5c88268008",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 5.592362448461343,
+          "y": -2.6278450621805933,
+          "z": 0.3436751217407974
+        },
+        "size_lwh_m": {
+          "x": 0.484,
+          "y": 0.473,
+          "z": 0.73
+        },
+        "yaw_ego_rad": 3.0203371893325137
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 29,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "8b8d6878415f423394c6d47928605c2c",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.473,
+          0.484,
+          0.73
+        ]
+      }
+    },
+    {
+      "object_id": "f0056532879643c69e4efc9d845782f0",
+      "category": "vehicle.bicycle",
+      "box": {
+        "center_ego_m": {
+          "x": 15.696131189302164,
+          "y": 2.6244797500420076,
+          "z": 1.1450653503560004
+        },
+        "size_lwh_m": {
+          "x": 1.843,
+          "y": 0.567,
+          "z": 1.067
+        },
+        "yaw_ego_rad": -1.933587906199473
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 10,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "cycle.without_rider"
+        ],
+        "nuscenes_annotation_token": "93bbd23c226d4fbf8c2b6c58a24c61c5",
+        "nuscenes_category": "vehicle.bicycle",
+        "nuscenes_size_wlh": [
+          0.567,
+          1.843,
+          1.067
+        ]
+      }
+    },
+    {
+      "object_id": "adfd2ee7c64d4f259206a5a10663904e",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 15.906733663388884,
+          "y": -11.618886254952143,
+          "z": 0.2928350729731569
+        },
+        "size_lwh_m": {
+          "x": 0.421,
+          "y": 0.424,
+          "z": 0.808
+        },
+        "yaw_ego_rad": 3.026934533930718
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "5f9ca93b5ed44aeb9e7a9350c745551f",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.424,
+          0.421,
+          0.808
+        ]
+      }
+    },
+    {
+      "object_id": "6e04d2d7cbc64b49b4c2028325089e43",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 41.495692136442315,
+          "y": -7.3971503588998075,
+          "z": 0.4169370001649711
+        },
+        "size_lwh_m": {
+          "x": 0.549,
+          "y": 0.587,
+          "z": 0.803
+        },
+        "yaw_ego_rad": 3.0159389596489996
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "528b738e9f9148c8a4b965c95bcc14b3",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.587,
+          0.549,
+          0.803
+        ]
+      }
+    },
+    {
+      "object_id": "bbd6c47a20e34276bc6f2cfbc6ba6205",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -33.29904721684104,
+          "y": 9.793980916268328,
+          "z": 1.2616242525540522
+        },
+        "size_lwh_m": {
+          "x": 0.709,
+          "y": 0.648,
+          "z": 1.609
+        },
+        "yaw_ego_rad": -2.806688864520421
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "ffe1eacf79704c2b8066684de2b95deb",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.648,
+          0.709,
+          1.609
+        ]
+      }
+    },
+    {
+      "object_id": "81714918a9f54bda9e2b52dd7ce362e5",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -52.503923849507686,
+          "y": 10.80897614673621,
+          "z": 1.2591330312224942
+        },
+        "size_lwh_m": {
+          "x": 0.741,
+          "y": 0.79,
+          "z": 1.725
+        },
+        "yaw_ego_rad": -0.024965649389980017
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "2ffc4dfeb91042f8af06ab745563e982",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.79,
+          0.741,
+          1.725
+        ]
+      }
+    },
+    {
+      "object_id": "56a71c208ac6472f90b6a82529a6ce61",
+      "category": "vehicle.car",
+      "box": {
+        "center_ego_m": {
+          "x": -26.266164763086525,
+          "y": -8.105245324403889,
+          "z": 0.9504677374355347
+        },
+        "size_lwh_m": {
+          "x": 4.956,
+          "y": 2.135,
+          "z": 2.17
+        },
+        "yaw_ego_rad": 3.0079628049510885
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 29,
+        "num_radar_pts": 4,
+        "visibility_token": "3",
+        "attributes": [
+          "vehicle.stopped"
+        ],
+        "nuscenes_annotation_token": "776e5e704a764e53a936986b77a1da42",
+        "nuscenes_category": "vehicle.car",
+        "nuscenes_size_wlh": [
+          2.135,
+          4.956,
+          2.17
+        ]
+      }
+    },
+    {
+      "object_id": "863043f8c9204bf888f0ec77aa27ddef",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -1.4965573353767005,
+          "y": -9.60374618199313,
+          "z": 0.25437862176910375
+        },
+        "size_lwh_m": {
+          "x": 0.451,
+          "y": 0.435,
+          "z": 0.706
+        },
+        "yaw_ego_rad": 3.025677896875429
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 5,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "59395da277244841afbbaf0e8785d3a4",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.435,
+          0.451,
+          0.706
+        ]
+      }
+    },
+    {
+      "object_id": "03d01c950f044575b69137f069345db0",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -34.22802468517028,
+          "y": -13.979427881807752,
+          "z": 0.41751289562475563
+        },
+        "size_lwh_m": {
+          "x": 0.951,
+          "y": 0.767,
+          "z": 1.835
+        },
+        "yaw_ego_rad": -1.661927408137343
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "eb76725bc60a45d4bc1345fe63b737ff",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.767,
+          0.951,
+          1.835
+        ]
+      }
+    },
+    {
+      "object_id": "8705ebefeb7746468d837fb138a1a121",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -41.284412720937894,
+          "y": 28.58440997472097,
+          "z": 2.202225424803647
+        },
+        "size_lwh_m": {
+          "x": 0.704,
+          "y": 1.967,
+          "z": 0.962
+        },
+        "yaw_ego_rad": -0.0882338347784306
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "2",
+        "attributes": [],
+        "nuscenes_annotation_token": "d0b2251411744e289f2f3b8fcfb2bb9a",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.967,
+          0.704,
+          0.962
+        ]
+      }
+    },
+    {
+      "object_id": "e1e148c7bcb14072822872a4cfc8e882",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -26.335337639652735,
+          "y": 11.249534357303164,
+          "z": 1.3653744567350907
+        },
+        "size_lwh_m": {
+          "x": 0.78,
+          "y": 0.72,
+          "z": 1.812
+        },
+        "yaw_ego_rad": 0.9018914498789544
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "c97765e49b03487a83ef3c24b0c6a135",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.72,
+          0.78,
+          1.812
+        ]
+      }
+    },
+    {
+      "object_id": "16dc951205cb4f8299f5915313436d69",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -39.05059048636148,
+          "y": 39.2504843859175,
+          "z": 3.0203867042166923
+        },
+        "size_lwh_m": {
+          "x": 0.759,
+          "y": 2.06,
+          "z": 1.1
+        },
+        "yaw_ego_rad": -0.14527119473451441
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "8815efc7094c4a2296941aca133fa040",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.06,
+          0.759,
+          1.1
+        ]
+      }
+    },
+    {
+      "object_id": "eb3da8843f614a90a48ddb6ee392c0c0",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -20.803068624272147,
+          "y": 11.01471182541967,
+          "z": 1.522049023847026
+        },
+        "size_lwh_m": {
+          "x": 0.761,
+          "y": 0.69,
+          "z": 1.73
+        },
+        "yaw_ego_rad": 1.5596536850935816
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "41dfe1a7b2d246b79ee0bd1449ce419c",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.69,
+          0.761,
+          1.73
+        ]
+      }
+    },
+    {
+      "object_id": "b42629870eee45b7bb01572742e8723d",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 14.402570220621932,
+          "y": -11.440660169271045,
+          "z": 0.26151734913879465
+        },
+        "size_lwh_m": {
+          "x": 0.497,
+          "y": 0.493,
+          "z": 0.808
+        },
+        "yaw_ego_rad": 3.026934533930718
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "7679880df246487ab11c2429b320545a",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.493,
+          0.497,
+          0.808
+        ]
+      }
+    },
+    {
+      "object_id": "070412f6a4f944e6a0a9e01ac1ea1fee",
+      "category": "human.pedestrian.construction_worker",
+      "box": {
+        "center_ego_m": {
+          "x": -23.14543406361622,
+          "y": -4.689018285419447,
+          "z": 1.074127429714846
+        },
+        "size_lwh_m": {
+          "x": 0.851,
+          "y": 0.703,
+          "z": 1.76
+        },
+        "yaw_ego_rad": 1.1879308402717295
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "3",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "ecb1cd4ab7814c7a943161074bb4c4be",
+        "nuscenes_category": "human.pedestrian.construction_worker",
+        "nuscenes_size_wlh": [
+          0.703,
+          0.851,
+          1.76
+        ]
+      }
+    },
+    {
+      "object_id": "3b54d4dd46f24f91a36799f2d0ed801e",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -41.43844690672857,
+          "y": 26.869706107724227,
+          "z": 2.19391169435389
+        },
+        "size_lwh_m": {
+          "x": 0.726,
+          "y": 1.99,
+          "z": 0.921
+        },
+        "yaw_ego_rad": -0.11170851321903941
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "9ec576b7c4ec48178c3b6e252e9d81e8",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.99,
+          0.726,
+          0.921
+        ]
+      }
+    },
+    {
+      "object_id": "97535c43b47f4b4396b15a9b36e646c8",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -41.81195349104681,
+          "y": 22.87934220921336,
+          "z": 1.9552931935361724
+        },
+        "size_lwh_m": {
+          "x": 0.696,
+          "y": 1.923,
+          "z": 0.919
+        },
+        "yaw_ego_rad": -0.0768019281791523
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "800f8f6d08ef408c8a62e89cfaf85a3f",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.923,
+          0.696,
+          0.919
+        ]
+      }
+    },
+    {
+      "object_id": "71603dd1a2ba4e9daf095535e38310ac",
+      "category": "human.pedestrian.construction_worker",
+      "box": {
+        "center_ego_m": {
+          "x": -28.329465014604853,
+          "y": 6.155723119352578,
+          "z": 1.3204624918116483
+        },
+        "size_lwh_m": {
+          "x": 0.837,
+          "y": 0.775,
+          "z": 1.746
+        },
+        "yaw_ego_rad": -1.575533610155764
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "d0f10ba43a0f4a59a93436531e1673d7",
+        "nuscenes_category": "human.pedestrian.construction_worker",
+        "nuscenes_size_wlh": [
+          0.775,
+          0.837,
+          1.746
+        ]
+      }
+    },
+    {
+      "object_id": "0e6a9e35da98479c82c8a0dfed16092a",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 21.84781048099115,
+          "y": -12.350318892677041,
+          "z": 0.2302208268299622
+        },
+        "size_lwh_m": {
+          "x": 0.422,
+          "y": 0.469,
+          "z": 0.768
+        },
+        "yaw_ego_rad": 3.026934533930718
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "c2bb3e34137d452580de9b0d6e363284",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.469,
+          0.422,
+          0.768
+        ]
+      }
+    },
+    {
+      "object_id": "e37421ad87d34227b87d6adeaf6b3f60",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -24.63923492280959,
+          "y": -6.654673739511427,
+          "z": 0.4247688008577213
+        },
+        "size_lwh_m": {
+          "x": 0.644,
+          "y": 2.175,
+          "z": 1.245
+        },
+        "yaw_ego_rad": -1.7159278951978079
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "6d06b95bd1d34631beb571c76aec7047",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.175,
+          0.644,
+          1.245
+        ]
+      }
+    },
+    {
+      "object_id": "b061f2f4c7a74223ab8546a193d07bab",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -22.425036086119917,
+          "y": -6.171896198708497,
+          "z": 0.47590936888881674
+        },
+        "size_lwh_m": {
+          "x": 0.638,
+          "y": 2.326,
+          "z": 1.221
+        },
+        "yaw_ego_rad": -1.1117996279101507
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 8,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "f14f563d348546ce890b0b4189b08d8b",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.326,
+          0.638,
+          1.221
+        ]
+      }
+    },
+    {
+      "object_id": "82e693ad9227437e8c792edfcc1ed243",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -8.751035587090437,
+          "y": -0.9190493563206124,
+          "z": 0.3618418320633145
+        },
+        "size_lwh_m": {
+          "x": 0.476,
+          "y": 0.51,
+          "z": 0.739
+        },
+        "yaw_ego_rad": 2.9881358646449216
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 10,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "1006d6bf4f654dc8b7add6e3d0d18834",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.51,
+          0.476,
+          0.739
+        ]
+      }
+    },
+    {
+      "object_id": "91d424135a6344aea4b0dde64a953b19",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 18.697677282458432,
+          "y": -12.027882654797878,
+          "z": 0.28669829140421
+        },
+        "size_lwh_m": {
+          "x": 0.466,
+          "y": 0.468,
+          "z": 0.838
+        },
+        "yaw_ego_rad": 3.026934533930718
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "180fd3e7169147ef841b0baa0f9e60be",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.468,
+          0.466,
+          0.838
+        ]
+      }
+    },
+    {
+      "object_id": "01c083253f30417dbe374f84e8ba6c19",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -41.64419635989293,
+          "y": 24.89178507011699,
+          "z": 2.0367381230593224
+        },
+        "size_lwh_m": {
+          "x": 0.677,
+          "y": 1.842,
+          "z": 0.885
+        },
+        "yaw_ego_rad": -0.09425522069909537
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 6,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "39cbd1ac55a143b4873d36517866fae5",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.842,
+          0.677,
+          0.885
+        ]
+      }
+    },
+    {
+      "object_id": "f81722a685cc49eba454efbb3aec0331",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -30.60596966065979,
+          "y": 9.64734655114224,
+          "z": 1.2827344244385268
+        },
+        "size_lwh_m": {
+          "x": 0.994,
+          "y": 0.674,
+          "z": 1.757
+        },
+        "yaw_ego_rad": 3.1098725799934157
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 2,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "f8e201f114114224812c9427607b5bb3",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.674,
+          0.994,
+          1.757
+        ]
+      }
+    },
+    {
+      "object_id": "dad63b6319f2479fab3a8f5f75d6049b",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -29.754333628053857,
+          "y": -3.7969985785823126,
+          "z": 0.5517172558179334
+        },
+        "size_lwh_m": {
+          "x": 0.619,
+          "y": 1.827,
+          "z": 1.066
+        },
+        "yaw_ego_rad": -2.737259666869902
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 5,
+        "num_radar_pts": 0,
+        "visibility_token": "2",
+        "attributes": [],
+        "nuscenes_annotation_token": "59afc04cead940109b7e48a9abf11e22",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.827,
+          0.619,
+          1.066
+        ]
+      }
+    },
+    {
+      "object_id": "797a3547f5df45ea80143e1832b51362",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -14.331133439462821,
+          "y": -0.15323747141548982,
+          "z": 0.43259573574944776
+        },
+        "size_lwh_m": {
+          "x": 0.536,
+          "y": 0.499,
+          "z": 0.798
+        },
+        "yaw_ego_rad": 2.9881358646449216
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 1,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "78c6c21e574b40ca8b33949e607072d7",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.499,
+          0.536,
+          0.798
+        ]
+      }
+    },
+    {
+      "object_id": "4539b9bbc1f44d20bb5543b7daf73992",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 25.405699806109048,
+          "y": -11.798576018315686,
+          "z": 0.26748140658350533
+        },
+        "size_lwh_m": {
+          "x": 0.406,
+          "y": 0.428,
+          "z": 0.729
+        },
+        "yaw_ego_rad": 3.0011734741677705
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "dba7a76b70f2442c849e717d90b035a8",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.428,
+          0.406,
+          0.729
+        ]
+      }
+    },
+    {
+      "object_id": "aa8209a4e8b34f5ab7c489ced764ddb9",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 5.788155854811522,
+          "y": -10.554596662706132,
+          "z": 0.20748405890813149
+        },
+        "size_lwh_m": {
+          "x": 0.525,
+          "y": 0.514,
+          "z": 0.736
+        },
+        "yaw_ego_rad": 3.0296048876909527
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "2f824097b9c04f75bb0ca1ab534549df",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.514,
+          0.525,
+          0.736
+        ]
+      }
+    },
+    {
+      "object_id": "79ef17865dbf483b89e1e83d330bdef6",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -41.24670013390889,
+          "y": 20.57046536971195,
+          "z": 1.741755416413468
+        },
+        "size_lwh_m": {
+          "x": 0.647,
+          "y": 2.168,
+          "z": 1.098
+        },
+        "yaw_ego_rad": -0.10212665566018536
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "af37660747d246f4aeb434b76b0accf7",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.168,
+          0.647,
+          1.098
+        ]
+      }
+    },
+    {
+      "object_id": "a87f4eb5c4b349cc8719e44a4dc0fcba",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 32.01741467911987,
+          "y": -6.196373900872125,
+          "z": 0.40956544270162154
+        },
+        "size_lwh_m": {
+          "x": 0.566,
+          "y": 0.56,
+          "z": 0.789
+        },
+        "yaw_ego_rad": 3.013268605873641
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "30187c06ab56442ab4d957069081966d",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.56,
+          0.566,
+          0.789
+        ]
+      }
+    },
+    {
+      "object_id": "32db4d3114344adb906e29cfe82d7f16",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -18.034700342982987,
+          "y": 0.44271344402778956,
+          "z": 0.5886716708988807
+        },
+        "size_lwh_m": {
+          "x": 0.59,
+          "y": 1.991,
+          "z": 1.079
+        },
+        "yaw_ego_rad": 1.4193466665117622
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 12,
+        "num_radar_pts": 1,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "88930c4e81a74b9b945995ab4b316005",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.991,
+          0.59,
+          1.079
+        ]
+      }
+    },
+    {
+      "object_id": "4439f40da4b14807a80c6a4b5bb4f9fa",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -20.160895355265065,
+          "y": -7.07344271673371,
+          "z": 0.37201217585374113
+        },
+        "size_lwh_m": {
+          "x": 0.437,
+          "y": 0.437,
+          "z": 0.742
+        },
+        "yaw_ego_rad": 3.025677896875429
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "cb4a17e1a679435da0926094b44e3442",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.437,
+          0.437,
+          0.742
+        ]
+      }
+    },
+    {
+      "object_id": "5fd331f2791a42c2be66a8b274ff5c04",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 12.650988553363621,
+          "y": -11.244153059984534,
+          "z": 0.28785399517800103
+        },
+        "size_lwh_m": {
+          "x": 0.429,
+          "y": 0.439,
+          "z": 0.844
+        },
+        "yaw_ego_rad": 3.0296048876909527
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "69a39cabed7840e59f753bb90d5676be",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.439,
+          0.429,
+          0.844
+        ]
+      }
+    },
+    {
+      "object_id": "98c19c689d5c43cab35eba2c6dc113d9",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -51.93501171472725,
+          "y": -19.209168396404557,
+          "z": -0.71295270981627
+        },
+        "size_lwh_m": {
+          "x": 0.64,
+          "y": 1.998,
+          "z": 1.068
+        },
+        "yaw_ego_rad": 2.980020083584718
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 0,
+        "visibility_token": "2",
+        "attributes": [],
+        "nuscenes_annotation_token": "d2b4bf3f79694deaaa338f2199b39a36",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.998,
+          0.64,
+          1.068
+        ]
+      }
+    },
+    {
+      "object_id": "5547ffd07a2b4b4b8850c8d75fa5b14e",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -42.248879124433316,
+          "y": 18.862371151103204,
+          "z": 1.7708141725213797
+        },
+        "size_lwh_m": {
+          "x": 0.639,
+          "y": 1.994,
+          "z": 0.927
+        },
+        "yaw_ego_rad": -0.10961411814773082
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "dda7496f50054937b0dccbb942551f36",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.994,
+          0.639,
+          0.927
+        ]
+      }
+    },
+    {
+      "object_id": "036e926dd21d407b8cde4f91f0ebf747",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 2.445820820706645,
+          "y": -10.137636736836189,
+          "z": 0.20280004204739577
+        },
+        "size_lwh_m": {
+          "x": 0.463,
+          "y": 0.466,
+          "z": 0.785
+        },
+        "yaw_ego_rad": 3.0296048876909527
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 11,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "8e29f379c05b46f39e584fba1251854c",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.466,
+          0.463,
+          0.785
+        ]
+      }
+    },
+    {
+      "object_id": "8f886599bee54d96b8d9a6c0f1171105",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -6.024922345292515,
+          "y": -8.972021715185159,
+          "z": 0.2562587829530405
+        },
+        "size_lwh_m": {
+          "x": 0.427,
+          "y": 0.407,
+          "z": 0.723
+        },
+        "yaw_ego_rad": 3.025677896875429
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "ed32076502b24f4fb205dc1fefcbedd7",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.407,
+          0.427,
+          0.723
+        ]
+      }
+    },
+    {
+      "object_id": "9ab053c383784943b0a141777f717d31",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": 17.759102884825595,
+          "y": 16.62319992677324,
+          "z": 2.9607622405464054
+        },
+        "size_lwh_m": {
+          "x": 0.889,
+          "y": 0.8,
+          "z": 1.721
+        },
+        "yaw_ego_rad": -2.9097505568179485
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "3a4e404c4d804d16ac0d07832d9a5017",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.8,
+          0.889,
+          1.721
+        ]
+      }
+    },
+    {
+      "object_id": "8fa10277171849e0a4b3376dcc62f9fd",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 28.3197298807408,
+          "y": -5.694861890845005,
+          "z": 0.37772465697999413
+        },
+        "size_lwh_m": {
+          "x": 0.533,
+          "y": 0.555,
+          "z": 0.734
+        },
+        "yaw_ego_rad": 3.013268605873641
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "54bd83cb7f964bbb9657b8fa369edb4e",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.555,
+          0.533,
+          0.734
+        ]
+      }
+    },
+    {
+      "object_id": "9c862884c821410299394775c1a19395",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": 18.650777263139442,
+          "y": 17.059448348729656,
+          "z": 2.963024407446023
+        },
+        "size_lwh_m": {
+          "x": 0.884,
+          "y": 0.784,
+          "z": 1.693
+        },
+        "yaw_ego_rad": -2.578137998939026
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 5,
+        "num_radar_pts": 0,
+        "visibility_token": "3",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "1b2c344e543b415d9fb3244821c4a118",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.784,
+          0.884,
+          1.693
+        ]
+      }
+    },
+    {
+      "object_id": "f11f865bc5c74e52ab78218e45b8b40a",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 11.539690380215264,
+          "y": -3.44029783914406,
+          "z": 0.36016625221404774
+        },
+        "size_lwh_m": {
+          "x": 0.497,
+          "y": 0.524,
+          "z": 0.72
+        },
+        "yaw_ego_rad": 2.993790731412021
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 5,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "8a5870d491ab40b4bf8066f796c97aec",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.524,
+          0.497,
+          0.72
+        ]
+      }
+    },
+    {
+      "object_id": "42641eb6adcb4f8f8def8ef129d9e843",
+      "category": "vehicle.car",
+      "box": {
+        "center_ego_m": {
+          "x": -62.62485994393803,
+          "y": 7.98650166186709,
+          "z": 0.9688980320934659
+        },
+        "size_lwh_m": {
+          "x": 4.819,
+          "y": 1.939,
+          "z": 1.736
+        },
+        "yaw_ego_rad": -0.13006937694481266
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 3,
+        "visibility_token": "4",
+        "attributes": [
+          "vehicle.stopped"
+        ],
+        "nuscenes_annotation_token": "dc2bf1f81b884d95aea398e9526da3b3",
+        "nuscenes_category": "vehicle.car",
+        "nuscenes_size_wlh": [
+          1.939,
+          4.819,
+          1.736
+        ]
+      }
+    },
+    {
+      "object_id": "e3c5b72c12c34c85aac247734ad83bef",
+      "category": "vehicle.construction",
+      "box": {
+        "center_ego_m": {
+          "x": -21.606583758552155,
+          "y": -0.7187002214467904,
+          "z": 1.5500520135474332
+        },
+        "size_lwh_m": {
+          "x": 3.992,
+          "y": 3.016,
+          "z": 2.916
+        },
+        "yaw_ego_rad": 3.0079628049510885
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 82,
+        "num_radar_pts": 4,
+        "visibility_token": "4",
+        "attributes": [
+          "vehicle.stopped"
+        ],
+        "nuscenes_annotation_token": "de0b8adcd30c4ea98bdc8b5d865ad5a5",
+        "nuscenes_category": "vehicle.construction",
+        "nuscenes_size_wlh": [
+          3.016,
+          3.992,
+          2.916
+        ]
+      }
+    },
+    {
+      "object_id": "7ba3f4fee7b44e85986fe47846a67cf5",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -53.874049079662456,
+          "y": 9.434214284063092,
+          "z": 1.224323914123085
+        },
+        "size_lwh_m": {
+          "x": 0.716,
+          "y": 0.687,
+          "z": 1.73
+        },
+        "yaw_ego_rad": -1.566388084874986
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "c0d70667a60d4da1ac9674f2f90721c8",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.687,
+          0.716,
+          1.73
+        ]
+      }
+    },
+    {
+      "object_id": "95fc384cb4994ffe9a5caf914274ab22",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -34.83338845192601,
+          "y": -13.963341947448884,
+          "z": 0.5297490422757962
+        },
+        "size_lwh_m": {
+          "x": 0.858,
+          "y": 0.728,
+          "z": 2.0
+        },
+        "yaw_ego_rad": -1.679380700657287
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "8b3325e94ec74b308672a3ed58f43ab7",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.728,
+          0.858,
+          2.0
+        ]
+      }
+    },
+    {
+      "object_id": "c1958768d48640948f6053d04cffd35b",
+      "category": "vehicle.car",
+      "box": {
+        "center_ego_m": {
+          "x": 8.165544040551781,
+          "y": 4.019307881662861,
+          "z": 1.4682258032489781
+        },
+        "size_lwh_m": {
+          "x": 4.727,
+          "y": 1.907,
+          "z": 1.957
+        },
+        "yaw_ego_rad": 1.0319010258592771
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 602,
+        "num_radar_pts": 2,
+        "visibility_token": "4",
+        "attributes": [
+          "vehicle.moving"
+        ],
+        "nuscenes_annotation_token": "d02856dbe859476f9635f449d23aa211",
+        "nuscenes_category": "vehicle.car",
+        "nuscenes_size_wlh": [
+          1.907,
+          4.727,
+          1.957
+        ]
+      }
+    },
+    {
+      "object_id": "a3d0b60656064b6397942ee9c81d47a2",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -26.02119834624299,
+          "y": 1.5639682202578782,
+          "z": 0.6284632617753075
+        },
+        "size_lwh_m": {
+          "x": 0.693,
+          "y": 2.025,
+          "z": 1.046
+        },
+        "yaw_ego_rad": 1.4178980432281498
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 1,
+        "visibility_token": "2",
+        "attributes": [],
+        "nuscenes_annotation_token": "0da45ffbcee1420ca86f2b54b58a07ac",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.025,
+          0.693,
+          1.046
+        ]
+      }
+    },
+    {
+      "object_id": "4b77b9d062f547a5a3cfe21ac661ea9a",
+      "category": "vehicle.truck",
+      "box": {
+        "center_ego_m": {
+          "x": -15.416533042807057,
+          "y": -12.950151568544339,
+          "z": 1.5070510823146384
+        },
+        "size_lwh_m": {
+          "x": 10.107,
+          "y": 2.853,
+          "z": 3.608
+        },
+        "yaw_ego_rad": 3.025416097471032
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 418,
+        "num_radar_pts": 10,
+        "visibility_token": "4",
+        "attributes": [
+          "vehicle.stopped"
+        ],
+        "nuscenes_annotation_token": "9478f5f953b74a8e9ef2b0b41622f276",
+        "nuscenes_category": "vehicle.truck",
+        "nuscenes_size_wlh": [
+          2.853,
+          10.107,
+          3.608
+        ]
+      }
+    },
+    {
+      "object_id": "a0049f95375044b8987fbcca8fda1e2b",
+      "category": "vehicle.car",
+      "box": {
+        "center_ego_m": {
+          "x": -24.307779721053244,
+          "y": -11.524352325228854,
+          "z": 0.624350666353851
+        },
+        "size_lwh_m": {
+          "x": 4.272,
+          "y": 1.706,
+          "z": 1.65
+        },
+        "yaw_ego_rad": 3.0079628049510885
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 10,
+        "num_radar_pts": 0,
+        "visibility_token": "3",
+        "attributes": [
+          "vehicle.stopped"
+        ],
+        "nuscenes_annotation_token": "fe49a31e0eef4200851531c1426672ee",
+        "nuscenes_category": "vehicle.car",
+        "nuscenes_size_wlh": [
+          1.706,
+          4.272,
+          1.65
+        ]
+      }
+    },
+    {
+      "object_id": "61dd7d03d7ad466d89f901ed64e2c0dd",
+      "category": "vehicle.car",
+      "box": {
+        "center_ego_m": {
+          "x": -16.379515142998542,
+          "y": -9.186175185380792,
+          "z": 0.6723240241102016
+        },
+        "size_lwh_m": {
+          "x": 4.663,
+          "y": 1.745,
+          "z": 1.482
+        },
+        "yaw_ego_rad": 3.0079628049510885
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 65,
+        "num_radar_pts": 1,
+        "visibility_token": "4",
+        "attributes": [
+          "vehicle.stopped"
+        ],
+        "nuscenes_annotation_token": "523a7b26730a474b9314e06ab40abba9",
+        "nuscenes_category": "vehicle.car",
+        "nuscenes_size_wlh": [
+          1.745,
+          4.663,
+          1.482
+        ]
+      }
+    },
+    {
+      "object_id": "26d807159cd749e89ee6624b5e4f835f",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -3.8001637114064954,
+          "y": -1.6082429654886718,
+          "z": 0.3450537516689889
+        },
+        "size_lwh_m": {
+          "x": 0.499,
+          "y": 0.492,
+          "z": 0.789
+        },
+        "yaw_ego_rad": 3.0431137360885945
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 21,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "a798dd4ca4c44c9a9496b9a3ca12167b",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.492,
+          0.499,
+          0.789
+        ]
+      }
+    },
+    {
+      "object_id": "e59d97d4403a48b88fbb6a58fc9959e6",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": -25.672633342555518,
+          "y": 10.87891054707119,
+          "z": 1.3510564297118428
+        },
+        "size_lwh_m": {
+          "x": 0.936,
+          "y": 0.749,
+          "z": 1.856
+        },
+        "yaw_ego_rad": 0.930043610713186
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "d67dfdc42ad44fc8ada0211f1a187913",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.749,
+          0.936,
+          1.856
+        ]
+      }
+    },
+    {
+      "object_id": "4e5e612885cd4b4289126c391d894d28",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -22.039121945678083,
+          "y": 1.0658192274046647,
+          "z": 0.6281154358213309
+        },
+        "size_lwh_m": {
+          "x": 0.675,
+          "y": 1.981,
+          "z": 1.078
+        },
+        "yaw_ego_rad": 1.4193466665117622
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 4,
+        "num_radar_pts": 1,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "a9e2ff6089474bf084a19621861f6723",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.981,
+          0.675,
+          1.078
+        ]
+      }
+    },
+    {
+      "object_id": "acc1b985c3b746cdbb22fc59bb41b774",
+      "category": "human.pedestrian.construction_worker",
+      "box": {
+        "center_ego_m": {
+          "x": -28.991800562776767,
+          "y": -0.4440719145945593,
+          "z": 1.0113813835012082
+        },
+        "size_lwh_m": {
+          "x": 0.718,
+          "y": 0.595,
+          "z": 1.76
+        },
+        "yaw_ego_rad": 1.7457930498054335
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "f9bcc32a765545ce994367d32b95beca",
+        "nuscenes_category": "human.pedestrian.construction_worker",
+        "nuscenes_size_wlh": [
+          0.595,
+          0.718,
+          1.76
+        ]
+      }
+    },
+    {
+      "object_id": "db5d2c1232154b5f83270c510d227720",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -52.26456098350033,
+          "y": -21.404315004662056,
+          "z": -0.4866726892500349
+        },
+        "size_lwh_m": {
+          "x": 0.667,
+          "y": 2.219,
+          "z": 1.169
+        },
+        "yaw_ego_rad": 2.9974733761046615
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "30de3f0a4e6c4b3cac8618b9c2d4db5f",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.219,
+          0.667,
+          1.169
+        ]
+      }
+    },
+    {
+      "object_id": "f8fe56a047cd40adb42c7d67d26af28d",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -20.006204059515213,
+          "y": 0.767040265441846,
+          "z": 0.6303515054847777
+        },
+        "size_lwh_m": {
+          "x": 0.626,
+          "y": 1.974,
+          "z": 1.054
+        },
+        "yaw_ego_rad": 1.4193466665117622
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 4,
+        "num_radar_pts": 1,
+        "visibility_token": "2",
+        "attributes": [],
+        "nuscenes_annotation_token": "9103f82eba054c989e900f3a90f06d7d",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          1.974,
+          0.626,
+          1.054
+        ]
+      }
+    },
+    {
+      "object_id": "f701357e9a3d43f485bdb25cdb643318",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 17.425025654321608,
+          "y": -11.891452343851459,
+          "z": 0.270493241092737
+        },
+        "size_lwh_m": {
+          "x": 0.509,
+          "y": 0.489,
+          "z": 0.767
+        },
+        "yaw_ego_rad": 3.011226570662769
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "3d3d30e907c84fc0901e75f1312f4352",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.489,
+          0.509,
+          0.767
+        ]
+      }
+    },
+    {
+      "object_id": "1866c60ae91e43f09154bb56cda1cce5",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -41.50043364532433,
+          "y": 18.47124480483654,
+          "z": 1.6221045694102163
+        },
+        "size_lwh_m": {
+          "x": 0.666,
+          "y": 2.03,
+          "z": 1.15
+        },
+        "yaw_ego_rad": -0.13703324070007158
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "b0df8bacd970423396d27146cba31c37",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.03,
+          0.666,
+          1.15
+        ]
+      }
+    },
+    {
+      "object_id": "6f6da3251c4c4398b45e47aeb030682b",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -24.05764048977502,
+          "y": 1.2881445579416075,
+          "z": 0.6131710543163804
+        },
+        "size_lwh_m": {
+          "x": 0.677,
+          "y": 2.086,
+          "z": 1.091
+        },
+        "yaw_ego_rad": 1.464445974381248
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 1,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "c0431403715346be80e814aa096518df",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.086,
+          0.677,
+          1.091
+        ]
+      }
+    },
+    {
+      "object_id": "b43aaf61de5d48c3883291610b4dd555",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -15.51870140797678,
+          "y": -7.776112468340596,
+          "z": 0.30356821383578503
+        },
+        "size_lwh_m": {
+          "x": 0.424,
+          "y": 0.393,
+          "z": 0.734
+        },
+        "yaw_ego_rad": 3.025677896875429
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "be90fbcfa4304675a43cad41ac28f7f5",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.393,
+          0.424,
+          0.734
+        ]
+      }
+    },
+    {
+      "object_id": "9e6d680cd81942f5acdfbb07254f8f45",
+      "category": "human.pedestrian.construction_worker",
+      "box": {
+        "center_ego_m": {
+          "x": -21.993752303793052,
+          "y": -4.123044764186266,
+          "z": 0.9321517368885407
+        },
+        "size_lwh_m": {
+          "x": 0.829,
+          "y": 0.759,
+          "z": 1.78
+        },
+        "yaw_ego_rad": -2.9231023256242383
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 9,
+        "num_radar_pts": 1,
+        "visibility_token": "4",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "41cae8597c9140c1a6427bcd7c835e44",
+        "nuscenes_category": "human.pedestrian.construction_worker",
+        "nuscenes_size_wlh": [
+          0.759,
+          0.829,
+          1.78
+        ]
+      }
+    },
+    {
+      "object_id": "36f5c9f6981d4fbf8362a73577bbdcfe",
+      "category": "movable_object.barrier",
+      "box": {
+        "center_ego_m": {
+          "x": -28.042062925555474,
+          "y": 1.6702121930773157,
+          "z": 0.6357138010678406
+        },
+        "size_lwh_m": {
+          "x": 0.613,
+          "y": 2.056,
+          "z": 1.181
+        },
+        "yaw_ego_rad": 1.7952731340967725
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "a46d3edadcd64b6399ee22dc0481c9a0",
+        "nuscenes_category": "movable_object.barrier",
+        "nuscenes_size_wlh": [
+          2.056,
+          0.613,
+          1.181
+        ]
+      }
+    },
+    {
+      "object_id": "203a688b840844b8ae16a2b07967ffad",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": 2.3949384216528937,
+          "y": 11.692491064876522,
+          "z": 2.3510619307273086
+        },
+        "size_lwh_m": {
+          "x": 0.909,
+          "y": 0.791,
+          "z": 1.78
+        },
+        "yaw_ego_rad": 1.3165991334491074
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "3",
+        "attributes": [
+          "pedestrian.standing"
+        ],
+        "nuscenes_annotation_token": "c2ac0cc002374d0796a1c1d1c1896a19",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.791,
+          0.909,
+          1.78
+        ]
+      }
+    },
+    {
+      "object_id": "15c72d99133e41dc98d0c16c32d24f2e",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 11.208227135754907,
+          "y": -11.144285010445088,
+          "z": 0.25519110276463797
+        },
+        "size_lwh_m": {
+          "x": 0.465,
+          "y": 0.478,
+          "z": 0.766
+        },
+        "yaw_ego_rad": 3.0296048876909527
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "0914d8f3d495486fa1b3834ffac275c3",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.478,
+          0.465,
+          0.766
+        ]
+      }
+    },
+    {
+      "object_id": "e859e74adc6740d0be67c9e23ed03dc8",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": 58.540435938239675,
+          "y": 9.898211419755846,
+          "z": 3.8151760553968677
+        },
+        "size_lwh_m": {
+          "x": 1.038,
+          "y": 0.861,
+          "z": 1.541
+        },
+        "yaw_ego_rad": 2.562132875151687
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "266babcc76494410bbe821acac624eed",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.861,
+          1.038,
+          1.541
+        ]
+      }
+    },
+    {
+      "object_id": "be4d4a2f77b84dedbdd11c0a430db35f",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -10.996756402392732,
+          "y": -8.391524001029884,
+          "z": 0.29243215049086146
+        },
+        "size_lwh_m": {
+          "x": 0.451,
+          "y": 0.392,
+          "z": 0.69
+        },
+        "yaw_ego_rad": -2.5593757095064253
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 3,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "a9b11207e6c54c82aa96c1637c8d38a0",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.392,
+          0.451,
+          0.69
+        ]
+      }
+    },
+    {
+      "object_id": "4192e942d0da4211a692a7c806bc5bfe",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": 4.570648175047613,
+          "y": 14.228212081051248,
+          "z": 2.5137671768402057
+        },
+        "size_lwh_m": {
+          "x": 0.917,
+          "y": 0.822,
+          "z": 1.849
+        },
+        "yaw_ego_rad": -2.9572816901358734
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 11,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "757841c927f848629961573befe1e267",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.822,
+          0.917,
+          1.849
+        ]
+      }
+    },
+    {
+      "object_id": "b8177b00f30c4fb8b98dfd7354cda6d1",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 19.93090845524229,
+          "y": -12.151421942449497,
+          "z": 0.28014704108987903
+        },
+        "size_lwh_m": {
+          "x": 0.482,
+          "y": 0.496,
+          "z": 0.825
+        },
+        "yaw_ego_rad": 3.026934533930718
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "6f56e4e3e5c94040a782f3d2f8cdc82c",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.496,
+          0.482,
+          0.825
+        ]
+      }
+    },
+    {
+      "object_id": "d6c0208ab4474db088d24a36d6daa54c",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 8.248718464084904,
+          "y": -10.803940964519606,
+          "z": 0.20722911038244016
+        },
+        "size_lwh_m": {
+          "x": 0.481,
+          "y": 0.477,
+          "z": 0.706
+        },
+        "yaw_ego_rad": 3.0296048876909527
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "40aa5d539b64470fb6ed7b4e9666fbaa",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.477,
+          0.481,
+          0.706
+        ]
+      }
+    },
+    {
+      "object_id": "6dc52da189624a1fa4cc0ce3caf3ddd2",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 24.20090542022901,
+          "y": -12.247824377328369,
+          "z": 0.3086687793624887
+        },
+        "size_lwh_m": {
+          "x": 0.451,
+          "y": 0.485,
+          "z": 0.87
+        },
+        "yaw_ego_rad": 3.0011734741677705
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "3",
+        "attributes": [],
+        "nuscenes_annotation_token": "6c879694d2684d6591406bfd90065ba5",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.485,
+          0.451,
+          0.87
+        ]
+      }
+    },
+    {
+      "object_id": "3377938bacc3493d87cf5a91d961de56",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": 8.697264778553208,
+          "y": 11.445694265764267,
+          "z": 2.099877076352005
+        },
+        "size_lwh_m": {
+          "x": 0.922,
+          "y": 0.838,
+          "z": 1.812
+        },
+        "yaw_ego_rad": -2.2607379216986723
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 8,
+        "num_radar_pts": 0,
+        "visibility_token": "3",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "c01e9fd6cb844ee1a6e5dae7cba0f064",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.838,
+          0.922,
+          1.812
+        ]
+      }
+    },
+    {
+      "object_id": "27a7104589f44c4191311477ef673845",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -75.05058561263016,
+          "y": 5.231594623574141,
+          "z": 0.6762842648680857
+        },
+        "size_lwh_m": {
+          "x": 0.447,
+          "y": 0.48,
+          "z": 0.775
+        },
+        "yaw_ego_rad": -0.1251824551390241
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 0,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [],
+        "nuscenes_annotation_token": "d5629730a2b14f97b112ea86f31e9bd3",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.48,
+          0.447,
+          0.775
+        ]
+      }
+    },
+    {
+      "object_id": "12c1f51f9c284f3ea74dbdef151cf24b",
+      "category": "vehicle.bicycle",
+      "box": {
+        "center_ego_m": {
+          "x": 16.350009056101875,
+          "y": 2.1562110118899858,
+          "z": 1.0767050974372172
+        },
+        "size_lwh_m": {
+          "x": 1.791,
+          "y": 0.458,
+          "z": 1.167
+        },
+        "yaw_ego_rad": -1.765406714665169
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 7,
+        "num_radar_pts": 0,
+        "visibility_token": "2",
+        "attributes": [
+          "cycle.without_rider"
+        ],
+        "nuscenes_annotation_token": "8609ae4bb6154cdb9e701903e9942952",
+        "nuscenes_category": "vehicle.bicycle",
+        "nuscenes_size_wlh": [
+          0.458,
+          1.791,
+          1.167
+        ]
+      }
+    },
+    {
+      "object_id": "2f33b1c171e243d3b211f14e5bda7af1",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": -78.5623388492829,
+          "y": 6.1119438373864,
+          "z": 0.20259188937653677
+        },
+        "size_lwh_m": {
+          "x": 0.606,
+          "y": 0.586,
+          "z": 0.858
+        },
+        "yaw_ego_rad": -0.15021047651139402
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "d0e12fcc614d465f9eaa14044111232c",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.586,
+          0.606,
+          0.858
+        ]
+      }
+    },
+    {
+      "object_id": "04485e189d4f40188b03da9ecbc36cd3",
+      "category": "human.pedestrian.adult",
+      "box": {
+        "center_ego_m": {
+          "x": 10.612243892575655,
+          "y": 14.619864321962659,
+          "z": 2.5814997992288493
+        },
+        "size_lwh_m": {
+          "x": 0.989,
+          "y": 0.886,
+          "z": 1.95
+        },
+        "yaw_ego_rad": -2.1702836415893
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 2,
+        "num_radar_pts": 0,
+        "visibility_token": "1",
+        "attributes": [
+          "pedestrian.moving"
+        ],
+        "nuscenes_annotation_token": "847c3d270e6f4fc3ae51ef6354f051cb",
+        "nuscenes_category": "human.pedestrian.adult",
+        "nuscenes_size_wlh": [
+          0.886,
+          0.989,
+          1.95
+        ]
+      }
+    },
+    {
+      "object_id": "e045fa4da9e64d759fb780b20c707b3e",
+      "category": "movable_object.trafficcone",
+      "box": {
+        "center_ego_m": {
+          "x": 37.0678071358334,
+          "y": -6.830074425266032,
+          "z": 0.40350916056211805
+        },
+        "size_lwh_m": {
+          "x": 0.578,
+          "y": 0.582,
+          "z": 0.844
+        },
+        "yaw_ego_rad": 2.9810323746091134
+      },
+      "source": "nuscenes_gt",
+      "velocity_ego_mps": null,
+      "confidence": null,
+      "attributes": {
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0,
+        "visibility_token": "4",
+        "attributes": [],
+        "nuscenes_annotation_token": "06615b130d4a4f949231a857952783ac",
+        "nuscenes_category": "movable_object.trafficcone",
+        "nuscenes_size_wlh": [
+          0.582,
+          0.578,
+          0.844
+        ]
+      }
+    }
+  ],
+  "map_layers": [
+    {
+      "source": "hd_map:nuscenes",
+      "drivable_areas": [
+        {
+          "element_id": "c3e28556-b711-4581-9970-b66166fb907d:1:0",
+          "exterior_ego_m": [
+            {
+              "x": -65.29253472860319,
+              "y": -59.02265057995741,
+              "z": 0.0
+            },
+            {
+              "x": -61.13300457644206,
+              "y": -59.45674837119062,
+              "z": 0.0
+            },
+            {
+              "x": -59.26958509926826,
+              "y": -58.909345141699674,
+              "z": 0.0
+            },
+            {
+              "x": -57.71556113752133,
+              "y": -57.92932703370248,
+              "z": 0.0
+            },
+            {
+              "x": -56.9401827988276,
+              "y": -56.77987223268907,
+              "z": 0.0
+            },
+            {
+              "x": -53.191741692830156,
+              "y": -26.82817574708749,
+              "z": 0.0
+            },
+            {
+              "x": -52.99773634601283,
+              "y": -24.205330234274648,
+              "z": 0.0
+            },
+            {
+              "x": -53.791874036261405,
+              "y": -19.00927146401189,
+              "z": 0.0
+            },
+            {
+              "x": -56.131329824987695,
+              "y": -14.726909940991572,
+              "z": 0.0
+            },
+            {
+              "x": -59.586989171623244,
+              "y": -11.312370740524115,
+              "z": 0.0
+            },
+            {
+              "x": -62.216498899126414,
+              "y": -9.729049134234232,
+              "z": 0.0
+            },
+            {
+              "x": -65.94574060896768,
+              "y": -8.576741502176848,
+              "z": 0.0
+            },
+            {
+              "x": -81.28507251551873,
+              "y": -6.358447106255336,
+              "z": 0.0
+            },
+            {
+              "x": -83.31482135568216,
+              "y": 0.8739364906897895,
+              "z": 0.0
+            },
+            {
+              "x": -62.53694955001906,
+              "y": -1.8860518995917412,
+              "z": 0.0
+            },
+            {
+              "x": -57.93496364490054,
+              "y": -2.2985324289347546,
+              "z": 0.0
+            },
+            {
+              "x": -57.51580517859001,
+              "y": -1.7218575048767508,
+              "z": 0.0
+            },
+            {
+              "x": -57.92930977243899,
+              "y": -1.2967412202185369,
+              "z": 0.0
+            },
+            {
+              "x": -59.0020616696193,
+              "y": -1.128298692824138,
+              "z": 0.0
+            },
+            {
+              "x": -83.6572910734096,
+              "y": 2.0942216412126533,
+              "z": 0.0
+            },
+            {
+              "x": -87.60452027174516,
+              "y": 16.158954746381767,
+              "z": 0.0
+            },
+            {
+              "x": -73.35964219063506,
+              "y": 14.065960260597116,
+              "z": 0.0
+            },
+            {
+              "x": -67.32407714239197,
+              "y": 13.645142406696582,
+              "z": 0.0
+            },
+            {
+              "x": -64.30592926575596,
+              "y": 13.906571156180174,
+              "z": 0.0
+            },
+            {
+              "x": -60.05252170802274,
+              "y": 15.1029148309034,
+              "z": 0.0
+            },
+            {
+              "x": -54.76585847660235,
+              "y": 18.165317323931188,
+              "z": 0.0
+            },
+            {
+              "x": -53.30205123428039,
+              "y": 19.495817877565703,
+              "z": 0.0
+            },
+            {
+              "x": -50.7440872723768,
+              "y": 22.60624160966072,
+              "z": 0.0
+            },
+            {
+              "x": -49.688277877224756,
+              "y": 24.522782527884733,
+              "z": 0.0
+            },
+            {
+              "x": -47.74276144258967,
+              "y": 30.02855027646044,
+              "z": 0.0
+            },
+            {
+              "x": -44.68484767422907,
+              "y": 52.09622866447768,
+              "z": 0.0
+            },
+            {
+              "x": -43.606889265288274,
+              "y": 56.41297194658563,
+              "z": 0.0
+            },
+            {
+              "x": -41.72913508117746,
+              "y": 71.31539566045939,
+              "z": 0.0
+            },
+            {
+              "x": -35.64846953570786,
+              "y": 73.01514324662446,
+              "z": 0.0
+            },
+            {
+              "x": -42.335210853225654,
+              "y": 20.797365473740925,
+              "z": 0.0
+            },
+            {
+              "x": -43.164376008794,
+              "y": 13.466511403691374,
+              "z": 0.0
+            },
+            {
+              "x": -43.22688315515947,
+              "y": 12.174990419547749,
+              "z": 0.0
+            },
+            {
+              "x": -42.846535444728985,
+              "y": 12.275038371951226,
+              "z": 0.0
+            },
+            {
+              "x": -42.42991277648082,
+              "y": 12.909938158592006,
+              "z": 0.0
+            },
+            {
+              "x": -42.09253632430923,
+              "y": 14.83614531639382,
+              "z": 0.0
+            },
+            {
+              "x": -34.56386615021102,
+              "y": 73.3183258460717,
+              "z": 0.0
+            },
+            {
+              "x": -23.87425287855308,
+              "y": 76.30642710236856,
+              "z": 0.0
+            },
+            {
+              "x": -23.471516053048948,
+              "y": 56.78914546697701,
+              "z": 0.0
+            },
+            {
+              "x": -27.177908342547248,
+              "y": 29.008476318917488,
+              "z": 0.0
+            },
+            {
+              "x": -27.73206197702153,
+              "y": 23.29927329905626,
+              "z": 0.0
+            },
+            {
+              "x": -27.63200694487601,
+              "y": 20.910153638571856,
+              "z": 0.0
+            },
+            {
+              "x": -27.132350399558955,
+              "y": 18.169348895261177,
+              "z": 0.0
+            },
+            {
+              "x": -25.874644771843776,
+              "y": 14.62600126933366,
+              "z": 0.0
+            },
+            {
+              "x": -22.99636743182609,
+              "y": 10.133027506396513,
+              "z": 0.0
+            },
+            {
+              "x": -20.741447587500122,
+              "y": 7.682483833605534,
+              "z": 0.0
+            },
+            {
+              "x": -17.306311474713766,
+              "y": 5.449162333767777,
+              "z": 0.0
+            },
+            {
+              "x": -14.990912031494585,
+              "y": 4.324274682288538,
+              "z": 0.0
+            },
+            {
+              "x": -11.920992732913374,
+              "y": 3.347679687219909,
+              "z": 0.0
+            },
+            {
+              "x": 2.6777306446523843,
+              "y": 1.3857667920853731,
+              "z": 0.0
+            },
+            {
+              "x": 4.360645542589892,
+              "y": 2.469866966902441,
+              "z": 0.0
+            },
+            {
+              "x": 5.702050612676336,
+              "y": 4.07842227391343,
+              "z": 0.0
+            },
+            {
+              "x": 6.479782944340201,
+              "y": 5.900594128062628,
+              "z": 0.0
+            },
+            {
+              "x": 6.889389128459344,
+              "y": 9.479036850236485,
+              "z": 0.0
+            },
+            {
+              "x": 7.392839248587277,
+              "y": 11.075975260292442,
+              "z": 0.0
+            },
+            {
+              "x": 8.529497906956925,
+              "y": 13.034312359631924,
+              "z": 0.0
+            },
+            {
+              "x": 9.986973149598775,
+              "y": 14.250353641374423,
+              "z": 0.0
+            },
+            {
+              "x": 18.457400997582887,
+              "y": 16.279131444315254,
+              "z": 0.0
+            },
+            {
+              "x": 28.419503649593487,
+              "y": 17.12955715067918,
+              "z": 0.0
+            },
+            {
+              "x": 36.53271889599167,
+              "y": 16.57631246073501,
+              "z": 0.0
+            },
+            {
+              "x": 41.43801197397883,
+              "y": 15.636295230345102,
+              "z": 0.0
+            },
+            {
+              "x": 54.33025680581584,
+              "y": 11.47323137870022,
+              "z": 0.0
+            },
+            {
+              "x": 58.28999715125407,
+              "y": 9.324097237953024,
+              "z": 0.0
+            },
+            {
+              "x": 60.849829993227885,
+              "y": 7.039687533070624,
+              "z": 0.0
+            },
+            {
+              "x": 61.61930970869264,
+              "y": 5.991258472018543,
+              "z": 0.0
+            },
+            {
+              "x": 62.19203510659604,
+              "y": 3.6900507891949434,
+              "z": 0.0
+            },
+            {
+              "x": 61.57069738335247,
+              "y": -3.9697970140851986,
+              "z": 0.0
+            },
+            {
+              "x": 62.41956236757228,
+              "y": -5.587613436929845,
+              "z": 0.0
+            },
+            {
+              "x": 63.1538978160663,
+              "y": -6.120005206466606,
+              "z": 0.0
+            },
+            {
+              "x": 64.1227061367211,
+              "y": -6.564297169872345,
+              "z": 0.0
+            },
+            {
+              "x": 77.17918452153964,
+              "y": -8.085314698543883,
+              "z": 0.0
+            },
+            {
+              "x": 81.52506160533605,
+              "y": -7.739392285691961,
+              "z": 0.0
+            },
+            {
+              "x": 84.948437643893,
+              "y": -6.694823988084464,
+              "z": 0.0
+            },
+            {
+              "x": 87.7813093201055,
+              "y": -16.788887961851902,
+              "z": 0.0
+            },
+            {
+              "x": -28.34708890037385,
+              "y": -1.762799835948792,
+              "z": 0.0
+            },
+            {
+              "x": -29.14843698882623,
+              "y": -1.994434038633181,
+              "z": 0.0
+            },
+            {
+              "x": -29.270474824707815,
+              "y": -2.4277991591769505,
+              "z": 0.0
+            },
+            {
+              "x": -28.95595150009456,
+              "y": -2.917431413726339,
+              "z": 0.0
+            },
+            {
+              "x": 11.829344544518785,
+              "y": -8.011470366393075,
+              "z": 0.0
+            },
+            {
+              "x": 39.55968581160518,
+              "y": -14.677570256257772,
+              "z": 0.0
+            },
+            {
+              "x": 89.03130704947782,
+              "y": -21.242869112250357,
+              "z": 0.0
+            },
+            {
+              "x": 91.14081285973545,
+              "y": -28.759442058556058,
+              "z": 0.0
+            },
+            {
+              "x": 6.225726827850056,
+              "y": -17.577783923013623,
+              "z": 0.0
+            },
+            {
+              "x": -23.702331092783275,
+              "y": -13.911906989290625,
+              "z": 0.0
+            },
+            {
+              "x": -27.7267643570985,
+              "y": -13.921506272955163,
+              "z": 0.0
+            },
+            {
+              "x": -29.816689983225505,
+              "y": -14.263541757811621,
+              "z": 0.0
+            },
+            {
+              "x": -32.76867046439348,
+              "y": -15.39855676685928,
+              "z": 0.0
+            },
+            {
+              "x": -36.14423375990731,
+              "y": -17.73965435239256,
+              "z": 0.0
+            },
+            {
+              "x": -37.97934884750617,
+              "y": -19.612918686259267,
+              "z": 0.0
+            },
+            {
+              "x": -39.28005808431781,
+              "y": -21.89584999243407,
+              "z": 0.0
+            },
+            {
+              "x": -40.57488494606247,
+              "y": -25.558329056853825,
+              "z": 0.0
+            },
+            {
+              "x": -44.41709484600224,
+              "y": -55.90851684526475,
+              "z": 0.0
+            },
+            {
+              "x": -44.3718622550693,
+              "y": -58.08248321346222,
+              "z": 0.0
+            },
+            {
+              "x": -43.510566184493264,
+              "y": -59.8537376642543,
+              "z": 0.0
+            },
+            {
+              "x": -41.03808395311056,
+              "y": -61.87621351746114,
+              "z": 0.0
+            },
+            {
+              "x": -36.01084624852453,
+              "y": -62.741343008832814,
+              "z": 0.0
+            },
+            {
+              "x": -35.78108355920886,
+              "y": -69.55512257988384,
+              "z": 0.0
+            },
+            {
+              "x": -40.710021628385405,
+              "y": -68.94200265324872,
+              "z": 0.0
+            },
+            {
+              "x": -42.42818500385669,
+              "y": -69.11235246680216,
+              "z": 0.0
+            },
+            {
+              "x": -45.047045289631065,
+              "y": -70.84377534593114,
+              "z": 0.0
+            },
+            {
+              "x": -45.991218997830686,
+              "y": -71.78022574240933,
+              "z": 0.0
+            },
+            {
+              "x": -46.520922792903704,
+              "y": -73.0448037661414,
+              "z": 0.0
+            },
+            {
+              "x": -48.27680023338904,
+              "y": -88.2511128796845,
+              "z": 0.0
+            },
+            {
+              "x": -47.89069169026053,
+              "y": -90.02658306765308,
+              "z": 0.0
+            },
+            {
+              "x": -46.642203692268275,
+              "y": -92.51694977076318,
+              "z": 0.0
+            },
+            {
+              "x": -43.07688743660156,
+              "y": -93.41136305727547,
+              "z": 0.0
+            },
+            {
+              "x": -43.23103183954933,
+              "y": -95.06457863456336,
+              "z": 0.0
+            },
+            {
+              "x": -55.43271274713051,
+              "y": -98.47535291818923,
+              "z": 0.0
+            },
+            {
+              "x": -60.36835133606792,
+              "y": -80.88872797980208,
+              "z": 0.0
+            },
+            {
+              "x": -59.61579090804951,
+              "y": -79.51532713515641,
+              "z": 0.0
+            },
+            {
+              "x": -58.85656846298874,
+              "y": -73.38166838091232,
+              "z": 0.0
+            },
+            {
+              "x": -59.733390935732096,
+              "y": -71.81464470653991,
+              "z": 0.0
+            },
+            {
+              "x": -61.33636958608999,
+              "y": -70.21993546278632,
+              "z": 0.0
+            },
+            {
+              "x": -63.720068980044616,
+              "y": -68.94591651947526,
+              "z": 0.0
+            },
+            {
+              "x": -66.54134880130191,
+              "y": -58.89315654351154,
+              "z": 0.0
+            },
+            {
+              "x": -65.29253472860319,
+              "y": -59.02265057995741,
+              "z": 0.0
+            }
+          ],
+          "holes_ego_m": [
+            [
+              {
+                "x": -36.01664238432348,
+                "y": 6.4923920770057135,
+                "z": 0.0
+              },
+              {
+                "x": -24.087014341637744,
+                "y": 4.666690343873701,
+                "z": 0.0
+              },
+              {
+                "x": -27.542405137764188,
+                "y": 7.528223580586172,
+                "z": 0.0
+              },
+              {
+                "x": -29.801320662111646,
+                "y": 10.866493686405413,
+                "z": 0.0
+              },
+              {
+                "x": -31.06697960890012,
+                "y": 13.554430391243086,
+                "z": 0.0
+              },
+              {
+                "x": -32.42850565630794,
+                "y": 19.077852971238865,
+                "z": 0.0
+              },
+              {
+                "x": -33.412997758167606,
+                "y": 28.75142234707994,
+                "z": 0.0
+              },
+              {
+                "x": -36.32374432663625,
+                "y": 7.022816299853137,
+                "z": 0.0
+              },
+              {
+                "x": -36.01664238432348,
+                "y": 6.4923920770057135,
+                "z": 0.0
+              }
+            ],
+            [
+              {
+                "x": -61.252338824620885,
+                "y": 9.654975545966977,
+                "z": 0.0
+              },
+              {
+                "x": -50.639174474189645,
+                "y": 8.260945502177169,
+                "z": 0.0
+              },
+              {
+                "x": -49.0296511067127,
+                "y": 17.588040048879122,
+                "z": 0.0
+              },
+              {
+                "x": -52.047563438372826,
+                "y": 13.674456073139972,
+                "z": 0.0
+              },
+              {
+                "x": -55.74921074801368,
+                "y": 11.402053441945439,
+                "z": 0.0
+              },
+              {
+                "x": -61.252338824620885,
+                "y": 9.654975545966977,
+                "z": 0.0
+              }
+            ],
+            [
+              {
+                "x": -51.15702308792778,
+                "y": -57.01641808398271,
+                "z": 0.0
+              },
+              {
+                "x": -50.875525752033774,
+                "y": -57.39658013574896,
+                "z": 0.0
+              },
+              {
+                "x": -50.35130853790465,
+                "y": -57.305844130439624,
+                "z": 0.0
+              },
+              {
+                "x": -45.72525022806311,
+                "y": -21.38542759843486,
+                "z": 0.0
+              },
+              {
+                "x": -45.9015976634927,
+                "y": -20.737667924927266,
+                "z": 0.0
+              },
+              {
+                "x": -46.41279827119014,
+                "y": -20.717194895348825,
+                "z": 0.0
+              },
+              {
+                "x": -46.79649746691171,
+                "y": -21.40068065570302,
+                "z": 0.0
+              },
+              {
+                "x": -51.15702308792778,
+                "y": -57.01641808398271,
+                "z": 0.0
+              }
+            ],
+            [
+              {
+                "x": 14.223267608100436,
+                "y": 0.10710910087475925,
+                "z": 0.0
+              },
+              {
+                "x": 53.744017124463895,
+                "y": -5.1012669509024855,
+                "z": 0.0
+              },
+              {
+                "x": 55.985272307267266,
+                "y": -3.9971689909162444,
+                "z": 0.0
+              },
+              {
+                "x": 56.56540997246642,
+                "y": -2.8805774485597233,
+                "z": 0.0
+              },
+              {
+                "x": 57.53794496822595,
+                "y": 3.168865417280813,
+                "z": 0.0
+              },
+              {
+                "x": 57.26255380838462,
+                "y": 4.432176594428475,
+                "z": 0.0
+              },
+              {
+                "x": 56.55474423965878,
+                "y": 5.227269063438694,
+                "z": 0.0
+              },
+              {
+                "x": 55.5841461903958,
+                "y": 5.567175863349596,
+                "z": 0.0
+              },
+              {
+                "x": 50.12981759668658,
+                "y": 6.45972363525052,
+                "z": 0.0
+              },
+              {
+                "x": 46.03179331068779,
+                "y": 6.930028272150856,
+                "z": 0.0
+              },
+              {
+                "x": 45.34950252334325,
+                "y": 6.615147983472854,
+                "z": 0.0
+              },
+              {
+                "x": 32.50178500541308,
+                "y": 8.290081372268082,
+                "z": 0.0
+              },
+              {
+                "x": 13.448141994023917,
+                "y": 11.134704841450937,
+                "z": 0.0
+              },
+              {
+                "x": 12.662386154145016,
+                "y": 11.004076077277833,
+                "z": 0.0
+              },
+              {
+                "x": 12.178366116913013,
+                "y": 10.36220623424327,
+                "z": 0.0
+              },
+              {
+                "x": 11.39986584079747,
+                "y": 5.4146994438025216,
+                "z": 0.0
+              },
+              {
+                "x": 11.64053983563316,
+                "y": 3.9487581439704056,
+                "z": 0.0
+              },
+              {
+                "x": 12.412833793440171,
+                "y": 2.1167482201513717,
+                "z": 0.0
+              },
+              {
+                "x": 13.60722707555981,
+                "y": 0.33987748093348186,
+                "z": 0.0
+              },
+              {
+                "x": 14.223267608100436,
+                "y": 0.10710910087475925,
+                "z": 0.0
+              }
+            ]
+          ],
+          "confidence": null
+        }
+      ],
+      "lane_dividers": [
+        {
+          "element_id": "063187ba-743e-4579-be0d-2d3dfe6d19e6:0",
+          "points_ego_m": [
+            {
+              "x": 37.98461613283059,
+              "y": -18.115548381028848,
+              "z": 0.0
+            },
+            {
+              "x": 90.0707726354966,
+              "y": -24.94668394153038,
+              "z": 0.0
+            }
+          ],
+          "kind": "dashed",
+          "confidence": null
+        },
+        {
+          "element_id": "0c646d44-d46d-46ca-aa7f-806a4f174be8:0",
+          "points_ego_m": [
+            {
+              "x": 61.92579623212027,
+              "y": -10.007356118395364,
+              "z": 0.0
+            },
+            {
+              "x": 82.2819464530579,
+              "y": -12.531501417958511,
+              "z": 0.0
+            }
+          ],
+          "kind": "dashed",
+          "confidence": null
+        },
+        {
+          "element_id": "11943433-927f-4f0c-a560-a9efddc33bc8:0",
+          "points_ego_m": [
+            {
+              "x": -29.70085524761899,
+              "y": -6.355589257377653,
+              "z": 0.0
+            },
+            {
+              "x": 8.375519523664874,
+              "y": -11.239398252169295,
+              "z": 0.0
+            }
+          ],
+          "kind": "dashed",
+          "confidence": null
+        },
+        {
+          "element_id": "158659bb-6339-4470-bb74-5ce8754604d4:0",
+          "points_ego_m": [
+            {
+              "x": -28.797171393715754,
+              "y": 1.9250701320600028,
+              "z": 0.0
+            },
+            {
+              "x": -24.86686596595232,
+              "y": 1.3963694511782827,
+              "z": 0.0
+            }
+          ],
+          "kind": "dashed",
+          "confidence": null
+        },
+        {
+          "element_id": "3d37fc34-730c-4894-9d8a-6ddbcd2aacbd:0",
+          "points_ego_m": [
+            {
+              "x": -39.109216070576736,
+              "y": 72.04774987085243,
+              "z": 0.0
+            },
+            {
+              "x": -44.68657089692197,
+              "y": 28.06791193543572,
+              "z": 0.0
+            }
+          ],
+          "kind": "dashed",
+          "confidence": null
+        },
+        {
+          "element_id": "5a164381-2d76-46f1-8bda-d5a48e74bc94:0",
+          "points_ego_m": [
+            {
+              "x": -42.90297868839816,
+              "y": -21.606256617970267,
+              "z": 0.0
+            },
+            {
+              "x": -43.77806130544061,
+              "y": -28.557819309968323,
+              "z": 0.0
+            }
+          ],
+          "kind": "dashed",
+          "confidence": null
+        },
+        {
+          "element_id": "5a6e25c9-fbcd-4553-8cd9-72f2cb7b77a9:0",
+          "points_ego_m": [
+            {
+              "x": -86.503672038513,
+              "y": 12.236421796879881,
+              "z": 0.0
+            },
+            {
+              "x": -68.89008576644707,
+              "y": 10.16901050491322,
+              "z": 0.0
+            }
+          ],
+          "kind": "dashed",
+          "confidence": null
+        },
+        {
+          "element_id": "5e4e576e-0034-407e-ab6b-8347cd84514d:0",
+          "points_ego_m": [
+            {
+              "x": -85.63423482103956,
+              "y": 9.138450586943216,
+              "z": 0.0
+            },
+            {
+              "x": -69.25657455910158,
+              "y": 7.011641728891994,
+              "z": 0.0
+            }
+          ],
+          "kind": "dashed",
+          "confidence": null
+        },
+        {
+          "element_id": "6b5a4771-79b4-4ddf-b305-5f4f8260b6ac:0",
+          "points_ego_m": [
+            {
+              "x": -28.882169255928694,
+              "y": 63.137103705598356,
+              "z": 0.0
+            },
+            {
+              "x": -32.58321308260185,
+              "y": 34.01178438359813,
+              "z": 0.0
+            }
+          ],
+          "kind": "dashed",
+          "confidence": null
+        },
+        {
+          "element_id": "80fedd56-10ee-4109-8519-56c904230158:0",
+          "points_ego_m": [
+            {
+              "x": -32.192983771380014,
+              "y": 63.594633276903174,
+              "z": 0.0
+            },
+            {
+              "x": -36.023052256086984,
+              "y": 34.49511768310102,
+              "z": 0.0
+            }
+          ],
+          "kind": "dashed",
+          "confidence": null
+        },
+        {
+          "element_id": "8b15b1df-4320-4138-8c2c-5454209729f7:0",
+          "points_ego_m": [
+            {
+              "x": -57.01661444864099,
+              "y": -81.98456217057685,
+              "z": 0.0
+            },
+            {
+              "x": -55.85498058108916,
+              "y": -72.54813188546719,
+              "z": 0.0
+            }
+          ],
+          "kind": "dashed",
+          "confidence": null
+        },
+        {
+          "element_id": "8b7c29f5-4d96-4f9d-8d7f-44c8ef4d7261:0",
+          "points_ego_m": [
+            {
+              "x": -82.23469287213008,
+              "y": -2.9747680250897353,
+              "z": 0.0
+            },
+            {
+              "x": -58.847004598235195,
+              "y": -5.972115662817814,
+              "z": 0.0
+            }
+          ],
+          "kind": "dashed",
+          "confidence": null
+        },
+        {
+          "element_id": "93abe314-6e9e-44d7-80d3-44a4a96cfbeb:0",
+          "points_ego_m": [
+            {
+              "x": -15.21370913151265,
+              "y": 0.1374011592333603,
+              "z": 0.0
+            },
+            {
+              "x": 1.9720775546851628,
+              "y": -2.108515621208663,
+              "z": 0.0
+            }
+          ],
+          "kind": "dashed",
+          "confidence": null
+        },
+        {
+          "element_id": "987235be-d7d6-4866-8588-cdc0688034b5:0",
+          "points_ego_m": [
+            {
+              "x": 12.990395923084561,
+              "y": -3.383641481583345,
+              "z": 0.0
+            },
+            {
+              "x": 53.446569260841294,
+              "y": -8.736354526116136,
+              "z": 0.0
+            }
+          ],
+          "kind": "dashed",
+          "confidence": null
+        },
+        {
+          "element_id": "b4f64cd5-a398-4850-af8c-63444354ab42:0",
+          "points_ego_m": [
+            {
+              "x": -46.25732940409764,
+              "y": 16.79383076242236,
+              "z": 0.0
+            },
+            {
+              "x": -46.74716762981201,
+              "y": 12.932137698709244,
+              "z": 0.0
+            }
+          ],
+          "kind": "dashed",
+          "confidence": null
+        },
+        {
+          "element_id": "b9bbbad4-2ed4-4b63-8390-9253765c0656:0",
+          "points_ego_m": [
+            {
+              "x": -49.36804839213066,
+              "y": -20.35967459765815,
+              "z": 0.0
+            },
+            {
+              "x": -53.81619646488995,
+              "y": -56.667615295369,
+              "z": 0.0
+            }
+          ],
+          "kind": "dashed",
+          "confidence": null
+        },
+        {
+          "element_id": "bac258e3-0148-4b10-be0d-a1f0fb018212:0",
+          "points_ego_m": [
+            {
+              "x": -84.63649777724477,
+              "y": 5.583322540152463,
+              "z": 0.0
+            },
+            {
+              "x": -69.69384688086505,
+              "y": 3.6050842488941375,
+              "z": 0.0
+            }
+          ],
+          "kind": "dashed",
+          "confidence": null
+        },
+        {
+          "element_id": "c0fbd77b-298d-4f9a-b86b-015467845aaf:0",
+          "points_ego_m": [
+            {
+              "x": -30.09255058649607,
+              "y": -9.658154914875531,
+              "z": 0.0
+            },
+            {
+              "x": 8.03352691162513,
+              "y": -14.289710518456486,
+              "z": 0.0
+            }
+          ],
+          "kind": "dashed",
+          "confidence": null
+        },
+        {
+          "element_id": "c8d5936b-8c39-4e21-ac35-8d9d80abc58b:0",
+          "points_ego_m": [
+            {
+              "x": -36.997567527515116,
+              "y": 28.102219287159677,
+              "z": 0.0
+            },
+            {
+              "x": -39.0442274950634,
+              "y": 12.202218333971722,
+              "z": 0.0
+            }
+          ],
+          "kind": "dashed",
+          "confidence": null
+        },
+        {
+          "element_id": "5ed07ab3-5bc1-438d-b9c4-4b39bd995a29:0",
+          "points_ego_m": [
+            {
+              "x": -53.84328312571538,
+              "y": -82.4153492259223,
+              "z": 0.0
+            },
+            {
+              "x": -52.667769766710634,
+              "y": -72.93497658844187,
+              "z": 0.0
+            }
+          ],
+          "kind": "road_edge",
+          "confidence": null
+        }
+      ],
+      "crosswalks": [
+        {
+          "element_id": "1060960e-f804-45f9-a6a7-e154c818ae11:0",
+          "exterior_ego_m": [
+            {
+              "x": -30.8094667709807,
+              "y": -4.231888756549974,
+              "z": 0.0
+            },
+            {
+              "x": -32.15273625350525,
+              "y": -15.011030634510108,
+              "z": 0.0
+            },
+            {
+              "x": -35.98728146030002,
+              "y": -17.66872208851646,
+              "z": 0.0
+            },
+            {
+              "x": -34.06095883061323,
+              "y": -3.7400509373439275,
+              "z": 0.0
+            },
+            {
+              "x": -30.8094667709807,
+              "y": -4.231888756549974,
+              "z": 0.0
+            }
+          ],
+          "holes_ego_m": [],
+          "confidence": null
+        },
+        {
+          "element_id": "1852502d-1b73-430c-bb98-047e555e841e:0",
+          "exterior_ego_m": [
+            {
+              "x": -56.071419802680225,
+              "y": -2.473122496540586,
+              "z": 0.0
+            },
+            {
+              "x": -54.61607248096897,
+              "y": 8.677095265175216,
+              "z": 0.0
+            },
+            {
+              "x": -51.261257659867695,
+              "y": 8.320085047450226,
+              "z": 0.0
+            },
+            {
+              "x": -52.701271987926454,
+              "y": -2.977428994447591,
+              "z": 0.0
+            },
+            {
+              "x": -56.071419802680225,
+              "y": -2.473122496540586,
+              "z": 0.0
+            }
+          ],
+          "holes_ego_m": [],
+          "confidence": null
+        },
+        {
+          "element_id": "3071c0b4-a2cc-4eba-83d2-4741f537bf1a:0",
+          "exterior_ego_m": [
+            {
+              "x": -49.888680375859735,
+              "y": 12.346172037193439,
+              "z": 0.0
+            },
+            {
+              "x": -42.2350401690385,
+              "y": 11.371659592161631,
+              "z": 0.0
+            },
+            {
+              "x": -42.538214161362376,
+              "y": 8.21201143223464,
+              "z": 0.0
+            },
+            {
+              "x": -50.44573979681169,
+              "y": 8.951483961609688,
+              "z": 0.0
+            },
+            {
+              "x": -49.888680375859735,
+              "y": 12.346172037193439,
+              "z": 0.0
+            }
+          ],
+          "holes_ego_m": [],
+          "confidence": null
+        },
+        {
+          "element_id": "3279446c-f30a-4f80-8fcd-2e7ef425939b:0",
+          "exterior_ego_m": [
+            {
+              "x": -36.37158531496731,
+              "y": 7.543554190373899,
+              "z": 0.0
+            },
+            {
+              "x": -44.156946664660545,
+              "y": 8.34363186005444,
+              "z": 0.0
+            },
+            {
+              "x": -43.73407017764293,
+              "y": 11.581293705231472,
+              "z": 0.0
+            },
+            {
+              "x": -35.92648763297373,
+              "y": 10.641462183856401,
+              "z": 0.0
+            },
+            {
+              "x": -36.37158531496731,
+              "y": 7.543554190373899,
+              "z": 0.0
+            }
+          ],
+          "holes_ego_m": [],
+          "confidence": null
+        },
+        {
+          "element_id": "397f0172-c488-4084-be06-b8db98b2aa1c:0",
+          "exterior_ego_m": [
+            {
+              "x": -57.50731979588375,
+              "y": -13.11943989691698,
+              "z": 0.0
+            },
+            {
+              "x": -56.033268819809294,
+              "y": -2.1620348913411527,
+              "z": 0.0
+            },
+            {
+              "x": -52.66624061707405,
+              "y": -2.639296369637666,
+              "z": 0.0
+            },
+            {
+              "x": -54.63098191362012,
+              "y": -17.112802592531295,
+              "z": 0.0
+            },
+            {
+              "x": -57.50731979588375,
+              "y": -13.11943989691698,
+              "z": 0.0
+            }
+          ],
+          "holes_ego_m": [],
+          "confidence": null
+        },
+        {
+          "element_id": "4b1f086d-029a-4a82-81cd-6eb611db73f2:0",
+          "exterior_ego_m": [
+            {
+              "x": -55.67146330135309,
+              "y": 17.512249064060356,
+              "z": 0.0
+            },
+            {
+              "x": -52.47139694493867,
+              "y": 13.432090726876256,
+              "z": 0.0
+            },
+            {
+              "x": -55.554955531805106,
+              "y": 11.571902965666341,
+              "z": 0.0
+            },
+            {
+              "x": -58.764080578649036,
+              "y": 15.659694586708095,
+              "z": 0.0
+            },
+            {
+              "x": -55.67146330135309,
+              "y": 17.512249064060356,
+              "z": 0.0
+            }
+          ],
+          "holes_ego_m": [],
+          "confidence": null
+        },
+        {
+          "element_id": "530f5d85-fad2-4fc3-b8d5-4d4ae0929ef4:0",
+          "exterior_ego_m": [
+            {
+              "x": -34.212163358798385,
+              "y": -4.193108756847423,
+              "z": 0.0
+            },
+            {
+              "x": -32.84537077941621,
+              "y": 5.832424822635393,
+              "z": 0.0
+            },
+            {
+              "x": -29.468358301597533,
+              "y": 5.363956286366776,
+              "z": 0.0
+            },
+            {
+              "x": -30.873424646717805,
+              "y": -4.53791632879685,
+              "z": 0.0
+            },
+            {
+              "x": -34.212163358798385,
+              "y": -4.193108756847423,
+              "z": 0.0
+            }
+          ],
+          "holes_ego_m": [],
+          "confidence": null
+        },
+        {
+          "element_id": "5cdb95a9-314b-4d20-b251-40a345ba0475:0",
+          "exterior_ego_m": [
+            {
+              "x": -56.995578775020945,
+              "y": -13.499379815445717,
+              "z": 0.0
+            },
+            {
+              "x": -44.89588514532182,
+              "y": -15.840757057789522,
+              "z": 0.0
+            },
+            {
+              "x": -45.38077516194051,
+              "y": -19.2004596692432,
+              "z": 0.0
+            },
+            {
+              "x": -54.59782408608144,
+              "y": -17.41709028517806,
+              "z": 0.0
+            },
+            {
+              "x": -56.995578775020945,
+              "y": -13.499379815445717,
+              "z": 0.0
+            }
+          ],
+          "holes_ego_m": [],
+          "confidence": null
+        },
+        {
+          "element_id": "6d5aa0c4-7e35-42f7-9a46-31b6aa5a9358:0",
+          "exterior_ego_m": [
+            {
+              "x": -38.60738340206579,
+              "y": -20.582851319379742,
+              "z": 0.0
+            },
+            {
+              "x": -47.2009045619081,
+              "y": -18.860464294711647,
+              "z": 0.0
+            },
+            {
+              "x": -46.60387322265421,
+              "y": -15.537764424911044,
+              "z": 0.0
+            },
+            {
+              "x": -35.77866732869723,
+              "y": -17.582274712645944,
+              "z": 0.0
+            },
+            {
+              "x": -38.60738340206579,
+              "y": -20.582851319379742,
+              "z": 0.0
+            }
+          ],
+          "holes_ego_m": [],
+          "confidence": null
+        },
+        {
+          "element_id": "792c801f-8320-4a6a-9e72-01f95e889c00:0",
+          "exterior_ego_m": [
+            {
+              "x": -29.581899056419843,
+              "y": 10.549519214900068,
+              "z": 0.0
+            },
+            {
+              "x": -25.26299387895217,
+              "y": 13.676705102398733,
+              "z": 0.0
+            },
+            {
+              "x": -23.407246719708382,
+              "y": 10.721725268551316,
+              "z": 0.0
+            },
+            {
+              "x": -27.527689095512255,
+              "y": 7.582548927359346,
+              "z": 0.0
+            },
+            {
+              "x": -29.581899056419843,
+              "y": 10.549519214900068,
+              "z": 0.0
+            }
+          ],
+          "holes_ego_m": [],
+          "confidence": null
+        }
+      ],
+      "stop_lines": [
+        {
+          "element_id": "0180ade1-6904-495f-a80a-1e7a9b92805d:0",
+          "points_ego_m": [
+            {
+              "x": -56.92398968732031,
+              "y": -82.13397012065198,
+              "z": 0.0
+            },
+            {
+              "x": -56.11645311042801,
+              "y": -77.15266679971354,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "2db83c94-d0c1-4ae5-bd8b-a8f89ff10e26:0",
+          "points_ego_m": [
+            {
+              "x": -47.66293425403157,
+              "y": -13.507366322036395,
+              "z": 0.0
+            },
+            {
+              "x": -45.74208252936002,
+              "y": -8.770908883049081,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "496167e7-7ea7-40fb-bf97-ad0def0f58c4:0",
+          "points_ego_m": [
+            {
+              "x": -18.11924868768666,
+              "y": 3.102497076311106,
+              "z": 0.0
+            },
+            {
+              "x": -25.427946873994635,
+              "y": 8.765560440616756,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "678652f3-14fe-4256-990a-761d0d0cc7bf:0",
+          "points_ego_m": [
+            {
+              "x": -37.93028378002419,
+              "y": 21.85913051271314,
+              "z": 0.0
+            },
+            {
+              "x": -38.697048337482826,
+              "y": 14.398850814438074,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "69c52db5-8ee9-4326-b43d-25a79f7fa333:0",
+          "points_ego_m": [
+            {
+              "x": -59.218357800796674,
+              "y": 12.633920845269026,
+              "z": 0.0
+            },
+            {
+              "x": -65.3271557609554,
+              "y": 11.133939078986684,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "6d7b1fc2-8980-4b2d-94f2-1542aea54267:0",
+          "points_ego_m": [
+            {
+              "x": -50.17786398202205,
+              "y": -76.93775674080271,
+              "z": 0.0
+            },
+            {
+              "x": -49.42090736212913,
+              "y": -71.0322010114709,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "7f96b57b-77c0-4d9c-907b-5fa1ff00c5a0:0",
+          "points_ego_m": [
+            {
+              "x": -36.53194332500207,
+              "y": -14.622063620630742,
+              "z": 0.0
+            },
+            {
+              "x": -30.843956101011635,
+              "y": -11.422365472083738,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "90797c4f-51a0-4559-857e-6e6cca78bb29:0",
+          "points_ego_m": [
+            {
+              "x": -53.445964740849604,
+              "y": -24.00840877573835,
+              "z": 0.0
+            },
+            {
+              "x": -47.67093288441048,
+              "y": -24.752801747632734,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "942dc2b1-345c-4fe7-83d0-9eeed8202709:0",
+          "points_ego_m": [
+            {
+              "x": -24.32741046895191,
+              "y": -14.311079847094248,
+              "z": 0.0
+            },
+            {
+              "x": -23.106395022382102,
+              "y": -3.9178540630578396,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "9ab69927-2f1e-48e9-baf4-9a4835f4c021:0",
+          "points_ego_m": [
+            {
+              "x": 57.127008855211635,
+              "y": -0.7654821192949864,
+              "z": 0.0
+            },
+            {
+              "x": 61.5333712092134,
+              "y": -1.2716898551630897,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "a3a12b27-c52b-4b64-a06f-569e69079010:0",
+          "points_ego_m": [
+            {
+              "x": -16.14307197620908,
+              "y": 2.1101742845607205,
+              "z": 0.0
+            },
+            {
+              "x": -25.503406165730677,
+              "y": 8.900996076723958,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "b263c6fc-e11e-4a6d-a463-212b2205e9b1:0",
+          "points_ego_m": [
+            {
+              "x": 59.671822394727,
+              "y": 0.01834347837180701,
+              "z": 0.0
+            },
+            {
+              "x": 58.983487972055364,
+              "y": -5.314956178645204,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "b2c23a52-0d01-4d77-ab85-06e365d121a3:0",
+          "points_ego_m": [
+            {
+              "x": -53.17719741407503,
+              "y": -13.802685414304268,
+              "z": 0.0
+            },
+            {
+              "x": -50.68082661772786,
+              "y": -20.836512498016063,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "b6c8f846-4c26-4b0f-9047-18b224aa1578:0",
+          "points_ego_m": [
+            {
+              "x": -30.93283834793337,
+              "y": -5.1211984232725305,
+              "z": 0.0
+            },
+            {
+              "x": -37.8117340280467,
+              "y": -1.493429283904272,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "c9a712a4-5907-439f-8415-c8758ea373be:0",
+          "points_ego_m": [
+            {
+              "x": -41.14035160884678,
+              "y": 9.492317542402612,
+              "z": 0.0
+            },
+            {
+              "x": -43.14954767100801,
+              "y": 5.385739027525232,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "cf44476e-9905-4019-95e4-dbe5637879ac:0",
+          "points_ego_m": [
+            {
+              "x": -56.215350103539244,
+              "y": -1.0633694957993798,
+              "z": 0.0
+            },
+            {
+              "x": -41.092558074863746,
+              "y": 2.063230345905091,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "d3322ade-3735-4218-a7fa-00e33d117af9:0",
+          "points_ego_m": [
+            {
+              "x": -61.46120126694325,
+              "y": 9.552219232942823,
+              "z": 0.0
+            },
+            {
+              "x": -62.797585220126926,
+              "y": -0.30157887126578004,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "e48ff3d5-6e31-461d-bc8c-a8976beccfe3:0",
+          "points_ego_m": [
+            {
+              "x": -28.6649787507531,
+              "y": 13.779029050373556,
+              "z": 0.0
+            },
+            {
+              "x": -30.455677092501062,
+              "y": 21.453544767130307,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "eabe61b9-c00d-46c0-bf91-3098619c4f7f:0",
+          "points_ego_m": [
+            {
+              "x": -46.869226044868256,
+              "y": 24.60184035940682,
+              "z": 0.0
+            },
+            {
+              "x": -52.0291540690585,
+              "y": 17.9229875478614,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        }
+      ],
+      "centerlines": [
+        {
+          "element_id": "03c94004-f3e2-4b92-87cb-5b57fa6ebe73:0",
+          "points_ego_m": [
+            {
+              "x": 63.88237912763841,
+              "y": -8.592050339062654,
+              "z": 0.0
+            },
+            {
+              "x": 74.01885069164778,
+              "y": -9.932189277037661,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "1222ceb7-6e2a-4763-a622-20310271ce24:0",
+          "points_ego_m": [
+            {
+              "x": -44.55504037682274,
+              "y": -23.779432187846574,
+              "z": 0.0
+            },
+            {
+              "x": -44.94483766854859,
+              "y": -27.85466453832016,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "1308814e-a108-434a-b306-1f0e18aac5ed:0",
+          "points_ego_m": [
+            {
+              "x": 15.09158486764137,
+              "y": -5.646380321637524,
+              "z": 0.0
+            },
+            {
+              "x": 52.11011553391951,
+              "y": -10.50503425352004,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "1d461032-cf3a-48dc-aad2-181704fd63f9:0",
+          "points_ego_m": [
+            {
+              "x": -30.325516815947548,
+              "y": 26.795764783103515,
+              "z": 0.0
+            },
+            {
+              "x": -30.163091628015703,
+              "y": 20.916319850666188,
+              "z": 0.0
+            },
+            {
+              "x": -29.618035451055807,
+              "y": 18.02191430341088,
+              "z": 0.0
+            },
+            {
+              "x": -28.443648326620465,
+              "y": 14.30946561277403,
+              "z": 0.0
+            },
+            {
+              "x": -26.20301492162116,
+              "y": 10.134372453806698,
+              "z": 0.0
+            },
+            {
+              "x": -22.363531430955728,
+              "y": 5.9417933276158825,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "32e91310-fd24-4dc5-8def-1fe7c5c98eca:0",
+          "points_ego_m": [
+            {
+              "x": 7.730310584649586,
+              "y": -12.761456103765749,
+              "z": 0.0
+            },
+            {
+              "x": -29.890166352759916,
+              "y": -7.960029404601957,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "40b04107-1968-4b25-b8a2-3a4406eedb13:0",
+          "points_ego_m": [
+            {
+              "x": -15.47003473307009,
+              "y": -1.6351910504957528,
+              "z": 0.0
+            },
+            {
+              "x": 1.0682769723534316,
+              "y": -3.8058318511342275,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "4951d7bc-7334-4944-ad59-8425e33d2b33:0",
+          "points_ego_m": [
+            {
+              "x": 62.05276908965628,
+              "y": -11.809999952230692,
+              "z": 0.0
+            },
+            {
+              "x": 81.77822288555224,
+              "y": -14.39895072987065,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "4e6383d9-0afb-438e-bccb-ee3a8ee328f7:0",
+          "points_ego_m": [
+            {
+              "x": 89.60705151712203,
+              "y": -23.294356843849037,
+              "z": 0.0
+            },
+            {
+              "x": 49.72486637569285,
+              "y": -17.936877926727544,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "4eb18137-6ccb-4f54-854b-e12997e50ca5:0",
+          "points_ego_m": [
+            {
+              "x": -45.08488729352865,
+              "y": 13.18983173617377,
+              "z": 0.0
+            },
+            {
+              "x": -44.69638107503964,
+              "y": 16.402262516200746,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "50e0930a-84b4-412c-9bb4-44a5fc42f399:0",
+          "points_ego_m": [
+            {
+              "x": -55.64396307205908,
+              "y": -81.74451689585226,
+              "z": 0.0
+            },
+            {
+              "x": -54.6003742347509,
+              "y": -73.36232708089528,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "5933500a-f0f2-4d69-9bbc-83b875e4a73e:0",
+          "points_ego_m": [
+            {
+              "x": 6.217978198843435,
+              "y": -15.810586852105633,
+              "z": 0.0
+            },
+            {
+              "x": -25.60021152584474,
+              "y": -11.685997923228534,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "5e73e2b0-3c82-4124-a405-fecff46c2d25:0",
+          "points_ego_m": [
+            {
+              "x": -9.657599697481176,
+              "y": 1.1127238092689717,
+              "z": 0.0
+            },
+            {
+              "x": -0.7359513960606415,
+              "y": -0.06048548180146682,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "65e60250-38b4-4407-86cf-604e05ba67b5:0",
+          "points_ego_m": [
+            {
+              "x": -61.031346081547994,
+              "y": -3.985542537021427,
+              "z": 0.0
+            },
+            {
+              "x": -82.72676507616072,
+              "y": -1.2214205830203664,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "69699cdc-4d68-4bb2-b977-d33b3082cdee:0",
+          "points_ego_m": [
+            {
+              "x": 9.073383980858509,
+              "y": 5.9113109935600106,
+              "z": 0.0
+            },
+            {
+              "x": 9.542151715665634,
+              "y": 8.850742967003752,
+              "z": 0.0
+            },
+            {
+              "x": 10.227790969185188,
+              "y": 10.702038626034476,
+              "z": 0.0
+            },
+            {
+              "x": 11.51178256476742,
+              "y": 12.202368769615916,
+              "z": 0.0
+            },
+            {
+              "x": 13.235948265696688,
+              "y": 13.16690385725916,
+              "z": 0.0
+            },
+            {
+              "x": 24.828035871566073,
+              "y": 14.715823520843646,
+              "z": 0.0
+            },
+            {
+              "x": 30.658391073984887,
+              "y": 15.035028219719988,
+              "z": 0.0
+            },
+            {
+              "x": 34.54333626706969,
+              "y": 14.84646171902846,
+              "z": 0.0
+            },
+            {
+              "x": 38.386543676206585,
+              "y": 14.24744812059522,
+              "z": 0.0
+            },
+            {
+              "x": 42.1287272805973,
+              "y": 13.25923710794009,
+              "z": 0.0
+            },
+            {
+              "x": 55.557303436657556,
+              "y": 8.487002419038918,
+              "z": 0.0
+            },
+            {
+              "x": 57.69832755290109,
+              "y": 6.818060479087514,
+              "z": 0.0
+            },
+            {
+              "x": 58.72190887039665,
+              "y": 5.319363324940662,
+              "z": 0.0
+            },
+            {
+              "x": 59.34653432739339,
+              "y": 3.6159488896819005,
+              "z": 0.0
+            },
+            {
+              "x": 59.46069480221101,
+              "y": 0.9060621359815932,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "74857537-1b32-468d-999a-89ec9bcc34f6:0",
+          "points_ego_m": [
+            {
+              "x": -58.47355358657844,
+              "y": 13.16452862338277,
+              "z": 0.0
+            },
+            {
+              "x": -54.23694107820886,
+              "y": 15.517879402490813,
+              "z": 0.0
+            },
+            {
+              "x": -50.66611149105791,
+              "y": 18.792664222417827,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "79d8b56f-ba80-46da-9881-d10176b250da:0",
+          "points_ego_m": [
+            {
+              "x": -27.833580176230726,
+              "y": 58.64855479901276,
+              "z": 0.0
+            },
+            {
+              "x": -29.462209051724006,
+              "y": 37.830861206838854,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "7b690728-97e7-4fe9-9116-a4a41ab39e41:0",
+          "points_ego_m": [
+            {
+              "x": -31.469742978055265,
+              "y": 56.66297866763434,
+              "z": 0.0
+            },
+            {
+              "x": -34.521593481275765,
+              "y": 34.3355925838124,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "7eaaa816-34ab-4400-9085-756aab7dd0eb:0",
+          "points_ego_m": [
+            {
+              "x": -42.36421427846847,
+              "y": 35.68618674057603,
+              "z": 0.0
+            },
+            {
+              "x": -37.68333041935364,
+              "y": 72.4463321766363,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "8c163dc2-eae9-4b7d-a30a-f8fd7d023439:0",
+          "points_ego_m": [
+            {
+              "x": -70.11651706059024,
+              "y": -6.061892490404395,
+              "z": 0.0
+            },
+            {
+              "x": -81.78144332600617,
+              "y": -4.589782906657784,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "8e181296-79dc-4741-9b62-9fefc0bc102a:0",
+          "points_ego_m": [
+            {
+              "x": -41.826762459432864,
+              "y": -23.947367483352046,
+              "z": 0.0
+            },
+            {
+              "x": -42.51799158905808,
+              "y": -28.410954610142316,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "90c1258b-bf90-49e9-a921-cb195217ea75:0",
+          "points_ego_m": [
+            {
+              "x": 15.642595060600332,
+              "y": -2.214287365398915,
+              "z": 0.0
+            },
+            {
+              "x": 53.54045461903358,
+              "y": -7.224748544952926,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "98a785d0-4797-4655-8bc6-3b4b72da1548:0",
+          "points_ego_m": [
+            {
+              "x": -28.750952941024007,
+              "y": 3.6164176613967824,
+              "z": 0.0
+            },
+            {
+              "x": -24.61410304443128,
+              "y": 3.068814608269386,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "9bdcf3c5-3181-4099-a2b6-e6fcf428c755:0",
+          "points_ego_m": [
+            {
+              "x": 90.64097225146317,
+              "y": -26.978414305356612,
+              "z": 0.0
+            },
+            {
+              "x": 38.17277879365672,
+              "y": -19.95513266198712,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "ad1abbe5-c1ab-4cbb-b9d2-ef3a3f06581c:0",
+          "points_ego_m": [
+            {
+              "x": -38.60953601769595,
+              "y": 28.33034188579351,
+              "z": 0.0
+            },
+            {
+              "x": -40.41682276031975,
+              "y": 13.872521512041851,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "af22deab-c58e-4ab4-b58c-f783be8e27af:0",
+          "points_ego_m": [
+            {
+              "x": -35.40407482959646,
+              "y": 27.879345195121296,
+              "z": 0.0
+            },
+            {
+              "x": -37.37564037509042,
+              "y": 12.360199492846222,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "b4dbd87f-baa8-4784-9597-d90c7bcd30ef:0",
+          "points_ego_m": [
+            {
+              "x": -55.15265704446261,
+              "y": -55.46852991412471,
+              "z": 0.0
+            },
+            {
+              "x": -51.521865027539384,
+              "y": -26.059405550084872,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "c7c6061c-803a-4c24-ac77-c88aba659c8c:0",
+          "points_ego_m": [
+            {
+              "x": -58.357025480780464,
+              "y": -80.8321192212906,
+              "z": 0.0
+            },
+            {
+              "x": -57.39997016006505,
+              "y": -73.03613600400027,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "cb87e228-5e10-477f-8438-320802139e05:0",
+          "points_ego_m": [
+            {
+              "x": -85.13046854252806,
+              "y": 7.343434919336155,
+              "z": 0.0
+            },
+            {
+              "x": -69.70479261241375,
+              "y": 5.5251281446704725,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "cf636984-b036-468b-b728-d7a7185ef1ea:0",
+          "points_ego_m": [
+            {
+              "x": -83.1252588788178,
+              "y": 13.12214881801118,
+              "z": 0.0
+            },
+            {
+              "x": -69.70462590634921,
+              "y": 12.026461952036723,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "d38c4767-267a-4296-bcfd-463d94ac7d57:0",
+          "points_ego_m": [
+            {
+              "x": -84.1674320909992,
+              "y": 3.911951724234594,
+              "z": 0.0
+            },
+            {
+              "x": -70.68857639495029,
+              "y": 2.171216921554057,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "d58aa99a-059a-4436-8c20-6db30841ab6f:0",
+          "points_ego_m": [
+            {
+              "x": 7.613637278325558,
+              "y": -9.780580714283921,
+              "z": 0.0
+            },
+            {
+              "x": -27.31437477687035,
+              "y": -4.945023961757479,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "d6f48dbf-3377-4e3a-9d1d-36c6dce63600:0",
+          "points_ego_m": [
+            {
+              "x": -47.86689701304036,
+              "y": 13.967752256371224,
+              "z": 0.0
+            },
+            {
+              "x": -47.54739607814462,
+              "y": 16.337093502290777,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "ddba49df-bc04-4a91-b75f-a0f480336300:0",
+          "points_ego_m": [
+            {
+              "x": -28.33971768519027,
+              "y": 0.05394502272300349,
+              "z": 0.0
+            },
+            {
+              "x": -25.015787137579135,
+              "y": -0.38231832336815075,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "ec65b625-ab99-49a2-bd3e-ba1716184c0a:0",
+          "points_ego_m": [
+            {
+              "x": -45.03731604233706,
+              "y": 35.40346848270093,
+              "z": 0.0
+            },
+            {
+              "x": -40.30527516781968,
+              "y": 71.71341170535932,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "f493215c-bc0b-47db-ba48-7338e21afe3d:0",
+          "points_ego_m": [
+            {
+              "x": -52.50746119139407,
+              "y": -56.131435580970766,
+              "z": 0.0
+            },
+            {
+              "x": -48.09008720356873,
+              "y": -21.01599459603677,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "f8a5b497-2b13-4ae2-9089-4abbdde990d3:0",
+          "points_ego_m": [
+            {
+              "x": -49.85731518165927,
+              "y": -73.59686684846223,
+              "z": 0.0
+            },
+            {
+              "x": -50.9491805431407,
+              "y": -82.62402205886178,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "fc54378d-a2ee-401d-a1ed-245253eddc48:0",
+          "points_ego_m": [
+            {
+              "x": -35.457506369303886,
+              "y": 52.69270353197565,
+              "z": 0.0
+            },
+            {
+              "x": -37.80760643168589,
+              "y": 34.74556844227994,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "ff42ed22-6e94-4616-ab60-bfb597ed393c:0",
+          "points_ego_m": [
+            {
+              "x": -86.0863283669428,
+              "y": 10.74934641847482,
+              "z": 0.0
+            },
+            {
+              "x": -69.38697819737729,
+              "y": 8.722804481528243,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "9b76cd1e-5d2e-4848-b4e8-16681d8a4f14:0",
+          "points_ego_m": [
+            {
+              "x": -24.614103044431054,
+              "y": 3.0688146082692125,
+              "z": 0.0
+            },
+            {
+              "x": -9.657599697482276,
+              "y": 1.1127238092689,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "3713d00f-8a9a-41db-afdc-27e4f73de78b:0",
+          "points_ego_m": [
+            {
+              "x": -58.98079836756631,
+              "y": -85.83284477430932,
+              "z": 0.0
+            },
+            {
+              "x": -58.357025480780585,
+              "y": -80.8321192212904,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "9bc140ea-b31a-49c0-bba8-26b4d05319fa:0",
+          "points_ego_m": [
+            {
+              "x": -69.70462590634915,
+              "y": 12.026461952036737,
+              "z": 0.0
+            },
+            {
+              "x": -64.00384340100948,
+              "y": 11.83790962673409,
+              "z": 0.0
+            },
+            {
+              "x": -61.187361557118194,
+              "y": 12.288123384523583,
+              "z": 0.0
+            },
+            {
+              "x": -58.47355358657849,
+              "y": 13.164528623382756,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "c7a6f934-182f-4b8f-b3af-a07826caeafa:0",
+          "points_ego_m": [
+            {
+              "x": -50.666111491058025,
+              "y": 18.792664222418033,
+              "z": 0.0
+            },
+            {
+              "x": -48.3471415629095,
+              "y": 22.012399518979368,
+              "z": 0.0
+            },
+            {
+              "x": -46.71525760479401,
+              "y": 25.628500803520538,
+              "z": 0.0
+            },
+            {
+              "x": -45.982514000133605,
+              "y": 28.514355114008413,
+              "z": 0.0
+            },
+            {
+              "x": -45.03731604233723,
+              "y": 35.40346848270088,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "af82d54f-77b6-4bcd-84da-8ae8fe416f13:0",
+          "points_ego_m": [
+            {
+              "x": 74.01885069164884,
+              "y": -9.932189277037606,
+              "z": 0.0
+            },
+            {
+              "x": 79.78756390991536,
+              "y": -10.107719075068754,
+              "z": 0.0
+            },
+            {
+              "x": 82.63029174914284,
+              "y": -9.578220192862936,
+              "z": 0.0
+            },
+            {
+              "x": 85.48011573985687,
+              "y": -8.589294803396996,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "0b017756-14bc-4451-949b-2bef62b9f50e:0",
+          "points_ego_m": [
+            {
+              "x": -37.80760643168594,
+              "y": 34.745568442279925,
+              "z": 0.0
+            },
+            {
+              "x": -38.609536017695895,
+              "y": 28.330341885793526,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "c290b52f-7678-469f-b6e0-665486d4108a:0",
+          "points_ego_m": [
+            {
+              "x": -25.015787137579355,
+              "y": -0.38231832336821203,
+              "z": 0.0
+            },
+            {
+              "x": -15.470034733070083,
+              "y": -1.6351910504959863,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "066aaaf5-cb01-4846-a9c5-2fcd60bca00e:0",
+          "points_ego_m": [
+            {
+              "x": 81.77822288555146,
+              "y": -14.39895072987063,
+              "z": 0.0
+            },
+            {
+              "x": 87.3145075387997,
+              "y": -15.125583872529656,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "bfdbd392-4753-485b-96a7-f26ed396ccba:0",
+          "points_ego_m": [
+            {
+              "x": -22.36353143095555,
+              "y": 5.941793327615461,
+              "z": 0.0
+            },
+            {
+              "x": -19.155066585161876,
+              "y": 3.632630857961504,
+              "z": 0.0
+            },
+            {
+              "x": -16.453493223268506,
+              "y": 2.403610511810728,
+              "z": 0.0
+            },
+            {
+              "x": -13.58370816597558,
+              "y": 1.6456483719905215,
+              "z": 0.0
+            },
+            {
+              "x": -9.657599697481237,
+              "y": 1.1127238092691905,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "c21c7588-04d7-4351-a5dd-1307d62e5935:0",
+          "points_ego_m": [
+            {
+              "x": -44.944837668548644,
+              "y": -27.854664538319945,
+              "z": 0.0
+            },
+            {
+              "x": -49.85731518165944,
+              "y": -73.59686684846227,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "7009e98c-4969-4fd8-8289-12075aa068fd:0",
+          "points_ego_m": [
+            {
+              "x": -48.09008720356901,
+              "y": -21.015994596036375,
+              "z": 0.0
+            },
+            {
+              "x": -47.24564714909094,
+              "y": -14.25674084342762,
+              "z": 0.0
+            },
+            {
+              "x": -46.58087265702152,
+              "y": -11.4178344884285,
+              "z": 0.0
+            },
+            {
+              "x": -44.95400819157091,
+              "y": -7.890842446963449,
+              "z": 0.0
+            },
+            {
+              "x": -42.56245392355716,
+              "y": -4.829345918109538,
+              "z": 0.0
+            },
+            {
+              "x": -39.5329877212526,
+              "y": -2.395636851015973,
+              "z": 0.0
+            },
+            {
+              "x": -36.02620358508121,
+              "y": -0.7187277676427037,
+              "z": 0.0
+            },
+            {
+              "x": -32.22799845379171,
+              "y": 0.11248727607308918,
+              "z": 0.0
+            },
+            {
+              "x": -28.339717685190333,
+              "y": 0.05394502272322218,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "092b05cd-12bd-4b45-ab0c-510c886fa06b:0",
+          "points_ego_m": [
+            {
+              "x": -69.70479261241364,
+              "y": 5.525128144670501,
+              "z": 0.0
+            },
+            {
+              "x": -28.33971768519111,
+              "y": 0.053945022723476586,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "0a73738e-b9ab-469d-85d0-6e44a0184f67:0",
+          "points_ego_m": [
+            {
+              "x": 59.4606948022109,
+              "y": 0.9060621359815613,
+              "z": 0.0
+            },
+            {
+              "x": 59.01585747930685,
+              "y": -2.7690844351976796,
+              "z": 0.0
+            },
+            {
+              "x": 59.5621007838145,
+              "y": -5.463152331010915,
+              "z": 0.0
+            },
+            {
+              "x": 61.325938704937755,
+              "y": -7.57364701629948,
+              "z": 0.0
+            },
+            {
+              "x": 63.88237912763852,
+              "y": -8.592050339062856,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "f78e012a-bcb4-478b-acac-55ad6581c293:0",
+          "points_ego_m": [
+            {
+              "x": 52.11011553391923,
+              "y": -10.505034253519883,
+              "z": 0.0
+            },
+            {
+              "x": 62.05276908965622,
+              "y": -11.809999952230473,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "26c04569-f75f-4198-8284-e3a1a5ee9f16:0",
+          "points_ego_m": [
+            {
+              "x": 49.72486637569279,
+              "y": -17.93687792672756,
+              "z": 0.0
+            },
+            {
+              "x": 39.2007271281781,
+              "y": -16.235451932588017,
+              "z": 0.0
+            },
+            {
+              "x": 7.613637278325449,
+              "y": -9.780580714283953,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "28d15254-0ef9-48c3-9e06-dc5a25b31127:0",
+          "points_ego_m": [
+            {
+              "x": -25.60021152584396,
+              "y": -11.685997923228554,
+              "z": 0.0
+            },
+            {
+              "x": -70.11651706059041,
+              "y": -6.061892490404205,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "4c9e7918-0aef-41da-a4c3-d49347a16089:0",
+          "points_ego_m": [
+            {
+              "x": 74.01885069164884,
+              "y": -9.932189277037606,
+              "z": 0.0
+            },
+            {
+              "x": 86.3131670420232,
+              "y": -11.557616033089896,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "fea4c05c-c4ce-499d-8bd9-9070f080eb70:0",
+          "points_ego_m": [
+            {
+              "x": -48.09008720356901,
+              "y": -21.015994596036375,
+              "z": 0.0
+            },
+            {
+              "x": -45.08488729352859,
+              "y": 13.189831736173552,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "ac11ff67-0f9f-4573-b4c9-681c5b00d5d5:0",
+          "points_ego_m": [
+            {
+              "x": -44.69638107503953,
+              "y": 16.40226251620078,
+              "z": 0.0
+            },
+            {
+              "x": -42.3642142784684,
+              "y": 35.686186740575806,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "c119fed8-400d-486a-93a0-6738464a3680:0",
+          "points_ego_m": [
+            {
+              "x": -27.31437477687035,
+              "y": -4.945023961757479,
+              "z": 0.0
+            },
+            {
+              "x": -31.18924967149287,
+              "y": -4.312176357224325,
+              "z": 0.0
+            },
+            {
+              "x": -34.88072526983261,
+              "y": -2.98726552987888,
+              "z": 0.0
+            },
+            {
+              "x": -37.4320900322036,
+              "y": -1.5195254241082694,
+              "z": 0.0
+            },
+            {
+              "x": -40.43213955995112,
+              "y": 1.0050406799448164,
+              "z": 0.0
+            },
+            {
+              "x": -42.86118351198649,
+              "y": 4.081708789304263,
+              "z": 0.0
+            },
+            {
+              "x": -44.2247388252519,
+              "y": 6.654759598539739,
+              "z": 0.0
+            },
+            {
+              "x": -45.0112897891342,
+              "y": 9.395521175292343,
+              "z": 0.0
+            },
+            {
+              "x": -45.08488729352865,
+              "y": 13.18983173617377,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "90a27e84-c8f6-4e84-816e-adbdc64fbc63:0",
+          "points_ego_m": [
+            {
+              "x": -42.517991589058134,
+              "y": -28.41095461014233,
+              "z": 0.0
+            },
+            {
+              "x": -43.92084103463322,
+              "y": -37.88067666317605,
+              "z": 0.0
+            },
+            {
+              "x": -47.76434611646346,
+              "y": -57.92735958306129,
+              "z": 0.0
+            },
+            {
+              "x": -49.85731518165921,
+              "y": -73.59686684846221,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "1ba067c9-a69c-4cd1-bc3c-8bdc9daec466:0",
+          "points_ego_m": [
+            {
+              "x": -0.7359513960606415,
+              "y": -0.06048548180146682,
+              "z": 0.0
+            },
+            {
+              "x": 3.231766463364746,
+              "y": -0.17662581746061792,
+              "z": 0.0
+            },
+            {
+              "x": 5.968594704982422,
+              "y": 0.986273679086201,
+              "z": 0.0
+            },
+            {
+              "x": 8.026372456374453,
+              "y": 3.130820268122764,
+              "z": 0.0
+            },
+            {
+              "x": 9.073383980858463,
+              "y": 5.911310993559761,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "6f489965-2ef5-4299-aa17-9a5bcf4e3d2a:0",
+          "points_ego_m": [
+            {
+              "x": -69.38697819737828,
+              "y": 8.722804481528435,
+              "z": 0.0
+            },
+            {
+              "x": -28.75095294102162,
+              "y": 3.61641766139627,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "16233dfa-88a2-4ae6-84e0-f9c5aa584bdc:0",
+          "points_ego_m": [
+            {
+              "x": -34.52159348127573,
+              "y": 34.33559258381288,
+              "z": 0.0
+            },
+            {
+              "x": -35.40407482959646,
+              "y": 27.879345195121296,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "fb2f6e0a-4484-4cd2-bbef-deceac7e441f:0",
+          "points_ego_m": [
+            {
+              "x": -29.462209051723892,
+              "y": 37.830861206838655,
+              "z": 0.0
+            },
+            {
+              "x": -30.325516815947726,
+              "y": 26.795764783103937,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "8f74cf95-642c-4683-abd0-b7f661ba7fbd:0",
+          "points_ego_m": [
+            {
+              "x": -27.298047181221985,
+              "y": 75.34936310041516,
+              "z": 0.0
+            },
+            {
+              "x": -27.833580176230843,
+              "y": 58.64855479901296,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "5b467cda-77cd-41ad-9d8a-0a93ce657f5f:0",
+          "points_ego_m": [
+            {
+              "x": -70.68857639495036,
+              "y": 2.1712169215542754,
+              "z": 0.0
+            },
+            {
+              "x": -61.06383198956743,
+              "y": 0.9518417125533665,
+              "z": 0.0
+            },
+            {
+              "x": -56.33265193081139,
+              "y": -0.10747576263388696,
+              "z": 0.0
+            },
+            {
+              "x": -50.86458959756141,
+              "y": -2.089985149736424,
+              "z": 0.0
+            },
+            {
+              "x": -47.57982797672822,
+              "y": -4.24137980126778,
+              "z": 0.0
+            },
+            {
+              "x": -45.155091242809284,
+              "y": -7.328017541830315,
+              "z": 0.0
+            },
+            {
+              "x": -43.84463453903738,
+              "y": -11.026237039512933,
+              "z": 0.0
+            },
+            {
+              "x": -43.68057967613776,
+              "y": -13.969259089045822,
+              "z": 0.0
+            },
+            {
+              "x": -44.555040376822674,
+              "y": -23.779432187846794,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "bd23f1a8-95ec-42ba-82d4-79ca85de54d0:0",
+          "points_ego_m": [
+            {
+              "x": -51.52186502753934,
+              "y": -26.059405550084392,
+              "z": 0.0
+            },
+            {
+              "x": -51.11076518838043,
+              "y": -22.20977240942384,
+              "z": 0.0
+            },
+            {
+              "x": -51.51594221402573,
+              "y": -18.369501232817562,
+              "z": 0.0
+            },
+            {
+              "x": -52.93033491185602,
+              "y": -14.775183589843499,
+              "z": 0.0
+            },
+            {
+              "x": -55.25179749122575,
+              "y": -11.686396907644987,
+              "z": 0.0
+            },
+            {
+              "x": -58.31267663280718,
+              "y": -9.326209757116636,
+              "z": 0.0
+            },
+            {
+              "x": -61.78395175878213,
+              "y": -7.761338323302842,
+              "z": 0.0
+            },
+            {
+              "x": -65.42725499244442,
+              "y": -6.727598340901976,
+              "z": 0.0
+            },
+            {
+              "x": -70.11651706059041,
+              "y": -6.061892490404205,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "e6c02d87-72ec-45d7-be42-e7dc32917784:0",
+          "points_ego_m": [
+            {
+              "x": 53.54045461903353,
+              "y": -7.224748544953175,
+              "z": 0.0
+            },
+            {
+              "x": 63.88237912763979,
+              "y": -8.592050339062505,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "2be79e09-f17d-4570-aa75-5c1c098d6afd:0",
+          "points_ego_m": [
+            {
+              "x": -47.547396078144715,
+              "y": 16.337093502290045,
+              "z": 0.0
+            },
+            {
+              "x": -45.037316042337416,
+              "y": 35.40346848269965,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "8026b697-f9b1-4eda-81ef-20ef5bffbb8a:0",
+          "points_ego_m": [
+            {
+              "x": -50.949180543140734,
+              "y": -82.62402205886274,
+              "z": 0.0
+            },
+            {
+              "x": -52.74988641855978,
+              "y": -97.72541402712726,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "349bd97f-67bc-4f5d-92cb-8f1fb9551767:0",
+          "points_ego_m": [
+            {
+              "x": -40.41682276031992,
+              "y": 13.872521512042042,
+              "z": 0.0
+            },
+            {
+              "x": -41.17958460489765,
+              "y": 10.042131565532754,
+              "z": 0.0
+            },
+            {
+              "x": -42.645939537897654,
+              "y": 6.422568755402728,
+              "z": 0.0
+            },
+            {
+              "x": -44.769388711652,
+              "y": 3.1443779234612625,
+              "z": 0.0
+            },
+            {
+              "x": -47.473765489881906,
+              "y": 0.32514548139979005,
+              "z": 0.0
+            },
+            {
+              "x": -50.662065769557636,
+              "y": -1.9340046754452382,
+              "z": 0.0
+            },
+            {
+              "x": -54.244732830999595,
+              "y": -3.49328664395142,
+              "z": 0.0
+            },
+            {
+              "x": -57.12310569080183,
+              "y": -4.0640798468769495,
+              "z": 0.0
+            },
+            {
+              "x": -61.03134608154794,
+              "y": -3.985542537021413,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "340892d1-a6f7-48da-8df2-d7b6382c6d3d:0",
+          "points_ego_m": [
+            {
+              "x": -57.3999701600652,
+              "y": -73.03613600400054,
+              "z": 0.0
+            },
+            {
+              "x": -55.152657044462806,
+              "y": -55.4685299141257,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "3f698990-af68-4f9c-a3ec-ab05a6d83baf:0",
+          "points_ego_m": [
+            {
+              "x": 1.0682769723531993,
+              "y": -3.8058318511338207,
+              "z": 0.0
+            },
+            {
+              "x": 15.091584867643146,
+              "y": -5.646380321637971,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "c8ebee91-cf9c-4212-a7d0-662f3f0c3a28:0",
+          "points_ego_m": [
+            {
+              "x": -57.048601521911564,
+              "y": -92.7176319440645,
+              "z": 0.0
+            },
+            {
+              "x": -55.64396307205914,
+              "y": -81.74451689585227,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "91da635c-b931-4517-89c9-ff90792d75f0:0",
+          "points_ego_m": [
+            {
+              "x": -28.711723958414254,
+              "y": 74.95419357963131,
+              "z": 0.0
+            },
+            {
+              "x": -31.469742978055226,
+              "y": 56.662978667634825,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "f24a067b-d650-47d0-8664-039d648d7c0d:0",
+          "points_ego_m": [
+            {
+              "x": 38.17277879365593,
+              "y": -19.95513266198663,
+              "z": 0.0
+            },
+            {
+              "x": 6.217978198843209,
+              "y": -15.81058685210546,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "51947187-3a3d-4292-ab59-26f650ff0b5e:0",
+          "points_ego_m": [
+            {
+              "x": 49.72486637569279,
+              "y": -17.93687792672756,
+              "z": 0.0
+            },
+            {
+              "x": 7.730310584649039,
+              "y": -12.761456103765903,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "da3704b9-a68e-47e7-b28e-2a70dce7039f:0",
+          "points_ego_m": [
+            {
+              "x": -32.4000892595402,
+              "y": 73.92317321342242,
+              "z": 0.0
+            },
+            {
+              "x": -35.45750636930392,
+              "y": 52.69270353197706,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "47b5a46c-88c0-445f-9193-972d8f7d705e:0",
+          "points_ego_m": [
+            {
+              "x": -37.37564037509036,
+              "y": 12.360199492846238,
+              "z": 0.0
+            },
+            {
+              "x": -39.90364200387348,
+              "y": -10.239641449523447,
+              "z": 0.0
+            },
+            {
+              "x": -41.82676245943299,
+              "y": -23.94736748335161,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "dab7c5c2-8558-483c-9c8c-31815fbf2898:0",
+          "points_ego_m": [
+            {
+              "x": -0.7359513960606415,
+              "y": -0.06048548180146682,
+              "z": 0.0
+            },
+            {
+              "x": 15.642595060600215,
+              "y": -2.214287365398711,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "368238a4-0296-4d75-8d86-374ecdedf3f3:0",
+          "points_ego_m": [
+            {
+              "x": -29.890166352759916,
+              "y": -7.960029404601957,
+              "z": 0.0
+            },
+            {
+              "x": -61.031346081547994,
+              "y": -3.985542537021427,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "0282d0e3-b6bf-4bcd-be24-35c9ce4c6591:0",
+          "points_ego_m": [
+            {
+              "x": -25.60021152584396,
+              "y": -11.685997923228554,
+              "z": 0.0
+            },
+            {
+              "x": -28.537633007876018,
+              "y": -11.596605806198001,
+              "z": 0.0
+            },
+            {
+              "x": -31.432297256049235,
+              "y": -12.101701271558408,
+              "z": 0.0
+            },
+            {
+              "x": -35.84044703541761,
+              "y": -14.197291798613746,
+              "z": 0.0
+            },
+            {
+              "x": -38.05787804500119,
+              "y": -16.12243553376743,
+              "z": 0.0
+            },
+            {
+              "x": -39.84002625700037,
+              "y": -18.45546410545705,
+              "z": 0.0
+            },
+            {
+              "x": -41.11341260350996,
+              "y": -21.10018530941475,
+              "z": 0.0
+            },
+            {
+              "x": -41.82676245943276,
+              "y": -23.94736748335225,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "5e479fe8-4129-4ae1-a80c-70f19fd637d6:0",
+          "points_ego_m": [
+            {
+              "x": -69.70479261241364,
+              "y": 5.525128144670501,
+              "z": 0.0
+            },
+            {
+              "x": -59.04928771246208,
+              "y": 4.165781990287546,
+              "z": 0.0
+            },
+            {
+              "x": -51.41048283179996,
+              "y": 2.5368000011437513,
+              "z": 0.0
+            },
+            {
+              "x": -45.739137213722834,
+              "y": 0.7729910195603334,
+              "z": 0.0
+            },
+            {
+              "x": -42.51451959644013,
+              "y": -1.5476569139665732,
+              "z": 0.0
+            },
+            {
+              "x": -40.282177783106924,
+              "y": -4.832010886795336,
+              "z": 0.0
+            },
+            {
+              "x": -39.313068479487505,
+              "y": -8.681423286930935,
+              "z": 0.0
+            },
+            {
+              "x": -39.49228001350978,
+              "y": -11.659233734719745,
+              "z": 0.0
+            },
+            {
+              "x": -41.826762459432814,
+              "y": -23.94736748335203,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "3d406756-c334-4123-a901-c47fe0a7c1b6:0",
+          "points_ego_m": [
+            {
+              "x": -86.82093682117728,
+              "y": 13.366896939727965,
+              "z": 0.0
+            },
+            {
+              "x": -83.12525887881775,
+              "y": 13.122148818011194,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        },
+        {
+          "element_id": "aa8beea9-dff6-4e95-980e-697045208788:0",
+          "points_ego_m": [
+            {
+              "x": -54.600374234750845,
+              "y": -73.36232708089527,
+              "z": 0.0
+            },
+            {
+              "x": -52.50746119139403,
+              "y": -56.13143558097029,
+              "z": 0.0
+            }
+          ],
+          "kind": null,
+          "confidence": null
+        }
+      ],
+      "attributes": {
+        "map_location": "singapore-onenorth",
+        "patch_radius_m": 80.0
+      }
+    }
+  ],
+  "metadata": {
+    "dataset": "nuscenes",
+    "version": "v1.0-mini",
+    "sample_token": "29e056fc277543c9bc42310b122c640e",
+    "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+    "scene_name": "scene-0061"
+  },
+  "diagnostics": {
+    "object_count": 87,
+    "camera_count": 6,
+    "lidar_present": true,
+    "map_layer_count": 1,
+    "map_element_counts": [
+      {
+        "source": "hd_map:nuscenes",
+        "drivable_areas": 1,
+        "lane_dividers": 20,
+        "crosswalks": 10,
+        "stop_lines": 19,
+        "centerlines": 84
+      }
+    ]
+  }
+}

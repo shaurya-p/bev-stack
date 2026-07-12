@@ -353,3 +353,66 @@ html, body, #root {
   color: #8b99ad;
   font-variant-numeric: tabular-nums;
 }
+
+/* ── map layer controls ── */
+
+.map-layer-group {
+  margin-bottom: 8px;
+}
+
+.map-source-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid rgba(120, 140, 170, 0.25);
+  border-radius: 6px;
+  background: rgba(120, 140, 170, 0.05);
+  color: #8fa0b8;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+}
+
+.map-source-toggle--active {
+  background: rgba(120, 140, 170, 0.14);
+  color: #c8d4e4;
+  border-color: rgba(120, 140, 170, 0.5);
+}
+
+.map-source-toggle:hover {
+  border-color: rgba(160, 180, 210, 0.6);
+}
+
+.map-sublayer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 5px;
+  padding-left: 4px;
+}
+
+.map-sublayer-chip {
+  padding: 3px 7px;
+  border: 1px solid rgba(120, 140, 170, 0.2);
+  border-radius: 9px;
+  background: transparent;
+  color: #5d6b82;
+  font-size: 9px;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.map-sublayer-chip--active {
+  background: rgba(140, 165, 200, 0.16);
+  color: #b6c1d2;
+  border-color: rgba(140, 165, 200, 0.45);
+}
+
+.map-sublayer-chip:hover {
+  border-color: rgba(160, 180, 210, 0.55);
+}

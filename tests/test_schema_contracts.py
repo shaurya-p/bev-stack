@@ -6,6 +6,9 @@ import json
 from bevstack.core.schema import (
     Box3D,
     EgoState,
+    MapLayer,
+    MapPolygon,
+    MapPolyline,
     Object3D,
     Pose3D,
     QuaternionWXYZ,
@@ -23,6 +26,7 @@ _EXPECTED_SCENE_FRAME_FIELDS = frozenset({
     "cameras",
     "lidar",
     "objects",
+    "map_layers",
     "metadata",
     "diagnostics",
 })
@@ -112,6 +116,66 @@ def test_object3d_source_not_hardcoded_to_gt() -> None:
             source=src,
         )
         assert obj.source == src
+
+
+def test_scene_frame_map_layers_default_empty() -> None:
+    frame = _minimal_frame()
+    assert frame.map_layers == []
+    d = to_dict(frame)
+    assert d["map_layers"] == []
+    json.dumps(d)  # stays JSON-serializable
+
+
+def test_map_layer_construction_and_serialization() -> None:
+    ring = [Vec3(0.0, 0.0, 0.0), Vec3(10.0, 0.0, 0.0), Vec3(10.0, 5.0, 0.0), Vec3(0.0, 0.0, 0.0)]
+    layer = MapLayer(
+        source="hd_map:nuscenes",
+        drivable_areas=[MapPolygon(element_id="da_1", exterior_ego_m=ring)],
+        lane_dividers=[
+            MapPolyline(
+                element_id="ld_1",
+                points_ego_m=[Vec3(0.0, 1.8, 0.0), Vec3(30.0, 1.8, 0.0)],
+                kind="dashed",
+            )
+        ],
+    )
+    d = to_dict(layer)
+    assert d["source"] == "hd_map:nuscenes"
+    assert d["drivable_areas"][0]["exterior_ego_m"][0] == {"x": 0.0, "y": 0.0, "z": 0.0}
+    assert d["drivable_areas"][0]["holes_ego_m"] == []
+    assert d["drivable_areas"][0]["confidence"] is None
+    assert d["lane_dividers"][0]["kind"] == "dashed"
+    assert d["lane_dividers"][0]["confidence"] is None
+    assert d["crosswalks"] == []
+    assert d["stop_lines"] == []
+    assert d["centerlines"] == []
+    json.dumps(d)
+
+
+def test_map_layer_uses_ego_frame_field_names() -> None:
+    poly = to_dict(MapPolygon(element_id="p", exterior_ego_m=[]))
+    line = to_dict(MapPolyline(element_id="l", points_ego_m=[]))
+    assert "exterior_ego_m" in poly and "exterior" not in poly
+    assert "points_ego_m" in line and "points" not in line
+
+
+def test_multiple_map_layer_sources_coexist() -> None:
+    frame = _minimal_frame()
+    frame.map_layers = [
+        MapLayer(source="hd_map:nuscenes"),
+        MapLayer(
+            source="model:lane_demo",
+            centerlines=[
+                MapPolyline(element_id="c", points_ego_m=[Vec3(0.0, 0.0, 0.0)], confidence=0.7)
+            ],
+        ),
+    ]
+    d = to_dict(frame)
+    assert [layer["source"] for layer in d["map_layers"]] == [
+        "hd_map:nuscenes",
+        "model:lane_demo",
+    ]
+    assert d["map_layers"][1]["centerlines"][0]["confidence"] == 0.7
 
 
 def test_typescript_schema_field_alignment() -> None:

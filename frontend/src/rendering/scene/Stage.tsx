@@ -2,24 +2,32 @@ import { useMemo } from 'react';
 import { Grid, Line } from '@react-three/drei';
 import { THEME } from '../visuals/theme';
 
-// Scene dressing for the product view: dark asphalt ground, a generic road
-// corridor along the ego axis with lane markings, a fading reference grid,
-// and faint range rings. Everything here is static composition — no
-// SceneFrame data flows into the stage.
+// Scene dressing for the product view: dark asphalt ground, a fading
+// reference grid, and faint range rings. Static composition only — real road
+// geometry comes from SceneFrame.map_layers (MapLayer3D). When a frame
+// carries no map geometry, `showProceduralRoad` re-enables a generic
+// corridor so the scene never looks broken without map data.
 
 const ROAD_WIDTH_M    = 8;
 const ROAD_BACK_M     = 25;   // behind ego (world +Z)
 const ROAD_AHEAD_M    = 95;   // ahead of ego (world −Z)
 
-export function Stage() {
+interface StageProps {
+  showProceduralRoad?: boolean;
+  /** Dashed range rings flatten into stray-looking marks at oblique camera
+   *  angles; diagnostic aid only, gated behind the debug overlay. */
+  showRangeRings?: boolean;
+}
+
+export function Stage({ showProceduralRoad = false, showRangeRings = false }: StageProps) {
   return (
     <>
       <color attach="background" args={[THEME.background]} />
       <fog attach="fog" args={[THEME.background, THEME.fogNear, THEME.fogFar]} />
       <GroundPlane />
       <ReferenceGrid />
-      <RoadCorridor />
-      <RangeRings />
+      {showProceduralRoad && <ProceduralRoad />}
+      {showRangeRings && <RangeRings />}
     </>
   );
 }
@@ -38,7 +46,7 @@ function ReferenceGrid() {
     <Grid
       position={[0, 0.01, 0]}
       cellSize={2}
-      cellThickness={0.5}
+      cellThickness={0.35}
       cellColor={THEME.gridCell}
       sectionSize={10}
       sectionThickness={1}
@@ -50,9 +58,10 @@ function ReferenceGrid() {
   );
 }
 
-// Generic driveable corridor along the ego axis: asphalt strip, solid edge
-// lines, dashed center line. Scene dressing only — not derived from map data.
-function RoadCorridor() {
+// Fallback-only generic corridor along the ego axis: asphalt strip, solid
+// edge lines, dashed center line. Not derived from map data — rendered only
+// when SceneFrame.map_layers carry no geometry.
+function ProceduralRoad() {
   const length  = ROAD_BACK_M + ROAD_AHEAD_M;
   const centerZ = (ROAD_BACK_M - ROAD_AHEAD_M) / 2;
 

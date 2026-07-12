@@ -6,14 +6,24 @@ import { Stage } from './scene/Stage';
 import { EgoActor } from './scene/EgoActor';
 import { ObjectLayer } from './scene/ObjectLayer';
 import { DebugOverlay } from './scene/DebugOverlay';
+import { MapLayer3D, hasMapGeometry } from './scene/MapLayer3D';
+import type { MapVisibility } from './mapStyle';
+import { IDENTITY_DELTA, type EgoMapDelta } from './egoMotion';
 import { THEME } from './visuals/theme';
 
 interface BevScene3DProps {
-  frame:      SceneFrame;
-  showDebug?: boolean;
+  frame:          SceneFrame;
+  showDebug?:     boolean;
+  mapVisibility?: MapVisibility;
+  mapMotion?:     EgoMapDelta;
 }
 
-export function BevScene3D({ frame, showDebug = false }: BevScene3DProps) {
+export function BevScene3D({
+  frame,
+  showDebug = false,
+  mapVisibility = {},
+  mapMotion = IDENTITY_DELTA,
+}: BevScene3DProps) {
   return (
     <Canvas
       shadows
@@ -22,7 +32,11 @@ export function BevScene3D({ frame, showDebug = false }: BevScene3DProps) {
       style={{ background: THEME.background }}
     >
       <Lighting />
-      <Stage />
+      <Stage
+        showProceduralRoad={!hasMapGeometry(frame.map_layers)}
+        showRangeRings={showDebug}
+      />
+      <MapLayer3D layers={frame.map_layers} visibility={mapVisibility} motion={mapMotion} />
       <EgoActor />
       <ObjectLayer frame={frame} />
       {showDebug && <DebugOverlay frame={frame} />}

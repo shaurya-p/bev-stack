@@ -1,6 +1,16 @@
 import { useEffect, useRef } from 'react';
-import type { Object3D, SceneFrame } from '../schema/sceneFrame';
+import type { MapLayer, MapPolygon, MapPolyline, Object3D, SceneFrame, Vec3 } from '../schema/sceneFrame';
 import { normalizeCategory, type NormalizedCategory } from './categories';
+import {
+  centerlineStyle,
+  crosswalkStyle,
+  dividerStyle,
+  drivableStyle,
+  stopLineStyle,
+  type LineStyle,
+  type MapVisibility,
+} from './mapStyle';
+import { IDENTITY_DELTA, type EgoMapDelta } from './egoMotion';
 
 // ── canvas dimensions ────────────────────────────────────────────────────────
 
@@ -105,6 +115,93 @@ function drawRangeRings(ctx: CanvasRenderingContext2D): void {
   ctx.textAlign = 'left';
 }
 
+// ── map layers ───────────────────────────────────────────────────────────────
+// Drawn beneath objects. Geometry is ego-frame meters; same toScreen mapping
+// as boxes. Style comes from the shared mapStyle module so 2D and 3D agree.
+
+function tracePolygon(ctx: CanvasRenderingContext2D, ring: Vec3[]): void {
+  ring.forEach((p, i) => {
+    const [sx, sy] = toScreen(p.x, p.y);
+    if (i === 0) ctx.moveTo(sx, sy);
+    else ctx.lineTo(sx, sy);
+  });
+  ctx.closePath();
+}
+
+function drawMapPolygon(
+  ctx: CanvasRenderingContext2D,
+  poly: MapPolygon,
+  color: string,
+  opacity: number,
+): void {
+  if (poly.exterior_ego_m.length < 4) return;
+  ctx.beginPath();
+  tracePolygon(ctx, poly.exterior_ego_m);
+  for (const hole of poly.holes_ego_m) {
+    if (hole.length >= 4) tracePolygon(ctx, hole);
+  }
+  ctx.fillStyle = hexAlpha(color, opacity);
+  ctx.fill('evenodd');
+}
+
+function drawMapPolyline(
+  ctx: CanvasRenderingContext2D,
+  line: MapPolyline,
+  style: LineStyle,
+): void {
+  if (line.points_ego_m.length < 2) return;
+  ctx.strokeStyle = hexAlpha(style.color, style.opacity);
+  ctx.lineWidth = style.widthPx;
+  ctx.setLineDash(style.dashed ? [6, 8] : []);
+  ctx.beginPath();
+  line.points_ego_m.forEach((p, i) => {
+    const [sx, sy] = toScreen(p.x, p.y);
+    if (i === 0) ctx.moveTo(sx, sy);
+    else ctx.lineTo(sx, sy);
+  });
+  ctx.stroke();
+  ctx.setLineDash([]);
+}
+
+function drawMapLayer(
+  ctx: CanvasRenderingContext2D,
+  layer: MapLayer,
+  vis: MapVisibility,
+): void {
+  const v = vis[layer.source];
+  if (v && !v.enabled) return;
+  const sub = v?.sublayers;
+
+  if (sub?.drivable_areas ?? true) {
+    for (const p of layer.drivable_areas) {
+      const s = drivableStyle(layer, p.confidence);
+      // 2D canvas background is darker than the 3D scene; lift HD fill a touch.
+      drawMapPolygon(ctx, p, s.color, Math.min(1, s.opacity * 0.5));
+    }
+  }
+  if (sub?.crosswalks ?? true) {
+    for (const p of layer.crosswalks) {
+      const s = crosswalkStyle(layer, p.confidence);
+      drawMapPolygon(ctx, p, s.color, s.opacity);
+    }
+  }
+  if (sub?.lane_dividers ?? true) {
+    for (const l of layer.lane_dividers) {
+      drawMapPolyline(ctx, l, dividerStyle(layer, l.kind, l.confidence));
+    }
+  }
+  if (sub?.stop_lines ?? true) {
+    for (const l of layer.stop_lines) {
+      drawMapPolyline(ctx, l, stopLineStyle(layer, l.confidence));
+    }
+  }
+  if (sub?.centerlines ?? false) {
+    for (const l of layer.centerlines) {
+      drawMapPolyline(ctx, l, centerlineStyle(layer, l.confidence));
+    }
+  }
+}
+
 // ── ego vehicle ───────────────────────────────────────────────────────────────
 
 function drawEgo(ctx: CanvasRenderingContext2D): void {
@@ -192,7 +289,10 @@ function draw2DObject(ctx: CanvasRenderingContext2D, obj: Object3D): void {
 // ── component ─────────────────────────────────────────────────────────────────
 
 export interface BevCanvasProps {
-  frame: SceneFrame;
+  frame:          SceneFrame;
+  mapVisibility?: MapVisibility;
+  /** Rigid ego-motion delta for smooth map scrolling between keyframes. */
+  mapMotion?:     EgoMapDelta;
 }
 
 // Static props (barriers / cones / pushable_pullable) render under dynamic
@@ -204,7 +304,11 @@ function isStaticProp(o: Object3D): boolean {
   return o.category.startsWith('movable_object.');
 }
 
-export function BevCanvas({ frame }: BevCanvasProps) {
+export function BevCanvas({
+  frame,
+  mapVisibility = {},
+  mapMotion = IDENTITY_DELTA,
+}: BevCanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -217,13 +321,26 @@ export function BevCanvas({ frame }: BevCanvasProps) {
     drawGrid(ctx);
     drawRangeRings(ctx);
 
+    // Rigid ego-motion transform so the map glides between keyframes, matching
+    // the 3D view. Ego rotation +θ about z maps to screen rotation −θ; the
+    // ego-frame offset maps through the same toScreen axis convention.
+    ctx.save();
+    ctx.translate(
+      EGO_SX - mapMotion.offsetEgoY * PX_PER_M,
+      EGO_SY - mapMotion.offsetEgoX * PX_PER_M,
+    );
+    ctx.rotate(-mapMotion.dyawRad);
+    ctx.translate(-EGO_SX, -EGO_SY);
+    for (const layer of frame.map_layers) drawMapLayer(ctx, layer, mapVisibility);
+    ctx.restore();
+
     const below = frame.objects.filter(isStaticProp);
     const above = frame.objects.filter(o => !isStaticProp(o));
     for (const o of below) draw2DObject(ctx, o);
     for (const o of above) draw2DObject(ctx, o);
 
     drawEgo(ctx);
-  }, [frame]);
+  }, [frame, mapVisibility, mapMotion]);
 
   return (
     <canvas

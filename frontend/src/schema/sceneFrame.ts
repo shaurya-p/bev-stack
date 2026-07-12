@@ -57,6 +57,37 @@ export interface Object3D {
   attributes: Record<string, unknown>;
 }
 
+// A closed polygon map element (drivable area, crosswalk) in the ego frame.
+// exterior_ego_m is a closed ring (first point == last point), meters.
+export interface MapPolygon {
+  element_id: string;
+  exterior_ego_m: Vec3[];
+  holes_ego_m: Vec3[][];
+  confidence: number | null;
+}
+
+// An open polyline map element (divider, stop line, centerline) in the ego frame.
+// kind is semantic only (dividers: 'solid' | 'dashed' | 'road_edge');
+// visual style is resolved frontend-side, keyed by layer source.
+export interface MapPolyline {
+  element_id: string;
+  points_ego_m: Vec3[];
+  kind: string | null;
+  confidence: number | null;
+}
+
+// One source-tagged set of static map elements ("hd_map:nuscenes", "model:*"),
+// mirroring how objects carry a source. Geometry is ego frame, meters.
+export interface MapLayer {
+  source: string;
+  drivable_areas: MapPolygon[];
+  lane_dividers: MapPolyline[];
+  crosswalks: MapPolygon[];
+  stop_lines: MapPolyline[];
+  centerlines: MapPolyline[];
+  attributes: Record<string, unknown>;
+}
+
 export interface SceneFrame {
   frame_id: string;
   timestamp_us: number;
@@ -64,6 +95,7 @@ export interface SceneFrame {
   cameras: CameraFrame[];
   lidar: LidarFrame | null;
   objects: Object3D[];
+  map_layers: MapLayer[];
   metadata: Record<string, unknown>;
   diagnostics: Record<string, unknown>;
 }

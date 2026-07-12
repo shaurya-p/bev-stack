@@ -19,6 +19,17 @@ export const THEME = {
   gridSection:  '#566377',
   rangeRing:    '#5d6b82',
 
+  // HD-map layer (muted, recedes behind objects)
+  mapHdDrivable:   '#333b48',
+  mapHdDivider:    '#8f9aac',
+  mapHdRoadEdge:   '#6b7688',
+  mapHdCrosswalk:  '#7d8798',
+  mapHdStopLine:   '#79849a',
+  mapHdCenterline: '#4d5a70',
+
+  // Model map layers (vivid, reads as prediction overlay)
+  mapModelPrimary: '#35d0a5',
+
   // Shared object materials
   tire:         '#0b0d11',
   wheelHub:     '#3a4250',

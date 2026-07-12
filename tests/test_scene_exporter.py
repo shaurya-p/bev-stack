@@ -82,6 +82,7 @@ def test_exported_json_has_expected_top_level_keys(
         "cameras",
         "lidar",
         "objects",
+        "map_layers",
         "metadata",
         "diagnostics",
     }

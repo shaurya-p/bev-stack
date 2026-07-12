@@ -65,6 +65,53 @@ class Object3D:
 
 
 @dataclass
+class MapPolygon:
+    """A closed polygon map element (drivable area, crosswalk) in the ego frame.
+
+    exterior_ego_m is a closed ring (first point == last point), meters,
+    ego frame (x forward, y left, z up). holes_ego_m are interior rings.
+    confidence is None for ground-truth layers, set by model layers.
+    """
+
+    element_id: str
+    exterior_ego_m: list[Vec3]
+    holes_ego_m: list[list[Vec3]] = field(default_factory=list)
+    confidence: float | None = None
+
+
+@dataclass
+class MapPolyline:
+    """An open polyline map element (divider, stop line, centerline) in the ego frame.
+
+    kind carries semantic meaning only (e.g. dividers: "solid" | "dashed" |
+    "road_edge"); visual style is a frontend concern keyed by layer source.
+    """
+
+    element_id: str
+    points_ego_m: list[Vec3]
+    kind: str | None = None
+    confidence: float | None = None
+
+
+@dataclass
+class MapLayer:
+    """One source-tagged set of static map elements, mirroring how objects carry source.
+
+    Sources follow the "hd_map:<dataset>" / "model:<name>" convention so a
+    ground-truth HD map and online map-prediction layers can coexist in a frame.
+    All geometry is in the current ego frame, meters.
+    """
+
+    source: str
+    drivable_areas: list[MapPolygon] = field(default_factory=list)
+    lane_dividers: list[MapPolyline] = field(default_factory=list)
+    crosswalks: list[MapPolygon] = field(default_factory=list)
+    stop_lines: list[MapPolyline] = field(default_factory=list)
+    centerlines: list[MapPolyline] = field(default_factory=list)
+    attributes: dict[str, Any] = field(default_factory=dict)
+
+
+@dataclass
 class SceneFrame:
     frame_id: str
     timestamp_us: int
@@ -72,6 +119,7 @@ class SceneFrame:
     cameras: list[CameraFrame] = field(default_factory=list)
     lidar: LidarFrame | None = None
     objects: list[Object3D] = field(default_factory=list)
+    map_layers: list[MapLayer] = field(default_factory=list)
     metadata: dict[str, Any] = field(default_factory=dict)
     diagnostics: dict[str, Any] = field(default_factory=dict)
 

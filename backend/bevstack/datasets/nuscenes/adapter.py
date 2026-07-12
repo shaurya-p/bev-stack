@@ -1,7 +1,10 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Any
+from typing import TYPE_CHECKING, Any
+
+if TYPE_CHECKING:
+    from bevstack.datasets.nuscenes.map_provider import NuScenesMapProvider
 
 import numpy as np
 from nuscenes.nuscenes import NuScenes
@@ -186,12 +189,17 @@ def sample_to_scene_frame(
     nusc: NuScenes,
     sample_token: str,
     dataroot: Path,
+    map_provider: "NuScenesMapProvider | None" = None,
 ) -> SceneFrame:
     """Convert one nuScenes sample into a SceneFrame.
 
     All object geometry is expressed in the current ego frame (x forward, y left,
     z up). The LIDAR_TOP ego pose is used as the canonical reference frame for
     this sample. Dataset-specific transforms are confined to this module.
+
+    When map_provider is given, the HD-map patch around the ego is extracted
+    into frame.map_layers (source="hd_map:nuscenes"); otherwise map_layers is
+    empty. Map extraction failures degrade to empty layers, never a crash.
     """
     sample = nusc.get("sample", sample_token)
 
@@ -214,6 +222,13 @@ def sample_to_scene_frame(
 
     scene = nusc.get("scene", sample["scene_token"])
 
+    map_layers = []
+    if map_provider is not None:
+        location = nusc.get("log", scene["log_token"])["location"]
+        map_layers = [
+            map_provider.get_map_layer(location, ego_translation, ego_rotation)
+        ]
+
     return SceneFrame(
         frame_id=sample_token,
         timestamp_us=int(sample["timestamp"]),
@@ -221,6 +236,7 @@ def sample_to_scene_frame(
         cameras=cameras,
         lidar=lidar,
         objects=objects,
+        map_layers=map_layers,
         metadata={
             "dataset": "nuscenes",
             "version": nusc.version,
@@ -232,5 +248,17 @@ def sample_to_scene_frame(
             "object_count": len(objects),
             "camera_count": len(cameras),
             "lidar_present": lidar is not None,
+            "map_layer_count": len(map_layers),
+            "map_element_counts": [
+                {
+                    "source": layer.source,
+                    "drivable_areas": len(layer.drivable_areas),
+                    "lane_dividers": len(layer.lane_dividers),
+                    "crosswalks": len(layer.crosswalks),
+                    "stop_lines": len(layer.stop_lines),
+                    "centerlines": len(layer.centerlines),
+                }
+                for layer in map_layers
+            ],
         },
     )

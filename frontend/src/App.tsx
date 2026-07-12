@@ -5,21 +5,102 @@ import { BevScene3D } from './rendering/BevScene3D';
 import { TransportBar } from './rendering/TransportBar';
 import { displayName } from './rendering/categories';
 import { categoryColor } from './rendering/visuals/registry';
+import {
+  MAP_SUBLAYERS,
+  SUBLAYER_LABELS,
+  ensureVisibilityFor,
+  sourceAccent,
+  type MapSublayer,
+  type MapVisibility,
+} from './rendering/mapStyle';
+import { egoMapDelta } from './rendering/egoMotion';
+import { normalizeFrame } from './sequence/manifest';
 import { usePlayback } from './sequence/usePlayback';
 import { interpolateFrame, lerp } from './sequence/interpolate';
 
 const SEQUENCE_URL = '/scene_frames/nuscenes_scene_0061/manifest.json';
 const FALLBACK_FRAME_URL = '/scene_frames/nuscenes_sample_frame.json';
 
-interface HudPanelProps {
-  frame:           SceneFrame;
-  mode:            '2d' | '3d';
-  onModeChange:    (m: '2d' | '3d') => void;
-  showDebug:       boolean;
-  onDebugChange:   (v: boolean) => void;
+interface MapLayerControlsProps {
+  frame:               SceneFrame;
+  mapVisibility:       MapVisibility;
+  onToggleSource:      (source: string) => void;
+  onToggleSublayer:    (source: string, sublayer: MapSublayer) => void;
 }
 
-function HudPanel({ frame, mode, onModeChange, showDebug, onDebugChange }: HudPanelProps) {
+function MapLayerControls({
+  frame,
+  mapVisibility,
+  onToggleSource,
+  onToggleSublayer,
+}: MapLayerControlsProps) {
+  if (frame.map_layers.length === 0) return null;
+  return (
+    <div className="panel-section">
+      <div className="panel-section-heading">map layers</div>
+      {frame.map_layers.map(layer => {
+        const vis = mapVisibility[layer.source];
+        const enabled = vis?.enabled ?? true;
+        return (
+          <div key={layer.source} className="map-layer-group">
+            <button
+              className={`map-source-toggle${enabled ? ' map-source-toggle--active' : ''}`}
+              onClick={() => onToggleSource(layer.source)}
+              title={`Toggle all ${layer.source} elements`}
+            >
+              <span
+                className="panel-cat-dot"
+                style={{ background: sourceAccent(layer.source) }}
+              />
+              {enabled ? '● ' : '○ '}{layer.source}
+            </button>
+            {enabled && (
+              <div className="map-sublayer-row">
+                {MAP_SUBLAYERS.map(sub => {
+                  const count = layer[sub].length;
+                  if (count === 0) return null;
+                  const on = vis?.sublayers[sub] ?? (sub !== 'centerlines');
+                  return (
+                    <button
+                      key={sub}
+                      className={`map-sublayer-chip${on ? ' map-sublayer-chip--active' : ''}`}
+                      onClick={() => onToggleSublayer(layer.source, sub)}
+                      title={`${SUBLAYER_LABELS[sub]} (${count})`}
+                    >
+                      {SUBLAYER_LABELS[sub]}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+interface HudPanelProps {
+  frame:            SceneFrame;
+  mode:             '2d' | '3d';
+  onModeChange:     (m: '2d' | '3d') => void;
+  showDebug:        boolean;
+  onDebugChange:    (v: boolean) => void;
+  mapVisibility:    MapVisibility;
+  onToggleSource:   (source: string) => void;
+  onToggleSublayer: (source: string, sublayer: MapSublayer) => void;
+}
+
+function HudPanel({
+  frame,
+  mode,
+  onModeChange,
+  showDebug,
+  onDebugChange,
+  mapVisibility,
+  onToggleSource,
+  onToggleSublayer,
+}: HudPanelProps) {
   const counts = new Map<string, number>();
   for (const o of frame.objects) {
     counts.set(o.category, (counts.get(o.category) ?? 0) + 1);
@@ -85,6 +166,13 @@ function HudPanel({ frame, mode, onModeChange, showDebug, onDebugChange }: HudPa
         </div>
       )}
 
+      <MapLayerControls
+        frame={frame}
+        mapVisibility={mapVisibility}
+        onToggleSource={onToggleSource}
+        onToggleSublayer={onToggleSublayer}
+      />
+
       {mode === '3d' && (
         <div className="panel-section panel-section--diagnostics">
           <div className="panel-section-heading">diagnostics</div>
@@ -104,6 +192,27 @@ function HudPanel({ frame, mode, onModeChange, showDebug, onDebugChange }: HudPa
 export default function App() {
   const [mode,  setMode]          = useState<'2d' | '3d'>('3d');
   const [showDebug, setShowDebug] = useState<boolean>(false);
+  const [mapVisibility, setMapVisibility] = useState<MapVisibility>({});
+
+  const toggleMapSource = (source: string) =>
+    setMapVisibility(v => {
+      const withDefaults = ensureVisibilityFor([source], v);
+      const cur = withDefaults[source];
+      return { ...withDefaults, [source]: { ...cur, enabled: !cur.enabled } };
+    });
+
+  const toggleMapSublayer = (source: string, sublayer: MapSublayer) =>
+    setMapVisibility(v => {
+      const withDefaults = ensureVisibilityFor([source], v);
+      const cur = withDefaults[source];
+      return {
+        ...withDefaults,
+        [source]: {
+          ...cur,
+          sublayers: { ...cur.sublayers, [sublayer]: !cur.sublayers[sublayer] },
+        },
+      };
+    });
 
   const pb = usePlayback(SEQUENCE_URL);
 
@@ -119,7 +228,7 @@ export default function App() {
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
         return r.json() as Promise<SceneFrame>;
       })
-      .then(d => setFallbackFrame(d))
+      .then(d => setFallbackFrame(normalizeFrame(d)))
       .catch(e => setFallbackError(String(e)));
   }, [manifestMissing]);
 
@@ -129,9 +238,29 @@ export default function App() {
     [pb.current, pb.next, pb.alpha],
   );
 
+  // Rigid map-motion delta: baked cur-ego map geometry re-expressed in the
+  // alpha-interpolated ego frame, so the map glides instead of snapping.
+  const mapMotion = useMemo(
+    () =>
+      egoMapDelta(
+        pb.current?.ego.pose_global ?? null,
+        pb.next?.ego.pose_global ?? null,
+        pb.alpha,
+      ),
+    [pb.current, pb.next, pb.alpha],
+  );
+
   const canvasFrame = renderFrame ?? fallbackFrame;
   // HUD shows discrete source-keyframe metadata, not interpolated values.
   const hudFrame = pb.current ?? fallbackFrame;
+
+  // Seed visibility defaults for any map-layer sources newly seen in a frame.
+  useEffect(() => {
+    if (!hudFrame || hudFrame.map_layers.length === 0) return;
+    setMapVisibility(v =>
+      ensureVisibilityFor(hudFrame.map_layers.map(l => l.source), v),
+    );
+  }, [hudFrame]);
 
   if (manifestMissing && fallbackError) {
     return (
@@ -161,8 +290,8 @@ export default function App() {
     <div className="viewer-root">
       <div className={`canvas-area${mode === '2d' ? ' canvas-area--2d' : ''}`}>
         {mode === '3d'
-          ? <BevScene3D frame={canvasFrame} showDebug={showDebug} />
-          : <BevCanvas frame={canvasFrame} />}
+          ? <BevScene3D frame={canvasFrame} showDebug={showDebug} mapVisibility={mapVisibility} mapMotion={mapMotion} />
+          : <BevCanvas frame={canvasFrame} mapVisibility={mapVisibility} mapMotion={mapMotion} />}
       </div>
       <HudPanel
         frame={hudFrame}
@@ -170,6 +299,9 @@ export default function App() {
         onModeChange={setMode}
         showDebug={showDebug}
         onDebugChange={setShowDebug}
+        mapVisibility={mapVisibility}
+        onToggleSource={toggleMapSource}
+        onToggleSublayer={toggleMapSublayer}
       />
       {pb.manifest && (
         <TransportBar
