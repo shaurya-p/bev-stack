@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/demo.gif" width="800" alt="BEV Stack — SceneFrame-driven BEV viewer with HD map and objects">
+</p>
+
 # bev-stack
 
 A perception-focused BEV (Bird's-Eye View) visualization and fusion toolkit.

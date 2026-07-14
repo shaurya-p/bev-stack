@@ -27,6 +27,9 @@ node_modules/
 .next/
 frontend/dist/
 
+# Screen recording videos
+*.mov
+
 # Local Claude Code instructions
 CLAUDE.md
 
